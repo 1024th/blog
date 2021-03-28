@@ -3,112 +3,112 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://1024th.github.io/blog/</loc>
+    <loc>/</loc>
     <lastmod>2021-03-27T10:45:41+00:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://1024th.github.io/blog/categories/</loc>
+    <loc>/categories/</loc>
     <lastmod>2021-03-27T10:45:41+00:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://1024th.github.io/blog/posts/</loc>
+    <loc>/posts/</loc>
     <lastmod>2021-03-27T10:45:41+00:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://1024th.github.io/blog/tags/</loc>
+    <loc>/tags/</loc>
     <lastmod>2021-03-27T10:45:41+00:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://1024th.github.io/blog/2021/03/%E7%94%B5%E5%AE%B9%E5%99%A8%E5%8A%A8%E6%9D%86%E7%94%B5%E7%A3%81%E6%84%9F%E5%BA%94%E9%97%AE%E9%A2%98/</loc>
+    <loc>/2021/03/%E7%94%B5%E5%AE%B9%E5%99%A8%E5%8A%A8%E6%9D%86%E7%94%B5%E7%A3%81%E6%84%9F%E5%BA%94%E9%97%AE%E9%A2%98/</loc>
     <lastmod>2021-03-27T10:45:41+00:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://1024th.github.io/blog/tags/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86/</loc>
+    <loc>/tags/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86/</loc>
     <lastmod>2021-03-27T10:45:41+00:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://1024th.github.io/blog/categories/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86/</loc>
+    <loc>/categories/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86/</loc>
     <lastmod>2021-03-27T10:45:41+00:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://1024th.github.io/blog/tags/css/</loc>
+    <loc>/tags/css/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://1024th.github.io/blog/tags/html/</loc>
+    <loc>/tags/html/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://1024th.github.io/blog/tags/markdown/</loc>
+    <loc>/tags/markdown/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://1024th.github.io/blog/2019/03/testmarkdown-syntax/</loc>
+    <loc>/2019/03/testmarkdown-syntax/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://1024th.github.io/blog/series/</loc>
+    <loc>/series/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://1024th.github.io/blog/categories/syntax/</loc>
+    <loc>/categories/syntax/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://1024th.github.io/blog/tags/themes/</loc>
+    <loc>/tags/themes/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://1024th.github.io/blog/categories/themes/</loc>
+    <loc>/categories/themes/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://1024th.github.io/blog/series/themes-guide/</loc>
+    <loc>/series/themes-guide/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.5</priority>
