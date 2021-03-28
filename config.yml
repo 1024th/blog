@@ -2,6 +2,7 @@ baseURL: https://1024th.github.io/blog
 theme: pure
 title: 1024th's Blog
 copyright: 署名-非商业性使用-相同方式共享 4.0 国际
+publishDir: docs
 defaultContentLanguage: zh  # en/zh/...
 footnoteReturnLinkContents: ↩
 hasCJKLanguage: true
