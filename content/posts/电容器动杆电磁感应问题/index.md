@@ -128,9 +128,9 @@ $$u+Ri=BLv$$
 
 $$\frac{m(v_0-v)}{BLC}-\frac{mR}{BL} \frac{\mathrm{d}v}{\mathrm{d}t}=BLv$$
 
-$$\frac{mR}{BL}\frac{\mathrm{d}v}{\mathrm{d}t}+(BL+ \frac{m}{BLC})v=\frac{mv_0}{BLC}$$
+$$\frac{mR}{BL}\frac{\mathrm{d}v}{\mathrm{d}t}+\left(BL+ \frac{m}{BLC}\right)v=\frac{mv_0}{BLC}$$
 
-$$\frac{\mathrm{d}v}{\mathrm{d}t}+(\frac{B^2L^2C+m}{mRC})v=\frac{v_0}{RC}$$
+$$\frac{\mathrm{d}v}{\mathrm{d}t}+\left(\frac{B^2L^2C+m}{mRC}\right)v=\frac{v_0}{RC}$$
 
 记 $k=\dfrac{m}{B^2L^2C+m}$，$\tau=RC$，则
 
