@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <title>
+         - 1024th&#39;s Blog
+      </title>
+        <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    
+    <meta name="theme-color" content="#000000" />
+    
+    <meta http-equiv="window-target" content="_top" />
+    
+    
+    <meta name="description" content="奔驰定理 内容 如图，已知 \(O\) 为 \(\triangle ABC\) 内一点，则 \(\overrightarrow {OA}\cdot S_{\triangle BOC}&#43;\overrightarrow {OB}\cdot S_{\triangle AOC}&#43;\overrightarrow {OC}\cdot S_{\triangle AOB}=\overrightarrow {0}\) 证明 1 如图，延长 \(AO\) 交 \(BC\) 于点 \(D\)。 \(\overrightarrow{A O}=\frac{A O}{A D} \overrightarrow{A D} =\frac{A O}{A D} \frac{D C}{B C} \overrightarrow{A B}&#43;\frac{A O}{A D} \frac{B D}{B C} \overrightarrow{A" />
+    <meta name="generator" content="Hugo 0.83.0-DEV with theme pure" />
+    <title> - 1024th&#39;s Blog</title>
+    
+    
+    <link rel="stylesheet" href="../../../css/style.min.ad6cc7f5a80b7d718bb952c6ae82c704d0da20a473043879607efeff8a59ef8e.css">
+    
+    <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
+    <meta property="og:title" content="" />
+<meta property="og:description" content="奔驰定理 内容 如图，已知 \(O\) 为 \(\triangle ABC\) 内一点，则 \(\overrightarrow {OA}\cdot S_{\triangle BOC}&#43;\overrightarrow {OB}\cdot S_{\triangle AOC}&#43;\overrightarrow {OC}\cdot S_{\triangle AOB}=\overrightarrow {0}\) 证明 1 如图，延长 \(AO\) 交 \(BC\) 于点 \(D\)。 \(\overrightarrow{A O}=\frac{A O}{A D} \overrightarrow{A D} =\frac{A O}{A D} \frac{D C}{B C} \overrightarrow{A B}&#43;\frac{A O}{A D} \frac{B D}{B C} \overrightarrow{A" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/1/01/%E5%A5%94%E9%A9%B0%E5%AE%9A%E7%90%86%E7%9A%84%E5%87%A0%E7%A7%8D%E8%AF%81%E6%98%8E%E4%B8%8E%E5%BA%94%E7%94%A8.49/" /><meta property="article:section" content="posts" />
+
+
+
+<meta itemprop="name" content="">
+<meta itemprop="description" content="奔驰定理 内容 如图，已知 \(O\) 为 \(\triangle ABC\) 内一点，则 \(\overrightarrow {OA}\cdot S_{\triangle BOC}&#43;\overrightarrow {OB}\cdot S_{\triangle AOC}&#43;\overrightarrow {OC}\cdot S_{\triangle AOB}=\overrightarrow {0}\) 证明 1 如图，延长 \(AO\) 交 \(BC\) 于点 \(D\)。 \(\overrightarrow{A O}=\frac{A O}{A D} \overrightarrow{A D} =\frac{A O}{A D} \frac{D C}{B C} \overrightarrow{A B}&#43;\frac{A O}{A D} \frac{B D}{B C} \overrightarrow{A">
+
+<meta itemprop="wordCount" content="2038">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="奔驰定理 内容 如图，已知 \(O\) 为 \(\triangle ABC\) 内一点，则 \(\overrightarrow {OA}\cdot S_{\triangle BOC}&#43;\overrightarrow {OB}\cdot S_{\triangle AOC}&#43;\overrightarrow {OC}\cdot S_{\triangle AOB}=\overrightarrow {0}\) 证明 1 如图，延长 \(AO\) 交 \(BC\) 于点 \(D\)。 \(\overrightarrow{A O}=\frac{A O}{A D} \overrightarrow{A D} =\frac{A O}{A D} \frac{D C}{B C} \overrightarrow{A B}&#43;\frac{A O}{A D} \frac{B D}{B C} \overrightarrow{A"/>
+
+    <!--[if lte IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+      <![endif]-->
+
+    <!--[if lt IE 9]>
+        <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+      <![endif]-->
+  </head>
+
+  
+  
+
+  <body class="main-center theme-black" itemscope itemtype="http://schema.org/WebPage"><header class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="slimContent">
+      <div class="navbar-header">
+        <div class="profile-block text-center">
+          <a id="avatar" href="" target="_blank">
+            <img class="img-circle img-rotate" src="../../../avatar.png" width="200" height="200">
+          </a>
+          <h2 id="name" class="hidden-xs hidden-sm">1024th</h2>
+          <h3 id="title" class="hidden-xs hidden-sm hidden-md"></h3>
+          <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i>China</small>
+        </div><div class="search" id="search-form-wrap">
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="搜索" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i
+                        class="icon icon-search"></i></button>
+            </span>
+        </div>
+        <div class="ins-search">
+            <div class="ins-search-mask"></div>
+            <div class="ins-search-container">
+                <div class="ins-input-wrapper">
+                    <input type="text" class="ins-search-input" placeholder="想要查找什么..."
+                        x-webkit-speech />
+                    <button type="button" class="close ins-close ins-selectable" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="ins-section-wrapper">
+                    <div class="ins-section-container"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+        <ul class="nav navbar-nav main-nav">
+            <li class="menu-item menu-item-home">
+                <a href="../../../">
+                    <i class="icon icon-home-fill"></i>
+                  <span class="menu-title">主页</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-archives">
+                <a href="../../../posts/">
+                    <i class="icon icon-archives-fill"></i>
+                  <span class="menu-title">归档</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-categories">
+                <a href="../../../categories/">
+                    <i class="icon icon-folder"></i>
+                  <span class="menu-title">分类</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-tags">
+                <a href="../../../tags/">
+                    <i class="icon icon-tags"></i>
+                  <span class="menu-title">标签</span>
+                </a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title"> 标签</h3>
+    <div id="tag-cloud-list" class="widget-body">
+            
+            
+            <a href="../../../tags/css/" class="tag-list-link" rel="1">css<span
+               class="tag-list-count">1</span></a>
+            
+            
+            <a href="../../../tags/html/" class="tag-list-link" rel="1">html<span
+               class="tag-list-count">1</span></a>
+            
+            
+            <a href="../../../tags/hugo/" class="tag-list-link" rel="1">hugo<span
+               class="tag-list-count">1</span></a>
+            
+            
+            <a href="../../../tags/markdown/" class="tag-list-link" rel="1">markdown<span
+               class="tag-list-count">1</span></a>
+            
+            
+            <a href="../../../tags/mathjax/" class="tag-list-link" rel="1">mathjax<span
+               class="tag-list-count">1</span></a>
+            
+            
+            <a href="../../../tags/themes/" class="tag-list-link" rel="1">themes<span
+               class="tag-list-count">1</span></a>
+            
+            
+            <a href="../../../tags/%E9%AB%98%E4%B8%AD%E6%95%B0%E5%AD%A6/" class="tag-list-link" rel="2">高中数学<span
+               class="tag-list-count">2</span></a>
+            
+            
+            <a href="../../../tags/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86/" class="tag-list-link" rel="1">高中物理<span
+               class="tag-list-count">1</span></a>
+            
+    </div>
+<script>
+document.onreadystatechange = () => {
+  if (document.readyState === 'complete') {
+    tagCloud('#tag-cloud-list a',  8 ,  20 );
+  }
+};
+
+function tagCloud(where, min, max) {
+  let iMax = 0;
+  let iMin = 0;
+  $(where).each(function() {
+    let weight = Number($(this).attr("rel"));
+    if(iMax < weight) iMax = weight;
+    if(iMin > weight || iMin == 0) iMin = weight;
+  });
+  let step = (max - min)/(iMax - iMin);
+  $(where).each(function() {
+    let weight = $(this).attr("rel") - iMin;
+    $(this).css({"font-size": min + (weight * step) + 'px'});
+  });
+};
+</script>
+</div>
+
+      <div class="widget">
+    <h3 class="widget-title"> 分类</h3>
+    <div class="widget-body">
+        <ul class="category-list">
+            <li class="category-list-item"><a href="../../../categories/syntax/" class="category-list-link">syntax</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="../../../categories/themes/" class="category-list-link">themes</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="../../../categories/%E7%BC%96%E7%A8%8B/" class="category-list-link">编程</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="../../../categories/%E9%AB%98%E4%B8%AD%E6%95%B0%E5%AD%A6/" class="category-list-link">高中数学</a><span class="category-list-count">2</span></li>
+            <li class="category-list-item"><a href="../../../categories/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86/" class="category-list-link">高中物理</a><span class="category-list-count">1</span></li>
+        </ul>
+    </div>
+</div>
+      <div class="widget">
+    <h3 class="widget-title"> 标签</h3>
+    <div class="widget-body">
+        <ul class="tag-list">
+            
+            
+            <li class="tag-list-item"><a href="../../../tags/css/" class="tag-list-link">css</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="../../../tags/html/" class="tag-list-link">html</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="../../../tags/hugo/" class="tag-list-link">hugo</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="../../../tags/markdown/" class="tag-list-link">markdown</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="../../../tags/mathjax/" class="tag-list-link">mathjax</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="../../../tags/themes/" class="tag-list-link">themes</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="../../../tags/%E9%AB%98%E4%B8%AD%E6%95%B0%E5%AD%A6/" class="tag-list-link">高中数学</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="../../../tags/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86/" class="tag-list-link">高中物理</a><span
+                    class="tag-list-count">1</span></li>
+            
+        </ul>
+
+    </div>
+</div>
+      
+<div class="widget">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget-body">
+        <ul class="recent-post-list list-unstyled no-thumbnail">
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="../../../2021/04/add-mathjax-support-for-hugo/" class="title">为 Hugo 添加 MathJax 支持（重新编译 Hugo）</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2021-04-01 00:29:23 &#43;0800 CST" itemprop="datePublished">2021-04-01</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="../../../2021/03/%E7%94%B5%E5%AE%B9%E5%99%A8%E5%8A%A8%E6%9D%86%E7%94%B5%E7%A3%81%E6%84%9F%E5%BA%94%E9%97%AE%E9%A2%98/" class="title">电容器动杆电磁感应问题</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2021-03-27 10:45:41 &#43;0000 UTC" itemprop="datePublished">2021-03-27</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="../../../2020/12/conic-section-and-polar-coordinate-system/" class="title">圆锥曲线与极坐标</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-12-21 22:27:00 &#43;0800 CST" itemprop="datePublished">2020-12-21</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="../../../2020/12/%E5%8D%8A%E4%BB%A3%E6%B3%95%E6%B1%82%E5%9C%86%E9%94%A5%E6%9B%B2%E7%BA%BF%E5%88%87%E7%BA%BF%E6%96%B9%E7%A8%8B%E7%9A%84%E5%8E%9F%E7%90%86%E9%9A%90%E5%87%BD%E6%95%B0%E6%B1%82%E5%AF%BC/" class="title">“半代法”求圆锥曲线切线方程的原理（隐函数求导）</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-12-05 00:41:00 &#43;0800 CST" itemprop="datePublished">2020-12-05</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="../../../2019/03/testmarkdown-syntax/" class="title">Markdown Syntax Guide</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2019-03-11 00:00:00 &#43;0000 UTC" itemprop="datePublished">2019-03-11</time>
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+  </div>
+</aside>
+
+    
+    
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <h4 class="toc-title">文章目录</h4>
+    <nav id="toc" class="js-toc toc">
+
+    </nav>
+  </div>
+</aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="../../../1/01/%E5%A5%94%E9%A9%B0%E5%AE%9A%E7%90%86%E7%9A%84%E5%87%A0%E7%A7%8D%E8%AF%81%E6%98%8E%E4%B8%8E%E5%BA%94%E7%94%A8.49/"
+    ></a
+  >
+</h1>
+
+      <div class="article-meta">
+        
+
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 2038字</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 5分 </span>
+      </div>
+    </div>
+    <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
+      <h1 id="奔驰定理">奔驰定理</h1>
+<h2 id="内容">内容</h2>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p>如图，已知 <span class="math inline">\(O\)</span> 为 <span class="math inline">\(\triangle ABC\)</span> 内一点，则</p>
+<p><span class="math inline">\(\overrightarrow {OA}\cdot S_{\triangle BOC}+\overrightarrow {OB}\cdot S_{\triangle AOC}+\overrightarrow {OC}\cdot S_{\triangle AOB}=\overrightarrow {0}\)</span></p>
+<h2 id="证明-1">证明 1</h2>
+<p>如图，延长 <span class="math inline">\(AO\)</span> 交 <span class="math inline">\(BC\)</span> 于点 <span class="math inline">\(D\)</span>。</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p><span class="math inline">\(\overrightarrow{A O}=\frac{A O}{A D} \overrightarrow{A D}  =\frac{A O}{A D} \frac{D C}{B C} \overrightarrow{A B}+\frac{A O}{A D} \frac{B D}{B C} \overrightarrow{A C}\\ =\frac{S_{\triangle A O C}}{S_{\triangle A D C}} \frac{S_{\triangle A D C}}{S_{\triangle A B C}}(-\overrightarrow{O A}+\overrightarrow{O B}) +\frac{S_{\triangle A O B}}{S_{\triangle A D B}} \frac{S_{\triangle A B D}}{S_{\triangle AB C}}(-\overrightarrow{O A}+\overrightarrow{O C})\)</span></p>
+<p>得：<span class="math inline">\(S_{\triangle BOC} \overrightarrow {OA} + S_{ \triangle AOC} \overrightarrow{OB} + S_{\triangle AOB} \overrightarrow{OC} = \vec 0\)</span></p>
+<h2 id="证明-2">证明 2</h2>
+<p>若 <span class="math inline">\(\overrightarrow {OA'}+\overrightarrow {OB'}+\overrightarrow {OC'}=\vec {0}\)</span>，则 <span class="math inline">\(O\)</span> 为 <span class="math inline">\(\triangle A'B'C'\)</span> 的重心，不妨设</p>
+<p><span class="math inline">\(x\overrightarrow {OA}=\overrightarrow {OA'}\)</span>, <span class="math inline">\(y\overrightarrow {OB}=\overrightarrow {OB'}\)</span>, <span class="math inline">\(z\overrightarrow {OC}=\overrightarrow {OC'}\)</span></p>
+<p><span class="math inline">\(\therefore x\overrightarrow {OA}+y\overrightarrow {OB}+z\overrightarrow {OC}=\vec{0}\)</span>  ①</p>
+<p><span class="math inline">\(S_{\triangle OBC}=\frac {1}{2}|\overrightarrow {OB}|\cdot |\overrightarrow {OC}|\sin \angle BOC=\frac {1}{2}\frac {|\overrightarrow {OB'}|}{y}\cdot \frac {|\overrightarrow {OC'}|}{z}\sin \angle B'OC'=\frac {S_{\triangle OB'C'}}{yz}=\frac {xS_{\triangle OB'C'}}{xyz}\)</span></p>
+<p>同理可得</p>
+<p><span class="math inline">\(S_{\triangle OAC}=\frac {yS_{\triangle OA'C'}}{xyz}\)</span>, <span class="math inline">\(S_{\triangle OAB}=\frac {zS_{\triangle OA'B'}}{xyz}\)</span></p>
+<p>又 <span class="math inline">\(\because S_{\triangle OB'C'}=S_{\triangle OA'C'}=S_{\triangle OA'B'}\)</span></p>
+<p><span class="math inline">\(\therefore x:y:z=S_{\triangle OBC}:S_{\triangle OAC}:S_{\triangle OBC}\)</span></p>
+<p>∴①式可化为 <span class="math inline">\(\overrightarrow {OA}\cdot S_{\triangle BOC}+\overrightarrow {OB}\cdot S_{\triangle AOC}+\overrightarrow {OC}\cdot S_{\triangle AOB}=\overrightarrow {0}\)</span></p>
+<p>奔驰定理得证。</p>
+<h2 id="证明-3">证明 3</h2>
+<p>如图，单位圆上有任意三点 <span class="math inline">\(A\)</span>，<span class="math inline">\(B\)</span>，<span class="math inline">\(C\)</span>，分别与圆心 <span class="math inline">\(O\)</span> 连接，则三点坐标为 <span class="math inline">\(A \left( 1 , 0 \right) , B \left( \cos \alpha , \sin \alpha \right) , C ( \cos \gamma , -\sin \gamma)\)</span></p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p><span class="math display">\[
+\]</span></p>
+<p>\begin{aligned}
+&amp;\overrightarrow{OA} \sin \beta+\overrightarrow{OB} \sin \gamma+\overrightarrow{OC} \sin \alpha \<br>
+=&amp;(\sin \beta,0)+(\cos\alpha \sin\gamma,\sin\alpha\sin\gamma) + (\cos\gamma\sin\alpha, -\sin\gamma\sin\alpha)\<br>
+=&amp;(\sin \beta+\cos\alpha \sin\gamma+\cos\gamma\sin\alpha, \sin\alpha\sin\gamma-\sin\gamma\sin\alpha) \<br>
+=&amp;(\sin \beta+\sin (\alpha+\gamma), 0)\<br>
+=&amp;(\sin \beta-\sin \beta, 0)=(0,0)=\overrightarrow{0}
+\end{aligned}</p>
+<p><span class="math display">\[
+所以 $\overrightarrow{O A} \sin \alpha+\overrightarrow{O B} \sin \beta+\overrightarrow{O C} \sin \gamma=\overrightarrow{0}$
+
+只要 $\overrightarrow{OA}, \overrightarrow{OB}, \overrightarrow{OC}$ 为单位向量，上市就成立。因此，在任意一个 $\triangle ABC$ 中，有 $\frac{\overrightarrow{O A}}{|\overrightarrow{O A}|} \sin \alpha+\frac{\overrightarrow{O B}}{|\overrightarrow{O B}|} \sin \beta+\frac{\overrightarrow{O C}}{|\overrightarrow{O C}|} \sin \gamma=\overrightarrow{0}$
+
+上式两边同时乘以 $\frac 12 |\overrightarrow{OA}||\overrightarrow{OB}||\overrightarrow{OC}|$，得
+
+$\frac{1}{2}|\overrightarrow{O B}||\overrightarrow{O C}|\sin \alpha\cdot \overrightarrow{OA}+\frac{1}{2}|\overrightarrow{OA}| |\overrightarrow{O C}|\sin \gamma\cdot \overrightarrow{O B}+\frac{1}{2}| \overrightarrow{OA}||\overrightarrow{O B}| \sin \beta \cdot\overrightarrow{O C}=\overrightarrow{0}$
+
+即 $S_{\triangle B O C}\cdot\overrightarrow{O A}+S_{\triangle A O C} \cdot \overrightarrow{O B}+S_{\triangle A O B} \cdot \overrightarrow{O C}=\overrightarrow{0}$
+
+奔驰定理得证。
+
+## 应用
+
+定理怎么用呢？
+
+看个例子：
+已知 $O$ 为 $\triangle$ABC 内一点，$\overrightarrow{OA}+2\overrightarrow{OB}+3\overrightarrow{OC}=\vec{0}$，则 $S_{\triangle AOB}:S_{\triangle BOC}=$_______
+
+分析：由推论很容易知道，面积比就是三角形所对应向量前的系数比，即比值为 3.
+
+变式：已知 $O$ 为 $\triangle$ABC 内一点，$S_{\triangle AOB}:S_{\triangle BOC}:S_{\triangle AOC}=4:3:2$，设 $\overrightarrow{AO}=\lambda\overrightarrow{AB}+\mu\overrightarrow{AC}$，求 $\lambda，\mu$ 的值。
+
+答案：$\lambda=\frac{2}{9}，\mu=\frac{4}{9}$。
+
+已知 $△ABC$ 的面积 $S_{△ABC}=1$ ，三角形内一点 $P$ 满足 $2\overrightarrow{PA}+\overrightarrow{PB}+\overrightarrow{PC}=\overrightarrow{0}$ ，求 $S_{△PBC}$ 。
+
+一、「奔驰定理」
+对于 $△ABC$ 内一点 $P$ ，记 $S_A=S_{△PBC}$ ， $S_B=S_{△PAC}$ ， $S_C=S_{△PAB}$ ，则
+
+$S_A\cdot\overrightarrow{PA}+S_B\cdot\overrightarrow{PB}+S_C\cdot\overrightarrow{PC}=\overrightarrow{0}$ 。
+
+证明 考虑将向量 $\overrightarrow{AP}$ 分解，延长 $AP$ 交 $BC$ 于 $Q$ 。
+
+容易得到 $\overrightarrow{AP}=\frac{S_B+S_C}{S_{△ABC}}\cdot\overrightarrow{AQ}$ ，且 $\overrightarrow{AQ}=\frac{S_B}{S_B+S_C}\cdot\overrightarrow{AB}+\frac{S_C}{S_B+S_C}\cdot\overrightarrow{AC}$
+
+代入化简得 $\overrightarrow{AP}=\frac{S_B}{S_{△ABC}}\cdot\overrightarrow{AB}+\frac{S_C}{S_{△ABC}}\cdot\overrightarrow{AC}$
+
+同理 $\overrightarrow{BP}=\frac{S_A}{S_{△ABC}}\cdot\overrightarrow{BA}+\frac{S_C}{S_{△ABC}}\cdot\overrightarrow{BC}$
+
+$\overrightarrow{CP}=\frac{S_A}{S_{△ABC}}\cdot\overrightarrow{CA}+\frac{S_B}{S_{△ABC}}\cdot\overrightarrow{CB}$
+
+所以 $S_A\cdot\overrightarrow{AP}+S_B\cdot\overrightarrow{BP}+S_C\cdot\overrightarrow{CP}$
+
+$=\frac{S_AS_B}{S_{△ABC}}\cdot(\overrightarrow{AB}+\overrightarrow{BA})+\frac{S_BS_C}{S_{△ABC}}\cdot(\overrightarrow{BC}+\overrightarrow{CB})+\frac{S_CS_A}{S_{△ABC}}\cdot(\overrightarrow{CA}+\overrightarrow{AC})$
+
+$=\overrightarrow{0}+\overrightarrow{0}+\overrightarrow{0}=\overrightarrow{0}$ ，结论得证。
+
+二、定理的应用
+
+（1）三角形的重心
+
+当点 $P$ 是三角形的重心 $G$ 时，容易得到 $S_A=S_B=S_C=\frac{1}{3}S_{△ABC}$
+
+所以 $\overrightarrow{GA}+\overrightarrow{GB}+\overrightarrow{GC}=\overrightarrow{0}$ 。
+
+（2）三角形的外心
+
+当点 $P$ 是三角形的外心 $O$ 时，由圆的性质可得 $\angle BOC=2\angle A$ ， $OA=OB=OC$
+
+由面积公式 $S_A=\frac{1}{2}OB\cdot OC\cdot \sin 2A$ 得
+
+$S_A:S_B:S_C=\sin 2A:\sin 2B:\sin 2C$
+
+所以 $\sin 2A\cdot\overrightarrow{OA}+\sin 2B\cdot\overrightarrow{OB}+\sin 2C\cdot\overrightarrow{OC}=\overrightarrow{0}$
+
+（3）三角形的内心
+
+当点 $P$ 是三角形的内心 $I$ 时，由圆的性质可得 $ID=IE=IF$
+
+由面积公式 $S_A=\frac{1}{2}ID\cdot a$ 得
+
+$S_A:S_B:S_C=a🅱️c$
+
+所以 $a\cdot\overrightarrow{IA}+b\cdot\overrightarrow{IB}+c\cdot\overrightarrow{IC}=\overrightarrow{0}$
+
+注：由正弦定理可知 $a🅱️c=\sin A:\sin B:\sin C$
+
+所以也可以写成 $\sin A\cdot\overrightarrow{IA}+\sin B\cdot\overrightarrow{IB}+\sin C\cdot\overrightarrow{IC}=\overrightarrow{0}$
+
+三、总结
+
+倒回去看最开始的那道题：
+
+已知 $△ABC$ 的面积 $S_{△ABC}=1$ ，三角形内一点 $P$ 满足 $2\overrightarrow{PA}+\overrightarrow{PB}+\overrightarrow{PC}=\overrightarrow{0}$ ，求 $S_{△PBC}$ 。
+
+解 由等式 $2\overrightarrow{PA}+\overrightarrow{PB}+\overrightarrow{PC}=\overrightarrow{0}$ 可知
+
+$S_A:S_B:S_C=2:1:1$ ，因此列出方程
+
+\]</span></p>
+<p>\begin{cases}S_A=2S_B=2S_C\<br>
+S_A+S_B+S_C=1\end{cases}</p>
+<p><span class="math display">\[
+可解得 $S_A=\frac{1}{2}$ ，即 $S_{△PBC}=\frac{1}{2}$
+
+这道题来自于这周的作业，原本是一道概率相关的题目。
+
+老师的解答方式是找几何关系，因为在本题中 $P$ 点恰好在中线上。
+
+但是稍微改一下题目的条件，就比较难找几何关系了：
+
+三角形内一点 $P$ 满足 $2\overrightarrow{PA}+3\overrightarrow{PB}+4\overrightarrow{PC}=\overrightarrow{0}$
+
+此时仍可以用如上的方法，列出方程组，解出所求面积。\]</span></p>
+
+    </div>
+    <div class="article-footer">
+<blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    <li class="post-copyright-author">
+      <strong>本文作者: </strong>
+        1024th
+    </li>
+    
+    <li class="post-copyright-license">
+      <strong>版权许可: </strong>
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="external">署名-非商业性使用-相同方式共享 4.0 国际</a>
+    </li>
+  </ul>
+</blockquote>
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="../../../avatar.png" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="" target="_blank"><span class="text-dark">1024th</span><small class="ml-1x"></small></a></h3>
+        <div>作者</div>
+      </div>
+    </figure>
+  </div>
+</div>
+
+    </div>
+  </article>
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <ul class="pager pull-left">
+            <li class="prev">
+                <a href="../../../1/01/%E6%8E%92%E5%88%97%E7%BB%84%E5%90%88%E7%9A%84%E4%B8%80%E4%BA%9B%E5%85%AC%E5%BC%8F%E5%8F%8A%E6%8E%A8%E5%AF%BC%E9%9D%9E%E5%B8%B8%E8%AF%A6%E7%BB%86%E6%98%93%E6%87%82.31/" title=""><i
+                        class="icon icon-angle-left"
+                        aria-hidden="true"></i><span>&nbsp;&nbsp;下一篇</span></a>
+            </li>
+            <li class="next">
+                <a href="../../../1/01/%E4%BA%8C%E9%A1%B9%E5%88%86%E5%B8%83%E6%96%B9%E5%B7%AE%E7%9A%84%E8%AF%A6%E7%BB%86%E8%AF%81%E6%98%8E.5/"
+                    title=""><span>上一篇&nbsp;&nbsp;</span><i
+                        class="icon icon-angle-right" aria-hidden="true"></i></a>
+            </li>
+            
+            <li class="toggle-toc">
+                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false"
+                    title="文章目录" role="button">
+                    <span>[&nbsp;</span><span>文章目录</span>
+                    <i class="text-collapsed icon icon-anchor"></i>
+                    <i class="text-in icon icon-close"></i>
+                    <span>]</span>
+                </a>
+            </li>
+        </ul>
+        <div class="bar-right">
+            <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter"
+                data-mobile-sites="weibo,qq,qzone"></div>
+        </div>
+    </div>
+</nav>
+
+
+</main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+<ul class="social-links">
+    <li><a href="../../../https:/github.com/1024th" target="_blank" title="github" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-github"></i></a></li>
+</ul>
+  <div class="copyright">
+    &copy;2020  -
+    2021
+    <div class="publishby">
+        Theme by <a href="https://github.com/xiaoheiAh" target="_blank"> xiaoheiAh </a>base on<a href="https://github.com/xiaoheiAh/hugo-theme-pure" target="_blank"> pure</a>.
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+            showMathMenu: false, //disables context menu
+            tex2jax: {
+            inlineMath: [ ['$','$'], ['\\(','\\)'] ]
+           }
+    });
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script>
+    window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/highlight.min.js"></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/python.min.js" defer></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/javascript.min.js" defer></script><script>
+    hljs.configure({
+        tabReplace: '    ', 
+        classPrefix: ''     
+        
+    })
+    hljs.initHighlightingOnLoad();
+</script>
+<script src="../../../js/application.min.a94ab19cb63a95c8d7fbd7b85cab3ddeea8c369bdf75b9cab6708787ead123af.js"></script>
+<script src="../../../js/plugin.min.19c5bcb2fb0789ab4f2b7834e5ceb5e92635645605bab902c1024b25f1502364.js"></script>
+
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: '文章',
+                PAGES: '页面',
+                CATEGORIES: '分类',
+                TAGS: '标签',
+                UNTITLED: '(未命名)',
+            },
+            ROOT_URL: '',
+            CONTENT_URL: '\/searchindex.json ',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script type="text/javascript" src="../../../js/insight.min.4a2d52de4bfff73e0c688404fe3d17c9a3ae12d9888e1e1ac9c690e4890de2ded50fe55f2b819c2ba55435a76f396f3ea6805765f0b0af5635cdf74ea459eab0.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+<script>
+    tocbot.init({
+        
+        tocSelector: '.js-toc',
+        
+        contentSelector: '.js-toc-content',
+        
+        headingSelector: 'h1, h2, h3',
+        
+        hasInnerContainers: true,
+    });
+</script>
+
+
+  </body>
+</html>

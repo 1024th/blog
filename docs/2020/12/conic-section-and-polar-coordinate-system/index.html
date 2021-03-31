@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <title>
+        圆锥曲线与极坐标 - 1024th&#39;s Blog
+      </title>
+        <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    
+    <meta name="theme-color" content="#000000" />
+    
+    <meta http-equiv="window-target" content="_top" />
+    
+    
+    <meta name="description" content="介绍极坐标，推导圆锥曲线的极坐标方程，推导一些二级结论" />
+    <meta name="generator" content="Hugo 0.83.0-DEV with theme pure" />
+    <title>圆锥曲线与极坐标 - 1024th&#39;s Blog</title>
+    
+    
+    <link rel="stylesheet" href="../../../css/style.min.ad6cc7f5a80b7d718bb952c6ae82c704d0da20a473043879607efeff8a59ef8e.css">
+    
+    <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
+    <meta property="og:title" content="圆锥曲线与极坐标" />
+<meta property="og:description" content="介绍极坐标，推导圆锥曲线的极坐标方程，推导一些二级结论" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/2020/12/conic-section-and-polar-coordinate-system/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2020-12-21T22:27:00&#43;08:00" />
+<meta property="article:modified_time" content="2020-12-21T22:27:00&#43;08:00" />
+
+<meta itemprop="name" content="圆锥曲线与极坐标">
+<meta itemprop="description" content="介绍极坐标，推导圆锥曲线的极坐标方程，推导一些二级结论"><meta itemprop="datePublished" content="2020-12-21T22:27:00&#43;08:00" />
+<meta itemprop="dateModified" content="2020-12-21T22:27:00&#43;08:00" />
+<meta itemprop="wordCount" content="2630">
+<meta itemprop="keywords" content="高中数学," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="圆锥曲线与极坐标"/>
+<meta name="twitter:description" content="介绍极坐标，推导圆锥曲线的极坐标方程，推导一些二级结论"/>
+
+    <!--[if lte IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+      <![endif]-->
+
+    <!--[if lt IE 9]>
+        <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+      <![endif]-->
+  </head>
+
+  
+  
+
+  <body class="main-center theme-black" itemscope itemtype="http://schema.org/WebPage"><header class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="slimContent">
+      <div class="navbar-header">
+        <div class="profile-block text-center">
+          <a id="avatar" href="" target="_blank">
+            <img class="img-circle img-rotate" src="../../../avatar.png" width="200" height="200">
+          </a>
+          <h2 id="name" class="hidden-xs hidden-sm">1024th</h2>
+          <h3 id="title" class="hidden-xs hidden-sm hidden-md"></h3>
+          <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i>China</small>
+        </div><div class="search" id="search-form-wrap">
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="搜索" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i
+                        class="icon icon-search"></i></button>
+            </span>
+        </div>
+        <div class="ins-search">
+            <div class="ins-search-mask"></div>
+            <div class="ins-search-container">
+                <div class="ins-input-wrapper">
+                    <input type="text" class="ins-search-input" placeholder="想要查找什么..."
+                        x-webkit-speech />
+                    <button type="button" class="close ins-close ins-selectable" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="ins-section-wrapper">
+                    <div class="ins-section-container"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+        <ul class="nav navbar-nav main-nav">
+            <li class="menu-item menu-item-home">
+                <a href="../../../">
+                    <i class="icon icon-home-fill"></i>
+                  <span class="menu-title">主页</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-archives">
+                <a href="../../../posts/">
+                    <i class="icon icon-archives-fill"></i>
+                  <span class="menu-title">归档</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-categories">
+                <a href="../../../categories/">
+                    <i class="icon icon-folder"></i>
+                  <span class="menu-title">分类</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-tags">
+                <a href="../../../tags/">
+                    <i class="icon icon-tags"></i>
+                  <span class="menu-title">标签</span>
+                </a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title"> 标签</h3>
+    <div id="tag-cloud-list" class="widget-body">
+            
+            
+            <a href="../../../tags/css/" class="tag-list-link" rel="1">css<span
+               class="tag-list-count">1</span></a>
+            
+            
+            <a href="../../../tags/html/" class="tag-list-link" rel="1">html<span
+               class="tag-list-count">1</span></a>
+            
+            
+            <a href="../../../tags/hugo/" class="tag-list-link" rel="1">hugo<span
+               class="tag-list-count">1</span></a>
+            
+            
+            <a href="../../../tags/markdown/" class="tag-list-link" rel="1">markdown<span
+               class="tag-list-count">1</span></a>
+            
+            
+            <a href="../../../tags/mathjax/" class="tag-list-link" rel="1">mathjax<span
+               class="tag-list-count">1</span></a>
+            
+            
+            <a href="../../../tags/themes/" class="tag-list-link" rel="1">themes<span
+               class="tag-list-count">1</span></a>
+            
+            
+            <a href="../../../tags/%E9%AB%98%E4%B8%AD%E6%95%B0%E5%AD%A6/" class="tag-list-link" rel="2">高中数学<span
+               class="tag-list-count">2</span></a>
+            
+            
+            <a href="../../../tags/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86/" class="tag-list-link" rel="1">高中物理<span
+               class="tag-list-count">1</span></a>
+            
+    </div>
+<script>
+document.onreadystatechange = () => {
+  if (document.readyState === 'complete') {
+    tagCloud('#tag-cloud-list a',  8 ,  20 );
+  }
+};
+
+function tagCloud(where, min, max) {
+  let iMax = 0;
+  let iMin = 0;
+  $(where).each(function() {
+    let weight = Number($(this).attr("rel"));
+    if(iMax < weight) iMax = weight;
+    if(iMin > weight || iMin == 0) iMin = weight;
+  });
+  let step = (max - min)/(iMax - iMin);
+  $(where).each(function() {
+    let weight = $(this).attr("rel") - iMin;
+    $(this).css({"font-size": min + (weight * step) + 'px'});
+  });
+};
+</script>
+</div>
+
+      <div class="widget">
+    <h3 class="widget-title"> 分类</h3>
+    <div class="widget-body">
+        <ul class="category-list">
+            <li class="category-list-item"><a href="../../../categories/syntax/" class="category-list-link">syntax</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="../../../categories/themes/" class="category-list-link">themes</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="../../../categories/%E7%BC%96%E7%A8%8B/" class="category-list-link">编程</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="../../../categories/%E9%AB%98%E4%B8%AD%E6%95%B0%E5%AD%A6/" class="category-list-link">高中数学</a><span class="category-list-count">2</span></li>
+            <li class="category-list-item"><a href="../../../categories/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86/" class="category-list-link">高中物理</a><span class="category-list-count">1</span></li>
+        </ul>
+    </div>
+</div>
+      <div class="widget">
+    <h3 class="widget-title"> 标签</h3>
+    <div class="widget-body">
+        <ul class="tag-list">
+            
+            
+            <li class="tag-list-item"><a href="../../../tags/css/" class="tag-list-link">css</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="../../../tags/html/" class="tag-list-link">html</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="../../../tags/hugo/" class="tag-list-link">hugo</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="../../../tags/markdown/" class="tag-list-link">markdown</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="../../../tags/mathjax/" class="tag-list-link">mathjax</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="../../../tags/themes/" class="tag-list-link">themes</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="../../../tags/%E9%AB%98%E4%B8%AD%E6%95%B0%E5%AD%A6/" class="tag-list-link">高中数学</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="../../../tags/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86/" class="tag-list-link">高中物理</a><span
+                    class="tag-list-count">1</span></li>
+            
+        </ul>
+
+    </div>
+</div>
+      
+<div class="widget">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget-body">
+        <ul class="recent-post-list list-unstyled no-thumbnail">
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="../../../2021/04/add-mathjax-support-for-hugo/" class="title">为 Hugo 添加 MathJax 支持（重新编译 Hugo）</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2021-04-01 00:29:23 &#43;0800 CST" itemprop="datePublished">2021-04-01</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="../../../2021/03/%E7%94%B5%E5%AE%B9%E5%99%A8%E5%8A%A8%E6%9D%86%E7%94%B5%E7%A3%81%E6%84%9F%E5%BA%94%E9%97%AE%E9%A2%98/" class="title">电容器动杆电磁感应问题</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2021-03-27 10:45:41 &#43;0000 UTC" itemprop="datePublished">2021-03-27</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="../../../2020/12/conic-section-and-polar-coordinate-system/" class="title">圆锥曲线与极坐标</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-12-21 22:27:00 &#43;0800 CST" itemprop="datePublished">2020-12-21</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="../../../2020/12/%E5%8D%8A%E4%BB%A3%E6%B3%95%E6%B1%82%E5%9C%86%E9%94%A5%E6%9B%B2%E7%BA%BF%E5%88%87%E7%BA%BF%E6%96%B9%E7%A8%8B%E7%9A%84%E5%8E%9F%E7%90%86%E9%9A%90%E5%87%BD%E6%95%B0%E6%B1%82%E5%AF%BC/" class="title">“半代法”求圆锥曲线切线方程的原理（隐函数求导）</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-12-05 00:41:00 &#43;0800 CST" itemprop="datePublished">2020-12-05</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="../../../2019/03/testmarkdown-syntax/" class="title">Markdown Syntax Guide</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2019-03-11 00:00:00 &#43;0000 UTC" itemprop="datePublished">2019-03-11</time>
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+  </div>
+</aside>
+
+    
+    
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <h4 class="toc-title">文章目录</h4>
+    <nav id="toc" class="js-toc toc">
+
+    </nav>
+  </div>
+</aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="../../../2020/12/conic-section-and-polar-coordinate-system/"
+    >圆锥曲线与极坐标</a
+  >
+</h1>
+
+      <div class="article-meta">
+        
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="../../../2020/12/conic-section-and-polar-coordinate-system/" class="article-date">
+  <time datetime="2020-12-21 22:27:00 &#43;0800 CST" itemprop="datePublished">2020-12-21</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="../../../categories/%E9%AB%98%E4%B8%AD%E6%95%B0%E5%AD%A6/"> 高中数学 </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="../../../tags/%E9%AB%98%E4%B8%AD%E6%95%B0%E5%AD%A6/"> 高中数学 </a>
+  </span>
+
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 2630字</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 6分 </span>
+      </div>
+    </div>
+    <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
+      <blockquote>
+<p>参考 <a href="https://zhuanlan.zhihu.com/p/33808071">https://zhuanlan.zhihu.com/p/33808071</a></p>
+</blockquote>
+<h2 id="极坐标">极坐标</h2>
+<blockquote>
+<p>在平面内取一个定点 <span class="math inline">\(O\)</span>，叫极点，引一条射线 <span class="math inline">\(Ox\)</span>，叫做极轴，再选定一个长度单位和角度的正方向（通常取逆时针方向）。对于平面内任何一点 <span class="math inline">\(M\)</span>，用 <span class="math inline">\(\rho\)</span> 表示线段 <span class="math inline">\(OM\)</span> 的长度（有时也用 <span class="math inline">\(r\)</span> 表示），<span class="math inline">\(\theta\)</span> 表示从 <span class="math inline">\(Ox\)</span> 到 <span class="math inline">\(OM\)</span> 的角度，<span class="math inline">\(\rho\)</span> 叫做点 <span class="math inline">\(M\)</span> 的极径，<span class="math inline">\(\theta\)</span> 叫做点 <span class="math inline">\(M\)</span> 的极角，有序数对 <span class="math inline">\((\rho,\theta)\)</span> 就叫点 <span class="math inline">\(M\)</span> 的极坐标，这样建立的坐标系叫做极坐标系。</p>
+</blockquote>
+<p>极坐标系用长度和角度取代了二维的坐标，相对于一般的直角坐标为下面的优点：</p>
+<ul>
+<li>便于处理角度的关系</li>
+<li>便于表示和计算长度</li>
+</ul>
+<p><img src="polar-coordinate-system.svg" alt=""></p>
+<p>设 <span class="math inline">\(M\)</span> 为平面上的一点，它的直角坐标为 <span class="math inline">\((x,y)\)</span>，极坐标为 <span class="math inline">\((\rho,\theta)\)</span>，易得<strong>互化公式</strong>：</p>
+<p><span class="math display">\[\left\{
+\begin{aligned}
+x &= \rho \cos \theta \\
+y &= \rho \sin \theta
+\end{aligned}
+\right.
+\quad\text{or}
+\left\{
+\begin{aligned}
+\rho^2 &= x^2+y^2 \\
+\tan \theta &= \tfrac{y}{x} \ (x\neq 0)
+\end{aligned}
+\right.
+\]</span></p>
+<h2 id="圆锥曲线的极坐标方程">圆锥曲线的极坐标方程</h2>
+<p>（1）以焦点为极点</p>
+<p><img src="conic.svg" alt=""></p>
+<p>记 <span class="math inline">\(|PF|=\rho\)</span>，<span class="math inline">\(P\)</span> 到准线 <span class="math inline">\(l\)</span> 的距离为 <span class="math inline">\(d\)</span>，焦点到准线的距离为 <span class="math inline">\(p\)</span>，由圆锥曲线的统一定义知 <span class="math inline">\(\frac{\rho}{d}=e\)</span>，由图形可得 <span class="math inline">\(d=p+\rho \cos\theta\)</span>，代入得 <span class="math inline">\(\frac{\rho}{p+\rho \cos\theta}=e\)</span>，整理后得到<strong>圆锥曲线的统一极坐标方程</strong>：</p>
+<p><span class="math display">\[\rho=\frac{ep}{1-e\cos\theta}
+\]</span></p>
+<p>当 <span class="math inline">\(e=0\)</span> 时，轨迹为圆；<span class="math inline">\(0< e <1\)</span> 时，轨迹为椭圆；<span class="math inline">\(e=1\)</span> 时，轨迹为抛物线；<span class="math inline">\(e>1\)</span> 时，轨迹为双曲线。</p>
+<p>（2）以坐标原点为极点</p>
+<p>在这里只考虑椭圆与双曲线的情况，抛物线也可类比：</p>
+<p>椭圆或双曲线的标准方程（焦点在 <span class="math inline">\(x\)</span> 轴上）为： <span class="math inline">\(\frac{x^2}{a^2}\pm\frac{y^2}{b^2}=1\)</span></p>
+<p>代入 <span class="math inline">\(x=\rho \cos\theta\)</span>，<span class="math inline">\(y=\rho \sin\theta\)</span> 得：</p>
+<p><span class="math inline">\(\frac{\rho^2 \cos^2\theta}{a^2}\pm\frac{\rho ^2\sin^2\theta}{b^2}=1\)</span>，提取 <span class="math inline">\(\rho^2\)</span> 得：</p>
+<p><span class="math inline">\(\displaystyle\frac{1}{\rho ^2}=\frac{\cos^2\theta}{a^2}\pm\frac{\sin^2\theta}{b^2}\)</span>，<strong>此方程表示椭圆或双曲线的轨迹。</strong></p>
+<p>取加号时，轨迹为椭圆；取减号时，轨迹为双曲线。</p>
+<h2 id="一些结论">一些结论</h2>
+<p><img src="conclusion.svg" alt=""></p>
+<p>如图，<span class="math inline">\(F\)</span> 为<strong>圆锥曲线</strong> <span class="math inline">\(E\)</span> 的焦点，过 <span class="math inline">\(F\)</span> 的直线交 <span class="math inline">\(E\)</span> 与 <span class="math inline">\(A,B\)</span> 两点，设直线 <span class="math inline">\(AB\)</span> 的倾斜角为 <span class="math inline">\(\alpha\)</span>，则</p>
+<p><span class="math display">\[\begin{aligned}
+&|AF|=\frac{ep}{1-e\cos \alpha} ,\ |BF|=\frac{ep}{1+e\cos \alpha} \\
+&|AB|=\tfrac{ep}{1-e\cos \alpha}+\tfrac{ep}{1+e\cos \alpha}=\frac{2ep}{1-e^2\cos^2 \alpha}
+\end{aligned}
+\]</span></p>
+<p>（看成以 <span class="math inline">\(F\)</span> 为极点的极坐标系，由圆锥曲线方程 <span class="math inline">\(\rho=\frac{ep}{1-e\cos\theta}\)</span>，令 <span class="math inline">\(\theta=\alpha\)</span> 可得 <span class="math inline">\(A\)</span> 点的 <span class="math inline">\(\rho\)</span>，即 <span class="math inline">\(|AF|\)</span>；同理，令 <span class="math inline">\(\theta=\alpha+\pi\)</span> 得到 <span class="math inline">\(B\)</span> 的，再用诱导公式 <span class="math inline">\(\cos(\theta+\pi)=-\cos \theta\)</span>）</p>
+<p>当椭圆与双曲线以标准方程表示时，焦准距 <span class="math inline">\(p=\frac{b^2}{c}\)</span>，离心率 <span class="math inline">\(e=\frac{c}{a}\)</span>，那么</p>
+<p><span class="math display">\[\begin{aligned}
+&|AF|=\frac{b^2}{a-c\cos \alpha} ,\ |BF|=\frac{b^2}{a+c\cos \alpha} \\
+&|AB|=\frac{2ab^2}{a^2-c^2\cos^2\alpha}
+\end{aligned}
+\]</span></p>
+<p>若 <span class="math inline">\(\frac{|AF|}{|BF|}=\lambda\)</span>，则 <span class="math inline">\(\frac{1+e\cos \alpha}{1-e\cos \alpha}=\lambda\)</span>，解出</p>
+<p><span class="math display">\[e\cos \alpha = \frac{\lambda-1}{\lambda+1}
+\]</span></p>
+<p>已知 <span class="math inline">\(e,\lambda\)</span> 时，可用上式求倾斜角。</p>
+<p>特殊地，当该曲线为抛物线时，<span class="math inline">\(e=1\)</span>，有</p>
+<p><span class="math display">\[\begin{aligned}
+& |AF|=\frac{p}{1-\cos \alpha} \\
+& |BF|=\frac{p}{1+\cos \alpha} \\
+& |AB|=\frac{2p}{\sin^2 \alpha}
+\end{aligned}
+\]</span></p>
+<h2 id="应用">应用</h2>
+<p>（1）以焦点为极点</p>
+<p><strong>例 1</strong> （2017 年全国Ⅰ卷）10．已知 <span class="math inline">\(F\)</span> 为抛物线 <span class="math inline">\(C:y^2=4x\)</span> 的焦点，过作两条互相垂直的直线 <span class="math inline">\(l_1\)</span>，<span class="math inline">\(l_2\)</span>，直线 <span class="math inline">\(l_1\)</span> 与 <span class="math inline">\(C\)</span> 交于 <span class="math inline">\(A\)</span>、<span class="math inline">\(B\)</span> 两点，直线 <span class="math inline">\(l_2\)</span> 与 <span class="math inline">\(C\)</span> 交于 <span class="math inline">\(D\)</span>、<span class="math inline">\(E\)</span> 两点，则 <span class="math inline">\(|AB|+|DE|\)</span> 的最小值为（　　）
+A.16　　B.14　　C. 12　　D.10</p>
+<p><strong>解</strong> <span class="math inline">\(p=2\)</span>，设直线 <span class="math inline">\(AB\)</span> 的倾斜角为 <span class="math inline">\(\alpha\)</span>，则直线 <span class="math inline">\(DE\)</span> 的倾斜角为 <span class="math inline">\(\alpha+\frac{\pi}{2}\)</span></p>
+<p>使用结论：<span class="math inline">\(|AB|=\frac{2p}{\sin^2\alpha}=\frac{4}{\sin^2\alpha}\)</span>，同理 <span class="math inline">\(|DE|=\frac{4}{\sin^2(\alpha+\frac{\pi}{2})}=\frac{4}{\cos^2\alpha}\)</span></p>
+<p>所以 <span class="math inline">\(|AB|+|DE|=\frac{4}{\sin^2\alpha}+\frac{4}{\cos^2\alpha}=\left(\frac{4}{\sin^2\alpha}+\frac{4}{\cos^2\alpha}\right)\times 1=\left(\frac{4}{\sin^2\alpha}+\frac{4}{\cos^2\alpha}\right)\left(\sin^2\alpha+\cos^2\alpha\right)\geq(\frac{2}{\sin \alpha}\sin \alpha +\frac{2}{\cos\alpha}\cos \alpha)^2=(2+2)^2=16\)</span> （柯西不等式）</p>
+<p><strong>例 2</strong> （模型来自于同济大学自招题）已知椭圆 <span class="math inline">\(C:\frac{x^2}{4}+\frac{y^2}{3}=1\)</span>，过左焦点作两条相互垂直的直线，交椭圆于 <span class="math inline">\(M,N,P,Q\)</span> 四点，求四边形 <span class="math inline">\(MNPQ\)</span> 的面积的取值范围。</p>
+<p><img src="T2.png" alt=""></p>
+<p><strong>解</strong> 依题意 <span class="math inline">\(e=\frac{1}{2}\)</span>，<span class="math inline">\(p=3\)</span>，设直线 <span class="math inline">\(PQ\)</span> 的倾斜角为 <span class="math inline">\(\alpha\)</span>，则直线 <span class="math inline">\(MN\)</span> 的倾斜角为 <span class="math inline">\(\alpha+\frac{\pi}{2}\)</span></p>
+<p><span class="math inline">\(|PQ|=\frac{2ep}{1-e^2\cos^2\alpha}=\frac{12}{4-\cos^2\alpha}=\frac{12}{\sin^2\alpha+3}\)</span></p>
+<p>用 <span class="math inline">\(\alpha+\frac{\pi}{2}\)</span> 代替 <span class="math inline">\(\alpha\)</span> 得：<span class="math inline">\(|MN|=\frac{12}{\cos^2\alpha+3}\)</span></p>
+<p>所以 <span class="math inline">\(S=\frac{1}{2}|PQ||MN|=\frac{72}{(4-\cos^2\alpha)(\cos^2\alpha+3)}\)</span></p>
+<p>此处换元后易求得范围。</p>
+<p><strong>例 3</strong> 已知梯形 <span class="math inline">\(ABCD\)</span> 满足 <span class="math inline">\(AB/\!/CD\)</span>，<span class="math inline">\(\angle BAD =45^\circ\)</span>，以 <span class="math inline">\(AD\)</span> 为焦点的双曲线 <span class="math inline">\(\Gamma\)</span> 经过 <span class="math inline">\(B,C\)</span> 两点，若 <span class="math inline">\(CD=7AB\)</span>，则 <span class="math inline">\(\Gamma\)</span> 的离心率为
+A.<span class="math inline">\(\frac{3\sqrt{2}}{4}\)</span>　　B.<span class="math inline">\(\sqrt{2}\)</span>　　C.<span class="math inline">\(\frac{3\sqrt{2}}{2}\)</span>　　D.<span class="math inline">\(2\sqrt{2}\)</span></p>
+<p><img src="T3.svg" alt=""></p>
+<p><strong>解</strong> 延长 <span class="math inline">\(CD\)</span> 交 <span class="math inline">\(\Gamma\)</span> 于点 <span class="math inline">\(E\)</span>，由对称性知 <span class="math inline">\(DE=AB\)</span>，因此 <span class="math inline">\(\frac{CD}{DE}=\frac{CD}{AB}=7\)</span> 即 <span class="math inline">\(\lambda=7\)</span></p>
+<p>运用结论 <span class="math inline">\(e\cos 45^\circ = \frac{\lambda-1}{\lambda+1}\)</span>，得 <span class="math inline">\(\frac{e}{\sqrt{2}}=\frac{6}{8}=\frac{3}{4}\)</span>，<span class="math inline">\(e=\frac{3\sqrt{2}}{4}\)</span></p>
+<p>（2）以坐标原点为极点</p>
+<p><strong>例 4</strong> 已知椭圆 <span class="math inline">\(C:\frac{x^2}{a^2}+\frac{y^2}{b^2}=1\)</span>，过原点作两条射线 <span class="math inline">\(OA\)</span>，<span class="math inline">\(OB\)</span>，交椭圆于 <span class="math inline">\(A,B\)</span>，且满足：<span class="math inline">\(OA\bot OB\)</span>，求证： <span class="math inline">\(\frac{1}{|OA|^2}+\frac{1}{|OB|^2}\)</span> 为定值。</p>
+<p><img src="T4.png" alt=""></p>
+<p><strong>解 1</strong> 以坐标原点为极点，<span class="math inline">\(x\)</span> 轴为极轴，建立极坐标系，则：</p>
+<p><span class="math inline">\(x=\rho \cos\theta\)</span>，<span class="math inline">\(y=\rho \sin\theta\)</span>，代入椭圆方程得：</p>
+<p><span class="math inline">\(\frac{1}{\rho ^2}=\frac{\cos^2\theta}{a^2}+\frac{\sin^2\theta}{b^2}\)</span></p>
+<p>设直线 <span class="math inline">\(OA\)</span> 的倾斜角为 <span class="math inline">\(\theta\)</span>，则直线 <span class="math inline">\(OB\)</span> 的倾斜角为 <span class="math inline">\(\theta+\frac{\pi}{2}\)</span></p>
+<p><span class="math inline">\(\frac{1}{|OA| ^2}=\frac{1}{\rho_1 ^2}=\frac{\cos^2\theta}{a^2}+\frac{\sin^2\theta}{b^2}\)</span></p>
+<p>用 <span class="math inline">\(\theta+\frac{\pi}{2}\)</span> 代替 <span class="math inline">\(\theta\)</span> 得：</p>
+<p><span class="math inline">\(\frac{1}{|OB| ^2}=\frac{1}{\rho_2 ^2}=\frac{\sin^2\theta}{a^2}+\frac{\cos^2\theta}{b^2}\)</span></p>
+<p>两式相加得： <span class="math inline">\(\frac{1}{|OA|^2}+\frac{1}{|OB|^2}=\frac{\cos^2\theta+\sin^2\theta}{a^2}+\frac{\sin^2\theta+\cos^2\theta}{b^2}=\frac{1}{a^2}+\frac{1}{b^2}\)</span>，为定值</p>
+<p>用此方法的证明极度简洁，但担心会被扣分，因此给出如下“角参”的做法：</p>
+<p><strong>解 2</strong> 记 <span class="math inline">\(|OA|=m\)</span>，<span class="math inline">\(|OB|=n\)</span>，<span class="math inline">\(\angle AOx=\theta\)</span>，<span class="math inline">\(\angle BOx=\theta+\frac{\pi}{2}\)</span></p>
+<p>则 <span class="math inline">\(A(m\cos\theta,m\sin\theta)\)</span>，<span class="math inline">\(B(n\cos(\theta+\frac{\pi}{2}),n\sin(\theta+\frac{\pi}{2}))\)</span>，即 <span class="math inline">\(B(-n\sin\theta,n\cos\theta)\)</span>，代入椭圆方程得：</p>
+<p><span class="math inline">\(\frac{1}{m^2}=\frac{\cos^2\theta}{a^2}+\frac{\sin^2\theta}{b^2}\)</span></p>
+<p><span class="math inline">\(\frac{1}{n^2}=\frac{\sin^2\theta}{a^2}+\frac{\cos^2\theta}{b^2}\)</span></p>
+<p>两式相加得： <span class="math inline">\(\frac{1}{m^2}+\frac{1}{n^2}=\frac{\cos^2\theta+\sin^2\theta}{a^2}+\frac{\sin^2\theta+\cos^2\theta}{b^2}=\frac{1}{a^2}+\frac{1}{b^2}\)</span>，为定值。</p>
+<p>其实本质上还是极坐标的思想，不过这样写就不会被当作超纲了。</p>
+<p>在这里有人可能会想到椭圆的参数方程： <span class="math inline">\((a\cos\theta,b\sin\theta)\)</span><br>
+但是由于参数方程里面的 <span class="math inline">\(\theta\)</span> 并没有明确的几何意义，垂直难以表示，因此在这里不能使用！</p>
+
+    </div>
+    <div class="article-footer">
+<blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    <li class="post-copyright-author">
+      <strong>本文作者: </strong>
+        1024th
+    </li>
+    
+    <li class="post-copyright-license">
+      <strong>版权许可: </strong>
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="external">署名-非商业性使用-相同方式共享 4.0 国际</a>
+    </li>
+  </ul>
+</blockquote>
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="../../../avatar.png" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="" target="_blank"><span class="text-dark">1024th</span><small class="ml-1x"></small></a></h3>
+        <div>作者</div>
+      </div>
+    </figure>
+  </div>
+</div>
+
+    </div>
+  </article>
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <ul class="pager pull-left">
+            <li class="prev">
+                <a href="../../../2020/12/%E5%8D%8A%E4%BB%A3%E6%B3%95%E6%B1%82%E5%9C%86%E9%94%A5%E6%9B%B2%E7%BA%BF%E5%88%87%E7%BA%BF%E6%96%B9%E7%A8%8B%E7%9A%84%E5%8E%9F%E7%90%86%E9%9A%90%E5%87%BD%E6%95%B0%E6%B1%82%E5%AF%BC/" title="“半代法”求圆锥曲线切线方程的原理（隐函数求导）"><i
+                        class="icon icon-angle-left"
+                        aria-hidden="true"></i><span>&nbsp;&nbsp;下一篇</span></a>
+            </li>
+            <li class="next">
+                <a href="../../../2021/03/%E7%94%B5%E5%AE%B9%E5%99%A8%E5%8A%A8%E6%9D%86%E7%94%B5%E7%A3%81%E6%84%9F%E5%BA%94%E9%97%AE%E9%A2%98/"
+                    title="电容器动杆电磁感应问题"><span>上一篇&nbsp;&nbsp;</span><i
+                        class="icon icon-angle-right" aria-hidden="true"></i></a>
+            </li>
+            
+            <li class="toggle-toc">
+                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false"
+                    title="文章目录" role="button">
+                    <span>[&nbsp;</span><span>文章目录</span>
+                    <i class="text-collapsed icon icon-anchor"></i>
+                    <i class="text-in icon icon-close"></i>
+                    <span>]</span>
+                </a>
+            </li>
+        </ul>
+        <div class="bar-right">
+            <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter"
+                data-mobile-sites="weibo,qq,qzone"></div>
+        </div>
+    </div>
+</nav>
+
+
+</main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+<ul class="social-links">
+    <li><a href="../../../https:/github.com/1024th" target="_blank" title="github" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-github"></i></a></li>
+</ul>
+  <div class="copyright">
+    &copy;2020  -
+    2021
+    <div class="publishby">
+        Theme by <a href="https://github.com/xiaoheiAh" target="_blank"> xiaoheiAh </a>base on<a href="https://github.com/xiaoheiAh/hugo-theme-pure" target="_blank"> pure</a>.
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+            showMathMenu: false, //disables context menu
+            tex2jax: {
+            inlineMath: [ ['$','$'], ['\\(','\\)'] ]
+           }
+    });
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script>
+    window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/highlight.min.js"></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/python.min.js" defer></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/javascript.min.js" defer></script><script>
+    hljs.configure({
+        tabReplace: '    ', 
+        classPrefix: ''     
+        
+    })
+    hljs.initHighlightingOnLoad();
+</script>
+<script src="../../../js/application.min.a94ab19cb63a95c8d7fbd7b85cab3ddeea8c369bdf75b9cab6708787ead123af.js"></script>
+<script src="../../../js/plugin.min.19c5bcb2fb0789ab4f2b7834e5ceb5e92635645605bab902c1024b25f1502364.js"></script>
+
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: '文章',
+                PAGES: '页面',
+                CATEGORIES: '分类',
+                TAGS: '标签',
+                UNTITLED: '(未命名)',
+            },
+            ROOT_URL: '',
+            CONTENT_URL: '\/searchindex.json ',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script type="text/javascript" src="../../../js/insight.min.4a2d52de4bfff73e0c688404fe3d17c9a3ae12d9888e1e1ac9c690e4890de2ded50fe55f2b819c2ba55435a76f396f3ea6805765f0b0af5635cdf74ea459eab0.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+<script>
+    tocbot.init({
+        
+        tocSelector: '.js-toc',
+        
+        contentSelector: '.js-toc-content',
+        
+        headingSelector: 'h1, h2, h3',
+        
+        hasInnerContainers: true,
+    });
+</script>
+
+
+  </body>
+</html>

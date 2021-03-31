@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <title>
+        “半代法”求圆锥曲线切线方程的原理（隐函数求导） - 1024th&#39;s Blog
+      </title>
+        <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    
+    <meta name="theme-color" content="#000000" />
+    
+    <meta http-equiv="window-target" content="_top" />
+    
+    
+    <meta name="description" content="“隐函数求导法”求圆雉曲线的切线方程" />
+    <meta name="generator" content="Hugo 0.83.0-DEV with theme pure" />
+    <title>“半代法”求圆锥曲线切线方程的原理（隐函数求导） - 1024th&#39;s Blog</title>
+    
+    
+    <link rel="stylesheet" href="../../../css/style.min.ad6cc7f5a80b7d718bb952c6ae82c704d0da20a473043879607efeff8a59ef8e.css">
+    
+    <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
+    <meta property="og:title" content="“半代法”求圆锥曲线切线方程的原理（隐函数求导）" />
+<meta property="og:description" content="“隐函数求导法”求圆雉曲线的切线方程" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/2020/12/%E5%8D%8A%E4%BB%A3%E6%B3%95%E6%B1%82%E5%9C%86%E9%94%A5%E6%9B%B2%E7%BA%BF%E5%88%87%E7%BA%BF%E6%96%B9%E7%A8%8B%E7%9A%84%E5%8E%9F%E7%90%86%E9%9A%90%E5%87%BD%E6%95%B0%E6%B1%82%E5%AF%BC/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2020-12-05T00:41:00&#43;08:00" />
+<meta property="article:modified_time" content="2020-12-05T00:41:00&#43;08:00" />
+
+<meta itemprop="name" content="“半代法”求圆锥曲线切线方程的原理（隐函数求导）">
+<meta itemprop="description" content="“隐函数求导法”求圆雉曲线的切线方程"><meta itemprop="datePublished" content="2020-12-05T00:41:00&#43;08:00" />
+<meta itemprop="dateModified" content="2020-12-05T00:41:00&#43;08:00" />
+<meta itemprop="wordCount" content="828">
+<meta itemprop="keywords" content="高中数学," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="“半代法”求圆锥曲线切线方程的原理（隐函数求导）"/>
+<meta name="twitter:description" content="“隐函数求导法”求圆雉曲线的切线方程"/>
+
+    <!--[if lte IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+      <![endif]-->
+
+    <!--[if lt IE 9]>
+        <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+      <![endif]-->
+  </head>
+
+  
+  
+
+  <body class="main-center theme-black" itemscope itemtype="http://schema.org/WebPage"><header class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="slimContent">
+      <div class="navbar-header">
+        <div class="profile-block text-center">
+          <a id="avatar" href="" target="_blank">
+            <img class="img-circle img-rotate" src="../../../avatar.png" width="200" height="200">
+          </a>
+          <h2 id="name" class="hidden-xs hidden-sm">1024th</h2>
+          <h3 id="title" class="hidden-xs hidden-sm hidden-md"></h3>
+          <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i>China</small>
+        </div><div class="search" id="search-form-wrap">
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="搜索" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i
+                        class="icon icon-search"></i></button>
+            </span>
+        </div>
+        <div class="ins-search">
+            <div class="ins-search-mask"></div>
+            <div class="ins-search-container">
+                <div class="ins-input-wrapper">
+                    <input type="text" class="ins-search-input" placeholder="想要查找什么..."
+                        x-webkit-speech />
+                    <button type="button" class="close ins-close ins-selectable" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="ins-section-wrapper">
+                    <div class="ins-section-container"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+        <ul class="nav navbar-nav main-nav">
+            <li class="menu-item menu-item-home">
+                <a href="../../../">
+                    <i class="icon icon-home-fill"></i>
+                  <span class="menu-title">主页</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-archives">
+                <a href="../../../posts/">
+                    <i class="icon icon-archives-fill"></i>
+                  <span class="menu-title">归档</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-categories">
+                <a href="../../../categories/">
+                    <i class="icon icon-folder"></i>
+                  <span class="menu-title">分类</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-tags">
+                <a href="../../../tags/">
+                    <i class="icon icon-tags"></i>
+                  <span class="menu-title">标签</span>
+                </a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title"> 标签</h3>
+    <div id="tag-cloud-list" class="widget-body">
+            
+            
+            <a href="../../../tags/css/" class="tag-list-link" rel="1">css<span
+               class="tag-list-count">1</span></a>
+            
+            
+            <a href="../../../tags/html/" class="tag-list-link" rel="1">html<span
+               class="tag-list-count">1</span></a>
+            
+            
+            <a href="../../../tags/hugo/" class="tag-list-link" rel="1">hugo<span
+               class="tag-list-count">1</span></a>
+            
+            
+            <a href="../../../tags/markdown/" class="tag-list-link" rel="1">markdown<span
+               class="tag-list-count">1</span></a>
+            
+            
+            <a href="../../../tags/mathjax/" class="tag-list-link" rel="1">mathjax<span
+               class="tag-list-count">1</span></a>
+            
+            
+            <a href="../../../tags/themes/" class="tag-list-link" rel="1">themes<span
+               class="tag-list-count">1</span></a>
+            
+            
+            <a href="../../../tags/%E9%AB%98%E4%B8%AD%E6%95%B0%E5%AD%A6/" class="tag-list-link" rel="2">高中数学<span
+               class="tag-list-count">2</span></a>
+            
+            
+            <a href="../../../tags/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86/" class="tag-list-link" rel="1">高中物理<span
+               class="tag-list-count">1</span></a>
+            
+    </div>
+<script>
+document.onreadystatechange = () => {
+  if (document.readyState === 'complete') {
+    tagCloud('#tag-cloud-list a',  8 ,  20 );
+  }
+};
+
+function tagCloud(where, min, max) {
+  let iMax = 0;
+  let iMin = 0;
+  $(where).each(function() {
+    let weight = Number($(this).attr("rel"));
+    if(iMax < weight) iMax = weight;
+    if(iMin > weight || iMin == 0) iMin = weight;
+  });
+  let step = (max - min)/(iMax - iMin);
+  $(where).each(function() {
+    let weight = $(this).attr("rel") - iMin;
+    $(this).css({"font-size": min + (weight * step) + 'px'});
+  });
+};
+</script>
+</div>
+
+      <div class="widget">
+    <h3 class="widget-title"> 分类</h3>
+    <div class="widget-body">
+        <ul class="category-list">
+            <li class="category-list-item"><a href="../../../categories/syntax/" class="category-list-link">syntax</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="../../../categories/themes/" class="category-list-link">themes</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="../../../categories/%E7%BC%96%E7%A8%8B/" class="category-list-link">编程</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="../../../categories/%E9%AB%98%E4%B8%AD%E6%95%B0%E5%AD%A6/" class="category-list-link">高中数学</a><span class="category-list-count">2</span></li>
+            <li class="category-list-item"><a href="../../../categories/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86/" class="category-list-link">高中物理</a><span class="category-list-count">1</span></li>
+        </ul>
+    </div>
+</div>
+      <div class="widget">
+    <h3 class="widget-title"> 标签</h3>
+    <div class="widget-body">
+        <ul class="tag-list">
+            
+            
+            <li class="tag-list-item"><a href="../../../tags/css/" class="tag-list-link">css</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="../../../tags/html/" class="tag-list-link">html</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="../../../tags/hugo/" class="tag-list-link">hugo</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="../../../tags/markdown/" class="tag-list-link">markdown</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="../../../tags/mathjax/" class="tag-list-link">mathjax</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="../../../tags/themes/" class="tag-list-link">themes</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="../../../tags/%E9%AB%98%E4%B8%AD%E6%95%B0%E5%AD%A6/" class="tag-list-link">高中数学</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="../../../tags/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86/" class="tag-list-link">高中物理</a><span
+                    class="tag-list-count">1</span></li>
+            
+        </ul>
+
+    </div>
+</div>
+      
+<div class="widget">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget-body">
+        <ul class="recent-post-list list-unstyled no-thumbnail">
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="../../../2021/04/add-mathjax-support-for-hugo/" class="title">为 Hugo 添加 MathJax 支持（重新编译 Hugo）</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2021-04-01 00:29:23 &#43;0800 CST" itemprop="datePublished">2021-04-01</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="../../../2021/03/%E7%94%B5%E5%AE%B9%E5%99%A8%E5%8A%A8%E6%9D%86%E7%94%B5%E7%A3%81%E6%84%9F%E5%BA%94%E9%97%AE%E9%A2%98/" class="title">电容器动杆电磁感应问题</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2021-03-27 10:45:41 &#43;0000 UTC" itemprop="datePublished">2021-03-27</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="../../../2020/12/conic-section-and-polar-coordinate-system/" class="title">圆锥曲线与极坐标</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-12-21 22:27:00 &#43;0800 CST" itemprop="datePublished">2020-12-21</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="../../../2020/12/%E5%8D%8A%E4%BB%A3%E6%B3%95%E6%B1%82%E5%9C%86%E9%94%A5%E6%9B%B2%E7%BA%BF%E5%88%87%E7%BA%BF%E6%96%B9%E7%A8%8B%E7%9A%84%E5%8E%9F%E7%90%86%E9%9A%90%E5%87%BD%E6%95%B0%E6%B1%82%E5%AF%BC/" class="title">“半代法”求圆锥曲线切线方程的原理（隐函数求导）</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-12-05 00:41:00 &#43;0800 CST" itemprop="datePublished">2020-12-05</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="../../../2019/03/testmarkdown-syntax/" class="title">Markdown Syntax Guide</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2019-03-11 00:00:00 &#43;0000 UTC" itemprop="datePublished">2019-03-11</time>
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+  </div>
+</aside>
+
+    
+    
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <h4 class="toc-title">文章目录</h4>
+    <nav id="toc" class="js-toc toc">
+
+    </nav>
+  </div>
+</aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="../../../2020/12/%E5%8D%8A%E4%BB%A3%E6%B3%95%E6%B1%82%E5%9C%86%E9%94%A5%E6%9B%B2%E7%BA%BF%E5%88%87%E7%BA%BF%E6%96%B9%E7%A8%8B%E7%9A%84%E5%8E%9F%E7%90%86%E9%9A%90%E5%87%BD%E6%95%B0%E6%B1%82%E5%AF%BC/"
+    >“半代法”求圆锥曲线切线方程的原理（隐函数求导）</a
+  >
+</h1>
+
+      <div class="article-meta">
+        
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="../../../2020/12/%E5%8D%8A%E4%BB%A3%E6%B3%95%E6%B1%82%E5%9C%86%E9%94%A5%E6%9B%B2%E7%BA%BF%E5%88%87%E7%BA%BF%E6%96%B9%E7%A8%8B%E7%9A%84%E5%8E%9F%E7%90%86%E9%9A%90%E5%87%BD%E6%95%B0%E6%B1%82%E5%AF%BC/" class="article-date">
+  <time datetime="2020-12-05 00:41:00 &#43;0800 CST" itemprop="datePublished">2020-12-05</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="../../../categories/%E9%AB%98%E4%B8%AD%E6%95%B0%E5%AD%A6/"> 高中数学 </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="../../../tags/%E9%AB%98%E4%B8%AD%E6%95%B0%E5%AD%A6/"> 高中数学 </a>
+  </span>
+
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 828字</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 2分 </span>
+      </div>
+    </div>
+    <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
+      <h2 id="隐函数求导法求圆雉曲线的切线方程">“隐函数求导法”求圆雉曲线的切线方程</h2>
+<blockquote>
+<p>参考《妙用“隐函数的导数法”求圆锥曲线的切线方程》<br>
+以下推导默认切线斜率存在。切线斜率不存在时，换成对 <span class="math inline">\(y\)</span> 求导即可得出相同的公式。</p>
+</blockquote>
+<h3 id="一般形式">一般形式</h3>
+<p>对于圆锥曲线 <span class="math inline">\(Ax^2+Bxy+Cy^2+Dx+Ey+F=0(A^2+B^2\neq 0)\)</span> 求关于 <span class="math inline">\(x\)</span> 的导数得</p>
+<p><span class="math inline">\(2 A x+B y+B x y'+2 C y y'+D+E y'=0\)</span></p>
+<p>即 <span class="math inline">\(\displaystyle y'=-\frac{2 A x+B y+D}{B x+2 C y+E}\)</span></p>
+<p>设 <span class="math inline">\(P\left(x_0, y_0\right)\)</span> 是曲线上的一点，则过此点的切线斜率为 <span class="math inline">\(\displaystyle -\frac{2 A x_0+B y_0+D}{B x_0+2 C y_0+E}\)</span></p>
+<p>所以切线方程为 <span class="math inline">\(\displaystyle y-y_0=-\frac{2 A x_0+B y_0+D}{B x_0+2 C y_0+E}\left(x-x_0\right)\)</span></p>
+<p>即 <span class="math inline">\(B x_0 y+2 C y y_0+E y-B x_0 y_0-2 C y_0^2-E y_0=-2 A x x_0-B x y_0-D x+2 A x_0^2+B x_0 y_0+D x_0\)</span></p>
+<p><span class="math inline">\(2Axx_0+B x_0 y+B x y_0+2 C y y_0+D x+E y=2 A x_0^2+2 C y_0^2+2 B x_0 y_0+D x_0+E y_0\)</span></p>
+<p><span class="math inline">\(\displaystyle Axx_0+\frac{B x_0 y+B x y_0}2+C y y_0+\frac{D x}2+\frac{E y}2=A x_0^2+B x_0 y_0+C y_0^2+\frac{D x_0}2+\frac{E y_0}2\)</span></p>
+<p>所以切线方程为 <span class="math inline">\(\displaystyle A x x_0+B \frac{x_0 y+x y_0}2+C y y_0+D \frac{x+x_0}2+E \frac{y+y_0}2+F=0\)</span></p>
+<p>综上，若求圆锥曲线 <span class="math inline">\(Ax^2+Bxy+Cy^2+Dx+Ey+F=0\)</span> 以 <span class="math inline">\(P\left(x_0,y_0\right)\)</span> 为切点的切线方程，<strong>只需将圆锥曲线方程中的这些字母进行替换</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>替换前</th>
+<th>替换后</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="math inline">\(x^2\)</span></td>
+<td><span class="math inline">\(x_0x\)</span></td>
+</tr>
+<tr>
+<td><span class="math inline">\(y^2\)</span></td>
+<td><span class="math inline">\(y_0y\)</span></td>
+</tr>
+<tr>
+<td><span class="math inline">\(x\)</span></td>
+<td><span class="math inline">\(\dfrac{x_0+x}2\)</span></td>
+</tr>
+<tr>
+<td><span class="math inline">\(y\)</span></td>
+<td><span class="math inline">\(\dfrac{y_0+y}2\)</span></td>
+</tr>
+<tr>
+<td><span class="math inline">\(xy\)</span></td>
+<td><span class="math inline">\(\dfrac{x_0y+xy_0}2\)</span></td>
+</tr>
+</tbody>
+</table>
+<h3 id="配方形式">配方形式</h3>
+<p>特殊地，若圆锥曲线的方程是<strong>配方后</strong>的形式：<span class="math inline">\(A(x-m)^2+B(y-n)^2+C=0\)</span>，则过点 <span class="math inline">\(M\left(x_0,y_0\right)\)</span> 的切线方程为 <span class="math inline">\(A\left(x_0-m\right)(x-m)+B\left(y_0-n\right)(y-n)+C=0\)</span></p>
+<p>要证明这个公式，可以直接对 <span class="math inline">\(A(x-m)^2=Ax^2-2Amx+Am^2\)</span> 套用上面的结论，即 <span class="math inline">\(Ax_0x-2Am\frac{x_0+x}2 +Am^2 = Ax_0x-Amx_0-Amx+Am^2=Ax(x_0-m)-Am(x_0-m)=A(x_0-m)(x-m)\)</span>，所以 <span class="math inline">\(A(x-m)^2 \rightarrow A(x_0-m)(x-m)\)</span><br>
+同理有 <span class="math inline">\(B(x-n)^2 \rightarrow B(x_0-n)(x-n)\)</span></p>
+<p>故 <span class="math inline">\(A(x-m)^2+B(y-n)^2+C=0 \rightarrow A\left(x_0-m\right)(x-m)+B\left(y_0-n\right)(y-n)+C=0\)</span></p>
+<p>或者，也可以直接对 <span class="math inline">\(A(x-m)^2+B(y-n)^2+C=0\)</span> 求关于 <span class="math inline">\(x\)</span> 的导数，得 <span class="math inline">\(2A(x-m)+2B(y-n)y'=0\)</span>，即 <span class="math inline">\(y'=-\frac{A(x-m)}{B(y-n)}\)</span></p>
+<p>所以切线方程为 <span class="math inline">\(y-y_0=-\frac{A(x_0-m)}{B(y_0-n)}(x-x_0)\)</span></p>
+<p>即 <span class="math inline">\(A(x_0-m)(x-x_0)+B(y_0-n)(y-y_0)=0\)</span></p>
+<p><span class="math inline">\(A(x_0-m)(x-m+m-x_0)+B(y_0-n)(y-n+n-y_0)=0\)</span></p>
+<p><span class="math inline">\(A(x_0-m)(x-m)+B(y_0-n)(y-n)=A(x_0-m)^2+B(y_0-n)^2=-C\)</span></p>
+<p>即 <span class="math inline">\(A\left(x_0-m\right)(x-m)+B\left(y_0-n\right)(y-n)+C=0\)</span></p>
+<h2 id="另向量法求圆的切线方程">另：向量法求圆的切线方程</h2>
+<p>设圆上一点 <span class="math inline">\(A\left(x_0, y_0\right)\)</span>, 则 <span class="math inline">\(\overrightarrow{OA}\left(x_0-a, y_0-b\right)\)</span></p>
+<p>设切线上任意点 <span class="math inline">\(B\left(x, y\right)\)</span></p>
+<p>则 <span class="math inline">\(\overrightarrow{A B}=\left(x-x_0, y-y_0\right)\)</span> 为切线的方向向量</p>
+<p>因为切线与半径垂直，所以</p>
+<p><span class="math display">\[\begin{aligned}
+&\overrightarrow{A B} \cdot \overrightarrow{O A}=\left(x-x_0\right)\left(x_0-a\right)+\left(y_0-b\right)\left(y-y_0\right) \\
+=& \left(x-a+a-x_0\right)\left(x_0-a\right)+\left(y_0-b\right)\left(y-b+b-y_0\right) \\
+=& (x-a)\left(x_0-a\right)+(y-b)\left(y_0-b\right)-\left(x_0-a\right)^2-\left(y_0-b\right)^2 \\
+=& 0
+\end{aligned}
+\]</span></p>
+<p>故有 <span class="math inline">\(\left(x_0-a\right)\left(x-a\right)+(y_0-b)\left(y-b\right)=\left(x_0-a\right)^2+\left(y_0-b\right)^2=r^2\)</span></p>
+<p>所以切线方程为 <span class="math inline">\((x_0-a)(x-a)+(y_0-b)(y-b)=r^2\)</span></p>
+<h2 id="例子">例子</h2>
+<h3 id="圆">圆</h3>
+<p>若点 <span class="math inline">\(M\left(x_0, y_0\right)\)</span> 在圆 <span class="math inline">\((x-a)^2+(y-b)^2=r^2\)</span> 上，则过点 <span class="math inline">\(M\)</span> 的切线方程为 <span class="math inline">\(\left(x_0-a\right)(x-a)+\left(y_0-b\right)(y-b)=r^2\)</span></p>
+<p>已知圆 <span class="math inline">\(C:(x-1)^2+y^2=4\)</span>，过点 <span class="math inline">\((2,\sqrt3)\)</span> 的切线方程为 <span class="math inline">\((2-1)(x-1)+\sqrt3y=4\)</span>，即 <span class="math inline">\(x+\sqrt3y-5=0\)</span></p>
+<h3 id="椭圆">椭圆</h3>
+<p>若点 <span class="math inline">\(P\left(x_0, y_0\right)\)</span> 在椭圆 <span class="math inline">\(\displaystyle\frac{x^2}{a^2}+\frac{y^2}{b^2}=1\)</span> 上，则过点 <span class="math inline">\(P\)</span> 的切线方程为 <span class="math inline">\(\displaystyle\frac{x_0x}{a^2}+\frac{y_0y}{b^2}=1\)</span></p>
+<p>已知椭圆 <span class="math inline">\(C:\frac{x^2}4+y^2=1\)</span>，过点 <span class="math inline">\((1,\frac{\sqrt3}2)\)</span> 的切线方程为 <span class="math inline">\(\frac{x}4+\frac{\sqrt3y}2=1\)</span>，即 <span class="math inline">\(x+2\sqrt3y-4=0\)</span></p>
+<h3 id="双曲线">双曲线</h3>
+<p>若点 <span class="math inline">\(P\left(x_0, y_0\right)\)</span> 在双曲线 <span class="math inline">\(\displaystyle\frac{x^2}{a^2}-\frac{y^2}{b^2}=1\)</span> 上，则过点 <span class="math inline">\(P\)</span> 的切线方程为 <span class="math inline">\(\displaystyle\frac{x_0x}{a^2}-\frac{y_0y}{b^2}=1\)</span></p>
+<h3 id="抛物线">抛物线</h3>
+<p>若点 <span class="math inline">\(P\left(x_0, y_0\right)\)</span> 在抛物线 <span class="math inline">\(y^2=2px\)</span> 上，则过点 <span class="math inline">\(P\)</span> 的切线方程为 <span class="math inline">\(\displaystyle y_0y=2p\frac{x_0+x}2\)</span> 即 <span class="math inline">\(y_0y=p(x_0+x)\)</span></p>
+
+    </div>
+    <div class="article-footer">
+<blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    <li class="post-copyright-author">
+      <strong>本文作者: </strong>
+        1024th
+    </li>
+    
+    <li class="post-copyright-license">
+      <strong>版权许可: </strong>
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="external">署名-非商业性使用-相同方式共享 4.0 国际</a>
+    </li>
+  </ul>
+</blockquote>
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="../../../avatar.png" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="" target="_blank"><span class="text-dark">1024th</span><small class="ml-1x"></small></a></h3>
+        <div>作者</div>
+      </div>
+    </figure>
+  </div>
+</div>
+
+    </div>
+  </article>
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <ul class="pager pull-left">
+            <li class="prev">
+                <a href="../../../2019/03/testmarkdown-syntax/" title="Markdown Syntax Guide"><i
+                        class="icon icon-angle-left"
+                        aria-hidden="true"></i><span>&nbsp;&nbsp;下一篇</span></a>
+            </li>
+            <li class="next">
+                <a href="../../../2020/12/conic-section-and-polar-coordinate-system/"
+                    title="圆锥曲线与极坐标"><span>上一篇&nbsp;&nbsp;</span><i
+                        class="icon icon-angle-right" aria-hidden="true"></i></a>
+            </li>
+            
+            <li class="toggle-toc">
+                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false"
+                    title="文章目录" role="button">
+                    <span>[&nbsp;</span><span>文章目录</span>
+                    <i class="text-collapsed icon icon-anchor"></i>
+                    <i class="text-in icon icon-close"></i>
+                    <span>]</span>
+                </a>
+            </li>
+        </ul>
+        <div class="bar-right">
+            <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter"
+                data-mobile-sites="weibo,qq,qzone"></div>
+        </div>
+    </div>
+</nav>
+
+
+</main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+<ul class="social-links">
+    <li><a href="../../../https:/github.com/1024th" target="_blank" title="github" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-github"></i></a></li>
+</ul>
+  <div class="copyright">
+    &copy;2020  -
+    2021
+    <div class="publishby">
+        Theme by <a href="https://github.com/xiaoheiAh" target="_blank"> xiaoheiAh </a>base on<a href="https://github.com/xiaoheiAh/hugo-theme-pure" target="_blank"> pure</a>.
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+            showMathMenu: false, //disables context menu
+            tex2jax: {
+            inlineMath: [ ['$','$'], ['\\(','\\)'] ]
+           }
+    });
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script>
+    window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/highlight.min.js"></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/python.min.js" defer></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/javascript.min.js" defer></script><script>
+    hljs.configure({
+        tabReplace: '    ', 
+        classPrefix: ''     
+        
+    })
+    hljs.initHighlightingOnLoad();
+</script>
+<script src="../../../js/application.min.a94ab19cb63a95c8d7fbd7b85cab3ddeea8c369bdf75b9cab6708787ead123af.js"></script>
+<script src="../../../js/plugin.min.19c5bcb2fb0789ab4f2b7834e5ceb5e92635645605bab902c1024b25f1502364.js"></script>
+
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: '文章',
+                PAGES: '页面',
+                CATEGORIES: '分类',
+                TAGS: '标签',
+                UNTITLED: '(未命名)',
+            },
+            ROOT_URL: '',
+            CONTENT_URL: '\/searchindex.json ',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script type="text/javascript" src="../../../js/insight.min.4a2d52de4bfff73e0c688404fe3d17c9a3ae12d9888e1e1ac9c690e4890de2ded50fe55f2b819c2ba55435a76f396f3ea6805765f0b0af5635cdf74ea459eab0.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+<script>
+    tocbot.init({
+        
+        tocSelector: '.js-toc',
+        
+        contentSelector: '.js-toc-content',
+        
+        headingSelector: 'h1, h2, h3',
+        
+        hasInnerContainers: true,
+    });
+</script>
+
+
+  </body>
+</html>
