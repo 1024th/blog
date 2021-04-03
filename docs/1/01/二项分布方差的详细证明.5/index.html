@@ -39,7 +39,7 @@
 <meta itemprop="name" content="">
 <meta itemprop="description" content="前置技能 从组合数公式可以直接推出： \(k\mathrm{C}_n^k = n\mathrm{C}_{n-1}^{k-1}\) 同样地，你可以得到 \((k-1)\mathrm{C}_{n-1}^{k-1} = (n-1)\mathrm{C}_{n-2}^{k-2}\) （禁止套娃） 你还要熟悉二项式定理： \[(p&#43;q)^n = \sum_{k=0}^n \mathrm{C}_n^k p^k q^{n-k} \] 你还要知道二项分布的概率和期">
 
-<meta itemprop="wordCount" content="664">
+<meta itemprop="wordCount" content="654">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content=""/>
 <meta name="twitter:description" content="前置技能 从组合数公式可以直接推出： \(k\mathrm{C}_n^k = n\mathrm{C}_{n-1}^{k-1}\) 同样地，你可以得到 \((k-1)\mathrm{C}_{n-1}^{k-1} = (n-1)\mathrm{C}_{n-2}^{k-2}\) （禁止套娃） 你还要熟悉二项式定理： \[(p&#43;q)^n = \sum_{k=0}^n \mathrm{C}_n^k p^k q^{n-k} \] 你还要知道二项分布的概率和期"/>
@@ -334,7 +334,7 @@ function tagCloud(where, min, max) {
       <div class="article-meta">
         
 
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 664字</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 654字</span>
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 2分 </span>
       </div>
     </div>
@@ -350,79 +350,69 @@ function tagCloud(where, min, max) {
 <h2 id="回归正题">回归正题</h2>
 <p>第一步当然是定义式啦</p>
 <p><span class="math display">\[\begin{aligned}
-D(X) &=\sum_{k=0}^{n}\left[k-E(X)\right]^{2} \cdot p_{k} \\
-&=\sum_{k=0}^{n}(k-n p)^{2} \cdot \mathrm{C}_{n}^{k} p^{k} q^{n-k} \\
+D(X) &amp;=\sum_{k=0}^{n}\left[k-E(X)\right]^{2} \cdot p_{k} \\
+&amp;=\sum_{k=0}^{n}(k-n p)^{2} \cdot \mathrm{C}_{n}^{k} p^{k} q^{n-k} \\
 \end{aligned}
 \]</span></p>
 <p>看到 <span class="math inline">\((k-np)^2\)</span> 是不是就很想把它拆开？</p>
 <p><span class="math display">\[\begin{aligned}
-D(X) &=\sum_{k=0}^{n}(k^2-2knp+n^2p^2) \cdot \mathrm{C}_{n}^{k} p^{k} q^{n-k} \\
-& =\color{Red}{\sum_{k=0}^{n} k^{2} \cdot \mathrm{C}_{n}^{k} p^{k} q^{n-k}} \\
-&\quad -2np \color{Blue}{\sum_{k=0}^{n} k \cdot \mathrm{C}_{n}^{k} p^{k} q^{n-k}} \\
-&\quad +n^2 p^2 \color{Green}{\sum_{k=0}^{n} \mathrm{C}_{n}^{k} p^{k} q^{n-k}}
+D(X) &amp;=\sum_{k=0}^{n}(k^2-2knp+n^2p^2) \cdot \mathrm{C}_{n}^{k} p^{k} q^{n-k} \\
+&amp; =\color{Red}{\sum_{k=0}^{n} k^{2} \cdot \mathrm{C}_{n}^{k} p^{k} q^{n-k}} \\
+&amp;\quad -2np \color{Blue}{\sum_{k=0}^{n} k \cdot \mathrm{C}_{n}^{k} p^{k} q^{n-k}} \\
+&amp;\quad +n^2 p^2 \color{Green}{\sum_{k=0}^{n} \mathrm{C}_{n}^{k} p^{k} q^{n-k}}
 \end{aligned}
 \]</span></p>
 <blockquote>
 <p>这式子也太长了吧 (＃°Д°)</p>
 </blockquote>
 <p>首先你肯定会把魔爪伸向 <span class="math inline">\(\color{Green}{\sum_{k=0}^{n} \mathrm{C}_{n}^{k} p^{k} q^{n-k}}\)</span> —— 他就是个二项式定理嘛！</p>
-<p><span class="math display">\[
-然后，你看到 $\color{Blue}{\sum_{k=0}^{n} k \cdot \mathrm{C}_{n}^{k} p^{k} q^{n-k}}$ 里面的 $\color{Blue}{k \cdot \mathrm{C}_{n}^{k}}$ 的时候，是不是有把 $\color{Blue}{k\cdot \mathrm{C}_n^k}$ 换成 $n\cdot\mathrm{C}_{n-1}^{k-1}$ 的冲动？
-
+<p><span class="math display">\[\color{Green}{\sum_{k=0}^{n} \mathrm{C}_{n}^{k} p^{k} q^{n-k}} = (p+q)^n=1
 \]</span></p>
-<p>\begin{aligned}
-&amp;\color{Blue}{\sum_{k=0}^{n} k \cdot \mathrm{C}_{n}^{k} p^{k} q^{n-k}} \<br>
-=&amp; \sum_{k=1}^{n} k \cdot \mathrm{C}_{n}^{k} p^{k} q^{n-k} \quad \text{（第一项是 0, 丢掉）}\<br>
-=&amp; \sum_{k=1}^{n} n \cdot \mathrm{C}_{n-1}^{k-1} p^{k} q^{n-k} \<br>
-=&amp; np \cdot \sum_{k=1}^{n} \mathrm{C}_{n-1}^{k-1} p^{k-1} q^{n-k} \<br>
-=&amp; np \cdot (p+q)^{n-1} \<br>
+<p>然后，你看到 <span class="math inline">\(\color{Blue}{\sum_{k=0}^{n} k \cdot \mathrm{C}_{n}^{k} p^{k} q^{n-k}}\)</span> 里面的 <span class="math inline">\(\color{Blue}{k \cdot \mathrm{C}_{n}^{k}}\)</span> 的时候，是不是有把 <span class="math inline">\(\color{Blue}{k\cdot \mathrm{C}_n^k}\)</span> 换成 <span class="math inline">\(n\cdot\mathrm{C}_{n-1}^{k-1}\)</span> 的冲动？</p>
+<p><span class="math display">\[\begin{aligned}
+&amp;\color{Blue}{\sum_{k=0}^{n} k \cdot \mathrm{C}_{n}^{k} p^{k} q^{n-k}} \\
+=&amp; \sum_{k=1}^{n} k \cdot \mathrm{C}_{n}^{k} p^{k} q^{n-k} \quad \text{（第一项是 0, 丢掉）}\\
+=&amp; \sum_{k=1}^{n} n \cdot \mathrm{C}_{n-1}^{k-1} p^{k} q^{n-k} \\
+=&amp; np \cdot \sum_{k=1}^{n} \mathrm{C}_{n-1}^{k-1} p^{k-1} q^{n-k} \\
+=&amp; np \cdot (p+q)^{n-1} \\
 =&amp; np
-\end{aligned}</p>
-<p><span class="math display">\[
-现在只剩 $\color{Red}{\sum_{k=0}^{n} k^{2} \cdot \mathrm{C}_{n}^{k} p^{k} q^{n-k}}$ 了，首先你肯定会故技重施:
-
+\end{aligned}
 \]</span></p>
-<p>\begin{aligned}
-&amp;\color{Red}{\sum_{k=0}^{n} k^{2} \cdot \mathrm{C}_{n}^{k} p^{k} q^{n-k}} \<br>
-=&amp; \sum_{k=1}^{n} k \cdot k \cdot \mathrm{C}_{n}^{k} p^{k} q^{n-k} \<br>
-=&amp; \sum_{k=1}^{n} kp \cdot n \cdot \mathrm{C}_{n-1}^{k-1} p^{k-1} q^{n-k} \<br>
+<p>现在只剩 <span class="math inline">\(\color{Red}{\sum_{k=0}^{n} k^{2} \cdot \mathrm{C}_{n}^{k} p^{k} q^{n-k}}\)</span> 了，首先你肯定会故技重施:</p>
+<p><span class="math display">\[\begin{aligned}
+&amp;\color{Red}{\sum_{k=0}^{n} k^{2} \cdot \mathrm{C}_{n}^{k} p^{k} q^{n-k}} \\
+=&amp; \sum_{k=1}^{n} k \cdot k \cdot \mathrm{C}_{n}^{k} p^{k} q^{n-k} \\
+=&amp; \sum_{k=1}^{n} kp \cdot n \cdot \mathrm{C}_{n-1}^{k-1} p^{k-1} q^{n-k} \\
 =&amp; np\sum_{k=1}^{n} k \cdot \mathrm{C}_{n-1}^{k-1} p^{k-1} q^{n-k}
-\end{aligned}</p>
-<p><span class="math display">\[
-但是 $\mathrm{C}_{n-1}^{k-1} p^{k-1} q^{n-k}$ 前面还有个 $k$ 啊，不能用啊 (ノ｀Д)ノ
-
-**所以，怎么把这个** $k$ **搞掉呢？？？**（我认为这是最难的一步，读者可以停下来思考思考）
-
-你肯定想用 $(k-1) \mathrm{C}_{n-1}^{k-1} = (n-1) \mathrm{C}_{n-2}^{k-2}$，但人家是 $k\mathrm{C}_{n-1}^{k-1}$ 不是 $(k-1) \mathrm{C}_{n-1}^{k-1}$ 啊
-
-那就……把 $k$ 拆成 $(k-1+1)$ 吧！~~（我真是太机智了）~~
-
+\end{aligned}
 \]</span></p>
-<p>\begin{aligned}
-&amp; \color{Red}{np\sum_{k=1}^{n} k \cdot \mathrm{C}_{n-1}^{k-1} p^{k-1} q^{n-k}} \<br>
-=&amp; np\sum_{k=1}^{n} (k-1+1) \cdot \mathrm{C}_{n-1}^{k-1} p^{k-1} q^{n-k} \<br>
-=&amp; np\sum_{k=1}^{n} \left[(k-1) \mathrm{C}_{n-1}^{k-1} p^{k-1} q^{n-k} + \mathrm{C}_{n-1}^{k-1} p^{k-1} q^{n-k}\right] \<br>
-=&amp; np \left[\sum_{k=2}^{n} (k-1) \mathrm{C}_{n-1}^{k-1} p^{k-1} q^{n-k} + \sum_{k=1}^n \mathrm{C}_{n-1}^{k-1} p^{k-1} q^{n-k}\right] \<br>
-=&amp; np \left[\sum_{k=2}^{n} (n-1)p \cdot \mathrm{C}_{n-2}^{k-2} p^{k-2} q^{n-k} + (p+q)^{n-1}\right] \<br>
-=&amp; np \left[(n-1)p \cdot \sum_{k=2}^{n} \mathrm{C}_{n-2}^{k-2} p^{k-2} q^{n-k} + 1\right] \<br>
-=&amp; np \left[(n-1)p \cdot (p+q)^{n-2} + 1\right] \<br>
-=&amp; np \left[(n-1)p + 1\right] \<br>
+<p>但是 <span class="math inline">\(\mathrm{C}_{n-1}^{k-1} p^{k-1} q^{n-k}\)</span> 前面还有个 <span class="math inline">\(k\)</span> 啊，不能用啊 (ノ｀Д)ノ</p>
+<p><strong>所以，怎么把这个</strong> <span class="math inline">\(k\)</span> <strong>搞掉呢？？？</strong>（我认为这是最难的一步，读者可以停下来思考思考）</p>
+<p>你肯定想用 <span class="math inline">\((k-1) \mathrm{C}_{n-1}^{k-1} = (n-1) \mathrm{C}_{n-2}^{k-2}\)</span>，但人家是 <span class="math inline">\(k\mathrm{C}_{n-1}^{k-1}\)</span> 不是 <span class="math inline">\((k-1) \mathrm{C}_{n-1}^{k-1}\)</span> 啊</p>
+<p>那就……把 <span class="math inline">\(k\)</span> 拆成 <span class="math inline">\((k-1+1)\)</span> 吧！<del>（我真是太机智了）</del></p>
+<p><span class="math display">\[\begin{aligned}
+&amp; \color{Red}{np\sum_{k=1}^{n} k \cdot \mathrm{C}_{n-1}^{k-1} p^{k-1} q^{n-k}} \\
+=&amp; np\sum_{k=1}^{n} (k-1+1) \cdot \mathrm{C}_{n-1}^{k-1} p^{k-1} q^{n-k} \\
+=&amp; np\sum_{k=1}^{n} \left[(k-1) \mathrm{C}_{n-1}^{k-1} p^{k-1} q^{n-k} + \mathrm{C}_{n-1}^{k-1} p^{k-1} q^{n-k}\right] \\
+=&amp; np \left[\sum_{k=2}^{n} (k-1) \mathrm{C}_{n-1}^{k-1} p^{k-1} q^{n-k} + \sum_{k=1}^n \mathrm{C}_{n-1}^{k-1} p^{k-1} q^{n-k}\right] \\
+=&amp; np \left[\sum_{k=2}^{n} (n-1)p \cdot \mathrm{C}_{n-2}^{k-2} p^{k-2} q^{n-k} + (p+q)^{n-1}\right] \\
+=&amp; np \left[(n-1)p \cdot \sum_{k=2}^{n} \mathrm{C}_{n-2}^{k-2} p^{k-2} q^{n-k} + 1\right] \\
+=&amp; np \left[(n-1)p \cdot (p+q)^{n-2} + 1\right] \\
+=&amp; np \left[(n-1)p + 1\right] \\
 =&amp; np(np-p+1)
-\end{aligned}</p>
-<p><span class="math display">\[
-终于！三个部分都推完了！！
-
+\end{aligned}
 \]</span></p>
-<p>\begin{aligned}
-&amp;D(X) \<br>
-=&amp;\color{Red}{\sum_{k=0}^{n} k^{2} \cdot \mathrm{C}_{n}^{k} p^{k} q^{n-k}} \<br>
-&amp; -2np \color{Blue}{\sum_{k=0}^{n} k \cdot \mathrm{C}_{n}^{k} p^{k} q^{n-k}} \<br>
-&amp; +n^2 p^2 \color{Green}{\sum_{k=0}^{n} \mathrm{C}_{n}^{k} p^{k} q^{n-k}} \<br>
-=&amp; np(np-p+1) -2np\cdot np +n^2p^2 \<br>
+<p>终于！三个部分都推完了！！</p>
+<p><span class="math display">\[\begin{aligned}
+&amp;D(X) \\
+=&amp;\color{Red}{\sum_{k=0}^{n} k^{2} \cdot \mathrm{C}_{n}^{k} p^{k} q^{n-k}} \\
+&amp; -2np \color{Blue}{\sum_{k=0}^{n} k \cdot \mathrm{C}_{n}^{k} p^{k} q^{n-k}} \\
+&amp; +n^2 p^2 \color{Green}{\sum_{k=0}^{n} \mathrm{C}_{n}^{k} p^{k} q^{n-k}} \\
+=&amp; np(np-p+1) -2np\cdot np +n^2p^2 \\
 =&amp; np(1-p)
-\end{aligned}</p>
-<p><span class="math display">\[
-证毕（￣︶￣）↗\]</span></p>
+\end{aligned}
+\]</span></p>
+<p>证毕（￣︶￣）↗</p>
 
     </div>
     <div class="article-footer">

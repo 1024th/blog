@@ -3,7 +3,7 @@ title = "电容器动杆电磁感应问题"
 date = 2021-03-27T10:45:41.000Z
 description = "流经电容器的电流的分析与计算，电容器与动杆电磁感应结合的分析与计算"
 draft = false
-tags = [ "高中物理" ]
+tags = [ "高中物理", "微分方程" ]
 categories = [ "高中物理" ]
 +++
 
@@ -13,7 +13,9 @@ categories = [ "高中物理" ]
 
 我们知道，电容器的电容值 $C$，电荷量 $q$ 和电容器两端的电压 $u$ 满足 $q=Cu$，所以当电容器两端电压变化时，会有电流流过电容器，计算公式为 
 
-$$i=\frac{\mathrm{d}q}{\mathrm{d}t}=C \frac{\mathrm{d}u}{\mathrm{d}t}$$
+$$
+i=\frac{\mathrm{d}q}{\mathrm{d}t}=C \frac{\mathrm{d}u}{\mathrm{d}t}
+$$
 
 我们以这样的一个电路为例分析电容器充电电流的特点：
 
@@ -31,7 +33,9 @@ $$i=\frac{\mathrm{d}q}{\mathrm{d}t}=C \frac{\mathrm{d}u}{\mathrm{d}t}$$
 
 整理得
 
-$$u=E\left(1-e^{-t/RC}\right)$$
+$$
+u=E\left(1-e^{-t/RC}\right)
+$$
 
 其中的 $RC$ 被称为电容器的**充电时间常数**，记作 $\tau$，可以用来衡量电容器充电所需时间。时间达到 $5\tau$ 时，$u \approx 0.993262E$，通常可以认为此后电容器就充满了。若电路中的电阻 $R$ 小到可以忽略不计，那么就认为电容器瞬间完成了充电。
 
@@ -47,21 +51,31 @@ $$u=E\left(1-e^{-t/RC}\right)$$
 
 由于电阻不计，可以认为电容器充电是瞬间完成的，那么电容器两端的电压恒等于金属杆的感应电动势，即
 
-$$u=BLv$$
+$$
+u=BLv
+$$
 
 根据电容器的电流特点，有
 
-$$i=C \frac{\mathrm{d}u}{\mathrm{d}t}=BLC \frac{\mathrm{d}v}{\mathrm{d}t}=BLCa$$
+$$
+i=C \frac{\mathrm{d}u}{\mathrm{d}t}=BLC \frac{\mathrm{d}v}{\mathrm{d}t}=BLCa
+$$
 
 对金属棒，根据牛顿第二定律
 
-$$F-BiL=ma$$
+$$
+F-BiL=ma
+$$
 
 所以
 
-$$F-B^2L^2Ca=ma$$
+$$
+F-B^2L^2Ca=ma
+$$
 
-$$a=\frac{F}{m+B^2L^2C}$$
+$$
+a=\frac{F}{m+B^2L^2C}
+$$
 
 加速度 $a$ 为定值，所以**金属棒做匀加速运动**。
 
@@ -73,35 +87,53 @@ $$a=\frac{F}{m+B^2L^2C}$$
 
 设金属杆的电阻为 $R$，导轨无电阻，根据基尔霍夫定律有 $u+Ri=BLv$，代入 $u=\frac 1 C q$ 得
 
-$$\frac1Cq+Ri=BLv \tag{1}$$
+$$
+\frac1Cq+Ri=BLv \tag{1}
+$$
 
 根据牛顿第二定律
 
-$$m\frac{\mathrm{d}v}{\mathrm{d}t}=F-BLi$$
+$$
+m\frac{\mathrm{d}v}{\mathrm{d}t}=F-BLi
+$$
 
 所以 $(1)$ 式对时间求导得
 
-$$\frac1Ci+R\frac{\mathrm{d}i}{\mathrm{d}t}=BL\frac{\mathrm{d}v}{\mathrm{d}t}=\frac{BLF}{m}-\frac{B^2L^2}{m}i$$
+$$
+\frac1Ci+R\frac{\mathrm{d}i}{\mathrm{d}t}=BL\frac{\mathrm{d}v}{\mathrm{d}t}=\frac{BLF}{m}-\frac{B^2L^2}{m}i
+$$
 
 整理得
 
-$$\frac{\mathrm{d}i}{\mathrm{d}t}+\frac{m+B^2L^2C}{mRC}i=\frac{BLF}{mR}$$
+$$
+\frac{\mathrm{d}i}{\mathrm{d}t}+\frac{m+B^2L^2C}{mRC}i=\frac{BLF}{mR}
+$$
 
 记 $k=\dfrac{m+B^2L^2C}{m}$，$\tau=RC$，则上式可化为
 
-$$\frac{\mathrm{d}i}{\mathrm{d}t}+\frac{k}{\tau}i=\frac{BLF}{mR}$$
+$$
+\frac{\mathrm{d}i}{\mathrm{d}t}+\frac{k}{\tau}i=\frac{BLF}{mR}
+$$
 
 结合初始条件 $t=0, i=0$，得
 
-$$i=I_f(1-e^{-kt/\tau})$$
+$$
+i=I_f(1-e^{-kt/\tau})
+$$
 
 其中 $I_f=\frac{CBLF}{mk}$
 
-从而 $$\frac{\mathrm{d}v}{\mathrm{d}t}=\frac F m-\frac{BL}{m}i=\frac{F}{mk}+\frac{BLI_f}{m}e^{-kt/\tau}$$
+从而
+
+$$
+\frac{\mathrm{d}v}{\mathrm{d}t}=\frac F m-\frac{BL}{m}i=\frac{F}{mk}+\frac{BLI_f}{m}e^{-kt/\tau}
+$$
 
 积分，结合 $t=0, v=0$ 得
 
-$$v=\frac{F}{mk}t-\frac{\tau BLI_f}{mk}e^{-kt/\tau}$$
+$$
+v=\frac{F}{mk}t-\frac{\tau BLI_f}{mk}e^{-kt/\tau}
+$$
 ## 有初速度有电阻
 
 ![](Cv0R.svg)
@@ -110,35 +142,53 @@ $$v=\frac{F}{mk}t-\frac{\tau BLI_f}{mk}e^{-kt/\tau}$$
 
 对金属杆，牛顿第二定律
 
-$$-BiL=m\frac{\mathrm{d}v}{\mathrm{d}t}$$
+$$
+-BiL=m\frac{\mathrm{d}v}{\mathrm{d}t}
+$$
 
 积分，结合 $t=0,v=v_0$ 得
 
-$$-BLq=m(v-v_0)$$
+$$
+-BLq=m(v-v_0)
+$$
 
 将 $q=Cu$ 代入，得
 
-$$BLCu=m(v_0-v)$$
+$$
+BLCu=m(v_0-v)
+$$
 
 把 $i=-\dfrac{m}{BL} \dfrac{\mathrm{d}v}{\mathrm{d}t}$，$u=\dfrac{m(v_0-v)}{BLC}$ 代入
 
-$$u+Ri=BLv$$
+$$
+u+Ri=BLv
+$$
 
 得
 
-$$\frac{m(v_0-v)}{BLC}-\frac{mR}{BL} \frac{\mathrm{d}v}{\mathrm{d}t}=BLv$$
+$$
+\frac{m(v_0-v)}{BLC}-\frac{mR}{BL} \frac{\mathrm{d}v}{\mathrm{d}t}=BLv
+$$
 
-$$\frac{mR}{BL}\frac{\mathrm{d}v}{\mathrm{d}t}+\left(BL+ \frac{m}{BLC}\right)v=\frac{mv_0}{BLC}$$
+$$
+\frac{mR}{BL}\frac{\mathrm{d}v}{\mathrm{d}t}+\left(BL+ \frac{m}{BLC}\right)v=\frac{mv_0}{BLC}
+$$
 
-$$\frac{\mathrm{d}v}{\mathrm{d}t}+\left(\frac{B^2L^2C+m}{mRC}\right)v=\frac{v_0}{RC}$$
+$$
+\frac{\mathrm{d}v}{\mathrm{d}t}+\left(\frac{B^2L^2C+m}{mRC}\right)v=\frac{v_0}{RC}
+$$
 
 记 $k=\dfrac{m}{B^2L^2C+m}$，$\tau=RC$，则
 
-$$\frac{\mathrm{d}v}{\mathrm{d}t} + \frac{1}{k\tau}v=\frac{v_0}{\tau}$$
+$$
+\frac{\mathrm{d}v}{\mathrm{d}t} + \frac{1}{k\tau}v=\frac{v_0}{\tau}
+$$
 
 结合初始条件 $t=0, v=v_0$，得
 
-$$v=v_0\left(k-(1-k)e^{-t/k\tau}\right)$$
+$$
+v=v_0\left(k-(1-k)e^{-t/k\tau}\right)
+$$
 
 最终趋于速率为 $v_0k = \dfrac{mv_0}{m+B^2L^2C}$ 的匀速运动。
 

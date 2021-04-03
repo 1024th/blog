@@ -1,6 +1,7 @@
 +++
 title = "为 Hugo 添加 MathJax 支持（重新编译 Hugo）"
 date = 2021-04-01T00:29:23+08:00
+description = "使用 goldmark-mathjax 彻底解决数学公式渲染问题"
 draft = false
 tags = [ "hugo", "MathJax" ]
 categories = [ "编程" ]

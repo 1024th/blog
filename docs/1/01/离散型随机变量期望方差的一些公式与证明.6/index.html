@@ -39,7 +39,7 @@
 <meta itemprop="name" content="">
 <meta itemprop="description" content="声明 本文基于人教版高中数学选修 2-3，本中随机变量均为离散型随机变量。 本文中 \(\displaystyle\sum_x\) 为 \(\displaystyle\sum_{x \in Range(X)}\)（\(Range(X)\) 表示随机">
 
-<meta itemprop="wordCount" content="1235">
+<meta itemprop="wordCount" content="1128">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content=""/>
 <meta name="twitter:description" content="声明 本文基于人教版高中数学选修 2-3，本中随机变量均为离散型随机变量。 本文中 \(\displaystyle\sum_x\) 为 \(\displaystyle\sum_{x \in Range(X)}\)（\(Range(X)\) 表示随机"/>
@@ -334,7 +334,7 @@ function tagCloud(where, min, max) {
       <div class="article-meta">
         
 
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 1235字</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 1128字</span>
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 3分 </span>
       </div>
     </div>
@@ -344,218 +344,152 @@ function tagCloud(where, min, max) {
 <p>本文中 <span class="math inline">\(\displaystyle\sum_x\)</span> 为 <span class="math inline">\(\displaystyle\sum_{x \in Range(X)}\)</span>（<span class="math inline">\(Range(X)\)</span> 表示随机变量 <span class="math inline">\(X\)</span> 可能的取值的集合）的简写。</p>
 <h2 id="期望">期望</h2>
 <h3 id="期望的线性性质">期望的线性性质</h3>
-<p><span class="math display">\[
-课本上就有，证明略。
-
-### 公式 1
-
-$$\boxed{E(X+Y)=E(X)+E(Y)}$$
-
-#### 证明
-
+<p><span class="math display">\[\boxed{E(aX+b) = aE(X)+b}
 \]</span></p>
-<p>\begin{aligned}
-E(X+Y) &amp;=\sum_{x} \sum_{y}(x+y) P(X=x, Y=y) \<br>
-&amp;=\sum_{x} \sum_{y} x P(X=x, Y=y)+\sum_{x} \sum_{y} y P(X=x, Y=y) \<br>
-&amp;=\sum_{x} x \sum_{y} P(X=x, Y=y)+\sum_{y} y \sum_{x} P(X=x, Y=y) \<br>
-&amp;=\sum_{x} x P(X=x)+\sum_{y} y P(Y=y) \<br>
+<p>课本上就有，证明略。</p>
+<h3 id="公式-1">公式 1</h3>
+<p><span class="math display">\[\boxed{E(X+Y)=E(X)+E(Y)}
+\]</span></p>
+<h4 id="证明">证明</h4>
+<p><span class="math display">\[\begin{aligned}
+E(X+Y) &amp;=\sum_{x} \sum_{y}(x+y) P(X=x, Y=y) \\
+&amp;=\sum_{x} \sum_{y} x P(X=x, Y=y)+\sum_{x} \sum_{y} y P(X=x, Y=y) \\
+&amp;=\sum_{x} x \sum_{y} P(X=x, Y=y)+\sum_{y} y \sum_{x} P(X=x, Y=y) \\
+&amp;=\sum_{x} x P(X=x)+\sum_{y} y P(Y=y) \\
 &amp;=E(X)+E(Y)
-\end{aligned}</p>
-<p><span class="math display">\[
-### 公式 2
-
-在 $X,Y$ 相互独立的情况下，有
-
-$$\boxed{E(XY)=E(X)E(Y)}$$
-
-#### 证明
-
-由 $X,Y$ 相互独立知 $P(X=x,Y=y)=P(X=x)P(Y=y)$
-
-所以
-
+\end{aligned}
 \]</span></p>
-<p>\begin{aligned}
-E(XY) &amp;=\sum_{x} \sum_{y} xy P(X=x, Y=y) \<br>
-&amp;=\sum_{x} \sum_{y} xy P(X=x)P(Y=y) \<br>
-&amp;=\sum_{x} x P(X=x)\sum_{y} yP(Y=y) \<br>
-&amp;=\sum_{x} x P(X=x)E(Y) \<br>
-&amp;=E(Y)\sum_{x} x P(X=x) \<br>
+<h3 id="公式-2">公式 2</h3>
+<p>在 <span class="math inline">\(X,Y\)</span> 相互独立的情况下，有</p>
+<p><span class="math display">\[\boxed{E(XY)=E(X)E(Y)}
+\]</span></p>
+<h4 id="证明-1">证明</h4>
+<p>由 <span class="math inline">\(X,Y\)</span> 相互独立知 <span class="math inline">\(P(X=x,Y=y)=P(X=x)P(Y=y)\)</span></p>
+<p>所以</p>
+<p><span class="math display">\[\begin{aligned}
+E(XY) &amp;=\sum_{x} \sum_{y} xy P(X=x, Y=y) \\
+&amp;=\sum_{x} \sum_{y} xy P(X=x)P(Y=y) \\
+&amp;=\sum_{x} x P(X=x)\sum_{y} yP(Y=y) \\
+&amp;=\sum_{x} x P(X=x)E(Y) \\
+&amp;=E(Y)\sum_{x} x P(X=x) \\
 &amp;=E(X)E(Y)
-\end{aligned}</p>
-<p><span class="math display">\[
-## 方差
-
-### 定义
-
-$$\boxed{D(X)=\sum_x (x-E(X))^2 P(X=x)}$$
-
-#### 换种写法
-
-$$\boxed{D(X)=E(x-E(X))^2}$$
-
-#### 再换种写法
-
+\end{aligned}
 \]</span></p>
-<p>\begin{aligned}
-D(X) &amp;= E[X-E(X)]^2 \<br>
-&amp;=E[X^2-2X\cdot E(X)+(E(X))^2] \<br>
-&amp;=E(X^2)-2E(X)E(X)+(E(X))^2 \<br>
+<h2 id="方差">方差</h2>
+<h3 id="定义">定义</h3>
+<p><span class="math display">\[\boxed{D(X)=\sum_x (x-E(X))^2 P(X=x)}
+\]</span></p>
+<h4 id="换种写法">换种写法</h4>
+<p><span class="math display">\[\boxed{D(X)=E(x-E(X))^2}
+\]</span></p>
+<h4 id="再换种写法">再换种写法</h4>
+<p><span class="math display">\[\begin{aligned}
+D(X) &amp;= E[X-E(X)]^2 \\
+&amp;=E[X^2-2X\cdot E(X)+(E(X))^2] \\
+&amp;=E(X^2)-2E(X)E(X)+(E(X))^2 \\
 &amp;=E(X^2)-(E(X))^2 
-\end{aligned}</p>
-<p><span class="math display">\[
-即
-
-$$\boxed{D(X)=E(X^2)-(E(X))^2 }$$
-
-### 公式 1
-
-$$\boxed{D(aX+b) = a^2D(X)}$$
-
-课本上就有，证明略。
-
-### 公式 2
-
-在 $X,Y$ 相互独立的情况下，有
-
-$$\boxed{D(X+Y)=D(X)+D(Y)}$$
-
-#### 证明
-
+\end{aligned}
 \]</span></p>
-<p>\begin{aligned}
-D(X+Y) &amp;= E{(X+Y)^2 - (E(X+Y))^2} \<br>
-&amp;= E{(X^2+Y^2+2XY) - (E(X)+E(Y))^2} \<br>
-&amp;= E(X^2 - E^2(X)) + E(Y^2 - E^2(Y))+ E(2XY) - 2E(X) E(Y) \<br>
+<p>即</p>
+<p><span class="math display">\[\boxed{D(X)=E(X^2)-(E(X))^2 }
+\]</span></p>
+<h3 id="公式-1-1">公式 1</h3>
+<p><span class="math display">\[\boxed{D(aX+b) = a^2D(X)}
+\]</span></p>
+<p>课本上就有，证明略。</p>
+<h3 id="公式-2-1">公式 2</h3>
+<p>在 <span class="math inline">\(X,Y\)</span> 相互独立的情况下，有</p>
+<p><span class="math display">\[\boxed{D(X+Y)=D(X)+D(Y)}
+\]</span></p>
+<h4 id="证明-2">证明</h4>
+<p><span class="math display">\[\begin{aligned}
+D(X+Y) &amp;= E{(X+Y)^2 - (E(X+Y))^2} \\
+&amp;= E{(X^2+Y^2+2XY) - (E(X)+E(Y))^2} \\
+&amp;= E(X^2 - E^2(X)) + E(Y^2 - E^2(Y))+ E(2XY) - 2E(X) E(Y) \\
 &amp;= D(X) + D(Y) + 0
-\end{aligned}</p>
-<p><span class="math display">\[
-即：$D(X+Y) = D(X) + D(Y)$
-
-## 超几何分布
-
-### 定义
-
-$N$ 个物品中有 $M$ 个次品，超几何分布描述了在这 $N$ 个样本中选 $n$ 个，其中有 $k$ 个次品的概率。
-
+\end{aligned}
 \]</span></p>
-<p>P(X = k) = \frac{C_M^k C_{N - M}^{n - k}}{C_N^n}</p>
-<p><span class="math display">\[
-若随机变量 $X$ 服从参数为 $n, M, N$ 的超几何分布，则记为
-
+<p>即：<span class="math inline">\(D(X+Y) = D(X) + D(Y)\)</span></p>
+<h2 id="超几何分布">超几何分布</h2>
+<h3 id="定义-1">定义</h3>
+<p><span class="math inline">\(N\)</span> 个物品中有 <span class="math inline">\(M\)</span> 个次品，超几何分布描述了在这 <span class="math inline">\(N\)</span> 个样本中选 <span class="math inline">\(n\)</span> 个，其中有 <span class="math inline">\(k\)</span> 个次品的概率。</p>
+<p><span class="math display">\[P(X = k) = \frac{C_M^k C_{N - M}^{n - k}}{C_N^n}
 \]</span></p>
-<p>x \sim H(n, M, N)</p>
-<p><span class="math display">\[
-### 期望
-
-若 $x \sim H(n, M, N)$，则
-
-$$\boxed{E(X) = \frac{nM}{N}}$$
-
-#### 证明
-
-##### 引理 1
-
-由组合数公式可以得到 $k \cdot C_M^k = M \cdot C_{M - 1}^{k - 1}$
-
-##### 引理 2
-
-由组合数公式可以得到 $C_{N}^n = \dfrac Nn \cdot C_{N - 1}^{n - 1}$
-
-##### 引理 3
-
-由超几何分布概率和为 $1$，即 $\displaystyle \sum_{k=0}^m P(X=k) = \sum_{k = 0}^m \frac{C_M^k C_{N - M}^{n - k}}{C_N^n} = 1$
-
-可得 $\displaystyle\sum_{k = 0}^m C_M^k C_{N - M}^{n - k} = C_N^n$
-
-##### 推导过程
-
+<p>若随机变量 <span class="math inline">\(X\)</span> 服从参数为 <span class="math inline">\(n, M, N\)</span> 的超几何分布，则记为</p>
+<p><span class="math display">\[x \sim H(n, M, N)
 \]</span></p>
-<p>\begin{aligned} E(x) &amp;= \sum_{k = 0}^m k * \frac{C_M^k * C_{N - M}^{n - k}}{C_N^n} \ &amp;=\frac{1}{C_N^n} \sum_{k = 0}^m k C_M^K * C_{N - M}^{n - k}\ &amp;=\frac{1}{C_N^n} \sum_{k = 1}^m M C_{M - 1}^{k - 1} C_{N - M}^{n - k}\ &amp;=\frac{M}{C_N^n} \sum_{k = 1}^m C_{M - 1}^{k - 1}C_{N - M}^{n - k}\ &amp;=\frac{M}{C_N^n} C_{N - 1}^{n - 1} \ &amp;=\frac{nM}{N} \end{aligned}</p>
-<p><span class="math display">\[
-### 方差
-
+<h3 id="期望-1">期望</h3>
+<p>若 <span class="math inline">\(x \sim H(n, M, N)\)</span>，则</p>
+<p><span class="math display">\[\boxed{E(X) = \frac{nM}{N}}
 \]</span></p>
-<p>D(x) = {n(\frac{M}{N})(1-\frac{M}{N})(N-n) \over (N-1)}</p>
-<p><span class="math display">\[
-二项分布
-----
-
-### 定义
-
-**二项分布**（Binomial distribution）是 $n$ 个 独立重复试验中成功的次数的离散概率分布，其中每次试验的成功概率为 $p$。这样的单次成功/失败试验又称为 [伯努利试验](https://zh.wikipedia.org/wiki/%E4%BC%AF%E5%8A%AA%E5%88%A9%E8%A9%A6%E9%A9%97 "伯努利试验")。
-
-实际上，当 $n = 1$ 时，二项分布就是两点分布。
-
-一般地，如果随机变量 $X$ 服从参数 $n$ 和 $p$ 的二项分布，我们记 $x \sim b(n, p)$ 或 $X \sim B(n, p)$. $n$ 次试验中正好得到 $k$ 次成功的概率为
-
-$$P(x = k) = C_n^k \ p^k \ (1-p)^{n- k}$$
-
-### 期望
-
-若 $X\sim B(n,p)$，则
-
-$$\boxed{E(x) = np}$$
-
-#### 证明
-
-##### 简单的证明
-
-记 
-
+<h4 id="证明-3">证明</h4>
+<h5 id="引理-1">引理 1</h5>
+<p>由组合数公式可以得到 <span class="math inline">\(k \cdot C_M^k = M \cdot C_{M - 1}^{k - 1}\)</span></p>
+<h5 id="引理-2">引理 2</h5>
+<p>由组合数公式可以得到 <span class="math inline">\(C_{N}^n = \dfrac Nn \cdot C_{N - 1}^{n - 1}\)</span></p>
+<h5 id="引理-3">引理 3</h5>
+<p>由超几何分布概率和为 <span class="math inline">\(1\)</span>，即 <span class="math inline">\(\displaystyle \sum_{k=0}^m P(X=k) = \sum_{k = 0}^m \frac{C_M^k C_{N - M}^{n - k}}{C_N^n} = 1\)</span></p>
+<p>可得 <span class="math inline">\(\displaystyle\sum_{k = 0}^m C_M^k C_{N - M}^{n - k} = C_N^n\)</span></p>
+<h5 id="推导过程">推导过程</h5>
+<p><span class="math display">\[\begin{aligned} E(x) &amp;= \sum_{k = 0}^m k * \frac{C_M^k * C_{N - M}^{n - k}}{C_N^n} \\ &amp;=\frac{1}{C_N^n} \sum_{k = 0}^m k C_M^K * C_{N - M}^{n - k}\\ &amp;=\frac{1}{C_N^n} \sum_{k = 1}^m M C_{M - 1}^{k - 1} C_{N - M}^{n - k}\\ &amp;=\frac{M}{C_N^n} \sum_{k = 1}^m C_{M - 1}^{k - 1}C_{N - M}^{n - k}\\ &amp;=\frac{M}{C_N^n} C_{N - 1}^{n - 1} \\ &amp;=\frac{nM}{N} \end{aligned}
 \]</span></p>
-<p>x_i = \begin{cases}
-1 &amp; \text{第 <span class="math inline">\(i\)</span> 次试验成功}\<br>
-0 &amp; \text{第 <span class="math inline">\(i\)</span> 次试验不成功}
-\end{cases}</p>
-<p><span class="math display">\[
-显然 $E(x_i)=p$
-
-由于 $X=x_1+x_2+\cdots+x_n$，根据期望的线性性质，  
-$E(X) = E(x_1) + E(x_2) + \cdots + E(x_n) = np$
-
-##### 复杂的证明
-
-记 $q = 1-p$，那么
-
+<h3 id="方差-1">方差</h3>
+<p><span class="math display">\[D(x) = {n(\frac{M}{N})(1-\frac{M}{N})(N-n) \over (N-1)}
 \]</span></p>
-<p>\begin{aligned}
-E(X) &amp;= \sum_{k=0}^n k P(X=k)\<br>
-&amp;= \sum_{k=0}^n k C_{n}^{k}p^kq^{n-k} \<br>
-&amp;= \sum_{k=1}^n k C_{n}^{k}p^kq^{n-k} \<br>
-&amp;= p\sum_{k=1}^n nC_{n-1}^{k-1}p^{k-1}q^{(n-1)-(k-1)}\<br>
-&amp;= np\sum_{k=1}^n C_{n-1}^{k-1}p^{k-1}q^{(n-1)-(k-1)} \<br>
-&amp;= np\cdot (p+q)^{n-1} \qquad \text{（二项式定理）}\<br>
+<h2 id="二项分布">二项分布</h2>
+<h3 id="定义-2">定义</h3>
+<p><strong>二项分布</strong>（Binomial distribution）是 <span class="math inline">\(n\)</span> 个 独立重复试验中成功的次数的离散概率分布，其中每次试验的成功概率为 <span class="math inline">\(p\)</span>。这样的单次成功/失败试验又称为 <a href="https://zh.wikipedia.org/wiki/%E4%BC%AF%E5%8A%AA%E5%88%A9%E8%A9%A6%E9%A9%97" title="伯努利试验">伯努利试验</a>。</p>
+<p>实际上，当 <span class="math inline">\(n = 1\)</span> 时，二项分布就是两点分布。</p>
+<p>一般地，如果随机变量 <span class="math inline">\(X\)</span> 服从参数 <span class="math inline">\(n\)</span> 和 <span class="math inline">\(p\)</span> 的二项分布，我们记 <span class="math inline">\(x \sim b(n, p)\)</span> 或 <span class="math inline">\(X \sim B(n, p)\)</span>. <span class="math inline">\(n\)</span> 次试验中正好得到 <span class="math inline">\(k\)</span> 次成功的概率为</p>
+<p><span class="math display">\[P(x = k) = C_n^k \ p^k \ (1-p)^{n- k}
+\]</span></p>
+<h3 id="期望-2">期望</h3>
+<p>若 <span class="math inline">\(X\sim B(n,p)\)</span>，则</p>
+<p><span class="math display">\[\boxed{E(x) = np}
+\]</span></p>
+<h4 id="证明-4">证明</h4>
+<h5 id="简单的证明">简单的证明</h5>
+<p>记</p>
+<p><span class="math display">\[x_i = \begin{cases}
+1 &amp; \text{第 $i$ 次试验成功}\\
+0 &amp; \text{第 $i$ 次试验不成功}
+\end{cases}
+\]</span></p>
+<p>显然 <span class="math inline">\(E(x_i)=p\)</span></p>
+<p>由于 <span class="math inline">\(X=x_1+x_2+\cdots+x_n\)</span>，根据期望的线性性质，<br>
+<span class="math inline">\(E(X) = E(x_1) + E(x_2) + \cdots + E(x_n) = np\)</span></p>
+<h5 id="复杂的证明">复杂的证明</h5>
+<p>记 <span class="math inline">\(q = 1-p\)</span>，那么</p>
+<p><span class="math display">\[\begin{aligned}
+E(X) &amp;= \sum_{k=0}^n k P(X=k)\\
+&amp;= \sum_{k=0}^n k C_{n}^{k}p^kq^{n-k} \\
+&amp;= \sum_{k=1}^n k C_{n}^{k}p^kq^{n-k} \\
+&amp;= p\sum_{k=1}^n nC_{n-1}^{k-1}p^{k-1}q^{(n-1)-(k-1)}\\
+&amp;= np\sum_{k=1}^n C_{n-1}^{k-1}p^{k-1}q^{(n-1)-(k-1)} \\
+&amp;= np\cdot (p+q)^{n-1} \qquad \text{（二项式定理）}\\
 &amp;= np
-\end{aligned}</p>
-<p><span class="math display">\[
-### 方差
-
+\end{aligned}
 \]</span></p>
-<p>\boxed{D(x) = np(1 - p)}</p>
-<p><span class="math display">\[
-#### 证明
-
-##### 简单的方法
-
-类似于期望的那种证明方法。
-
-##### 复杂的方法
-
+<h3 id="方差-2">方差</h3>
+<p><span class="math display">\[\boxed{D(x) = np(1 - p)}
 \]</span></p>
-<p>\begin{aligned}
-D(X) &amp;=\sum_{k=0}^{n}\left[k-E(X)\right]^{2} \cdot p_{k}=\sum_{k=0}^{n}(k-n p)^{2} \cdot \mathrm{C}_{n}^{k} p^{k} q^{n-k} \<br>
-&amp;=\sum_{k=0}^{n} k^{2} \cdot \mathrm{C}_{n}^{k} p^{k} q^{n-k}+\sum_{k=0}^{n}-2 n p k \cdot \mathrm{C}_{n}^{k} p^{k} q^{n-k}+\sum_{k=0}^{n} n^{2} p^{2} \cdot \mathrm{C}_{n}^{k} p^{k} q^{n-k} \<br>
-&amp;=\sum_{k=0}^{n}(k-1) \cdot k \cdot \mathrm{C}_{n}^{k} p^{k} q^{n-k}+\sum_{k=0}^{n} k \cdot \mathrm{C}_{n}^{k} p^{k} q^{n-k}-2 n p \sum_{k=0}^{n} k \cdot \mathrm{C}_{n}^{k} p^{k} q^{n-k} \<br>
-&amp;+n^{2} p^{2} \sum_{k=0}^{n} \mathrm{C}_{n}^{k} p^{k} q^{n-k} \<br>
-&amp;=\sum_{k=1}^{n}(k-1) \cdot k \cdot \mathrm{C}_{n}^{k} p^{k} q^{n-k}+n p-2 n p \cdot n p+n^{2} p^{2} \<br>
-&amp;=n \sum_{k=2}^{n}(k-1) \cdot \mathrm{C}_{n-1}^{k-1} p^{k} q^{n-k}+n p-n^{2} p^{2} \<br>
-&amp;=n(n-1) p^{2} \sum_{k=2}^{n} \mathrm{C}_{n-2}^{k-2} p^{k-2} q^{(n-2)-(k-2)}+n p-n^{2} p^{2} \quad(\text{令} k-2=i) \<br>
-&amp;=n(n-1) p^{2} \sum_{i=0}^{n-2} \mathrm{C}_{n-2}^{i} p^{i} q^{(n-2)-i}+n p-n^{2} p^{2} \<br>
-&amp;=n(n-1) p^{2}+n p-n^{2} p^{2} \<br>
+<h4 id="证明-5">证明</h4>
+<h5 id="简单的方法">简单的方法</h5>
+<p>类似于期望的那种证明方法。</p>
+<h5 id="复杂的方法">复杂的方法</h5>
+<p><span class="math display">\[\begin{aligned}
+D(X) &amp;=\sum_{k=0}^{n}\left[k-E(X)\right]^{2} \cdot p_{k}=\sum_{k=0}^{n}(k-n p)^{2} \cdot \mathrm{C}_{n}^{k} p^{k} q^{n-k} \\
+&amp;=\sum_{k=0}^{n} k^{2} \cdot \mathrm{C}_{n}^{k} p^{k} q^{n-k}+\sum_{k=0}^{n}-2 n p k \cdot \mathrm{C}_{n}^{k} p^{k} q^{n-k}+\sum_{k=0}^{n} n^{2} p^{2} \cdot \mathrm{C}_{n}^{k} p^{k} q^{n-k} \\
+&amp;=\sum_{k=0}^{n}(k-1) \cdot k \cdot \mathrm{C}_{n}^{k} p^{k} q^{n-k}+\sum_{k=0}^{n} k \cdot \mathrm{C}_{n}^{k} p^{k} q^{n-k}-2 n p \sum_{k=0}^{n} k \cdot \mathrm{C}_{n}^{k} p^{k} q^{n-k} \\
+&amp;+n^{2} p^{2} \sum_{k=0}^{n} \mathrm{C}_{n}^{k} p^{k} q^{n-k} \\
+&amp;=\sum_{k=1}^{n}(k-1) \cdot k \cdot \mathrm{C}_{n}^{k} p^{k} q^{n-k}+n p-2 n p \cdot n p+n^{2} p^{2} \\
+&amp;=n \sum_{k=2}^{n}(k-1) \cdot \mathrm{C}_{n-1}^{k-1} p^{k} q^{n-k}+n p-n^{2} p^{2} \\
+&amp;=n(n-1) p^{2} \sum_{k=2}^{n} \mathrm{C}_{n-2}^{k-2} p^{k-2} q^{(n-2)-(k-2)}+n p-n^{2} p^{2} \quad(\text{令} k-2=i) \\
+&amp;=n(n-1) p^{2} \sum_{i=0}^{n-2} \mathrm{C}_{n-2}^{i} p^{i} q^{(n-2)-i}+n p-n^{2} p^{2} \\
+&amp;=n(n-1) p^{2}+n p-n^{2} p^{2} \\
 &amp;=n p q
-\end{aligned}</p>
-<p><span class="math display">\[\]</span></p>
+\end{aligned}
+\]</span></p>
 
     </div>
     <div class="article-footer">

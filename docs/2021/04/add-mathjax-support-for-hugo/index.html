@@ -20,7 +20,7 @@
     <meta http-equiv="window-target" content="_top" />
     
     
-    <meta name="description" content="参考：https://www.cnblogs.com/jiahu-Blog/p/14350046.html 源码编译 Hugo （添加 MathJax 支持） Hugo 默认使用" />
+    <meta name="description" content="使用 goldmark-mathjax 彻底解决数学公式渲染问题" />
     <meta name="generator" content="Hugo 0.83.0-DEV with theme pure" />
     <title>为 Hugo 添加 MathJax 支持（重新编译 Hugo） - 1024th&#39;s Blog</title>
     
@@ -30,19 +30,19 @@
     <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
     <meta property="og:title" content="为 Hugo 添加 MathJax 支持（重新编译 Hugo）" />
-<meta property="og:description" content="参考：https://www.cnblogs.com/jiahu-Blog/p/14350046.html 源码编译 Hugo （添加 MathJax 支持） Hugo 默认使用" />
+<meta property="og:description" content="使用 goldmark-mathjax 彻底解决数学公式渲染问题" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/2021/04/add-mathjax-support-for-hugo/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-04-01T00:29:23&#43;08:00" />
 <meta property="article:modified_time" content="2021-04-01T00:29:23&#43;08:00" />
 
 <meta itemprop="name" content="为 Hugo 添加 MathJax 支持（重新编译 Hugo）">
-<meta itemprop="description" content="参考：https://www.cnblogs.com/jiahu-Blog/p/14350046.html 源码编译 Hugo （添加 MathJax 支持） Hugo 默认使用"><meta itemprop="datePublished" content="2021-04-01T00:29:23&#43;08:00" />
+<meta itemprop="description" content="使用 goldmark-mathjax 彻底解决数学公式渲染问题"><meta itemprop="datePublished" content="2021-04-01T00:29:23&#43;08:00" />
 <meta itemprop="dateModified" content="2021-04-01T00:29:23&#43;08:00" />
 <meta itemprop="wordCount" content="326">
 <meta itemprop="keywords" content="hugo,MathJax," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="为 Hugo 添加 MathJax 支持（重新编译 Hugo）"/>
-<meta name="twitter:description" content="参考：https://www.cnblogs.com/jiahu-Blog/p/14350046.html 源码编译 Hugo （添加 MathJax 支持） Hugo 默认使用"/>
+<meta name="twitter:description" content="使用 goldmark-mathjax 彻底解决数学公式渲染问题"/>
 
     <!--[if lte IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -162,8 +162,32 @@
                class="tag-list-count">1</span></a>
             
             
-            <a href="../../../tags/%E9%AB%98%E4%B8%AD%E6%95%B0%E5%AD%A6/" class="tag-list-link" rel="2">高中数学<span
+            <a href="../../../tags/%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/" class="tag-list-link" rel="1">微分方程<span
+               class="tag-list-count">1</span></a>
+            
+            
+            <a href="../../../tags/%E6%8E%92%E5%88%97%E7%BB%84%E5%90%88/" class="tag-list-link" rel="2">排列组合<span
                class="tag-list-count">2</span></a>
+            
+            
+            <a href="../../../tags/%E6%96%B9%E5%B7%AE/" class="tag-list-link" rel="2">方差<span
+               class="tag-list-count">2</span></a>
+            
+            
+            <a href="../../../tags/%E6%9C%9F%E6%9C%9B/" class="tag-list-link" rel="1">期望<span
+               class="tag-list-count">1</span></a>
+            
+            
+            <a href="../../../tags/%E6%9E%81%E5%9D%90%E6%A0%87/" class="tag-list-link" rel="1">极坐标<span
+               class="tag-list-count">1</span></a>
+            
+            
+            <a href="../../../tags/%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95/" class="tag-list-link" rel="2">解析几何<span
+               class="tag-list-count">2</span></a>
+            
+            
+            <a href="../../../tags/%E9%AB%98%E4%B8%AD%E6%95%B0%E5%AD%A6/" class="tag-list-link" rel="6">高中数学<span
+               class="tag-list-count">6</span></a>
             
             
             <a href="../../../tags/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86/" class="tag-list-link" rel="1">高中物理<span
@@ -201,7 +225,7 @@ function tagCloud(where, min, max) {
             <li class="category-list-item"><a href="../../../categories/syntax/" class="category-list-link">syntax</a><span class="category-list-count">1</span></li>
             <li class="category-list-item"><a href="../../../categories/themes/" class="category-list-link">themes</a><span class="category-list-count">1</span></li>
             <li class="category-list-item"><a href="../../../categories/%E7%BC%96%E7%A8%8B/" class="category-list-link">编程</a><span class="category-list-count">1</span></li>
-            <li class="category-list-item"><a href="../../../categories/%E9%AB%98%E4%B8%AD%E6%95%B0%E5%AD%A6/" class="category-list-link">高中数学</a><span class="category-list-count">2</span></li>
+            <li class="category-list-item"><a href="../../../categories/%E9%AB%98%E4%B8%AD%E6%95%B0%E5%AD%A6/" class="category-list-link">高中数学</a><span class="category-list-count">6</span></li>
             <li class="category-list-item"><a href="../../../categories/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86/" class="category-list-link">高中物理</a><span class="category-list-count">1</span></li>
         </ul>
     </div>
@@ -236,8 +260,32 @@ function tagCloud(where, min, max) {
                     class="tag-list-count">1</span></li>
             
             
-            <li class="tag-list-item"><a href="../../../tags/%E9%AB%98%E4%B8%AD%E6%95%B0%E5%AD%A6/" class="tag-list-link">高中数学</a><span
+            <li class="tag-list-item"><a href="../../../tags/%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/" class="tag-list-link">微分方程</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="../../../tags/%E6%8E%92%E5%88%97%E7%BB%84%E5%90%88/" class="tag-list-link">排列组合</a><span
                     class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="../../../tags/%E6%96%B9%E5%B7%AE/" class="tag-list-link">方差</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="../../../tags/%E6%9C%9F%E6%9C%9B/" class="tag-list-link">期望</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="../../../tags/%E6%9E%81%E5%9D%90%E6%A0%87/" class="tag-list-link">极坐标</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="../../../tags/%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95/" class="tag-list-link">解析几何</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="../../../tags/%E9%AB%98%E4%B8%AD%E6%95%B0%E5%AD%A6/" class="tag-list-link">高中数学</a><span
+                    class="tag-list-count">6</span></li>
             
             
             <li class="tag-list-item"><a href="../../../tags/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86/" class="tag-list-link">高中物理</a><span
@@ -295,10 +343,10 @@ function tagCloud(where, min, max) {
             <li>
                 <div class="item-inner">
                     <p class="item-title">
-                        <a href="../../../2019/03/testmarkdown-syntax/" class="title">Markdown Syntax Guide</a>
+                        <a href="../../../2020/05/%E9%9A%94%E6%9D%BF%E6%B3%95%E9%A2%98%E5%9E%8B%E6%95%B4%E7%90%86/" class="title">隔板法题型整理</a>
                     </p>
                     <p class="item-date">
-                        <time datetime="2019-03-11 00:00:00 &#43;0000 UTC" itemprop="datePublished">2019-03-11</time>
+                        <time datetime="2020-05-15 21:47:00 &#43;0800 CST" itemprop="datePublished">2020-05-15</time>
                     </p>
                 </div>
             </li>
@@ -459,7 +507,9 @@ function tagCloud(where, min, max) {
             showMathMenu: false, //disables context menu
             tex2jax: {
             inlineMath: [ ['$','$'], ['\\(','\\)'] ]
-           }
+            },
+            "HTML-CSS": { linebreaks: { automatic: true } },
+            SVG: { linebreaks: { automatic: true } }
     });
 </script>
 

@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <title>
+        隔板法题型整理 - 1024th&#39;s Blog
+      </title>
+        <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    
+    <meta name="theme-color" content="#000000" />
+    
+    <meta http-equiv="window-target" content="_top" />
+    
+    
+    <meta name="description" content="介绍隔板法及其变式" />
+    <meta name="generator" content="Hugo 0.83.0-DEV with theme pure" />
+    <title>隔板法题型整理 - 1024th&#39;s Blog</title>
+    
+    
+    <link rel="stylesheet" href="../../../css/style.min.ad6cc7f5a80b7d718bb952c6ae82c704d0da20a473043879607efeff8a59ef8e.css">
+    
+    <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
+    <meta property="og:title" content="隔板法题型整理" />
+<meta property="og:description" content="介绍隔板法及其变式" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/2020/05/%E9%9A%94%E6%9D%BF%E6%B3%95%E9%A2%98%E5%9E%8B%E6%95%B4%E7%90%86/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2020-05-15T21:47:00&#43;08:00" />
+<meta property="article:modified_time" content="2020-05-16T17:54:00&#43;08:00" />
+
+<meta itemprop="name" content="隔板法题型整理">
+<meta itemprop="description" content="介绍隔板法及其变式"><meta itemprop="datePublished" content="2020-05-15T21:47:00&#43;08:00" />
+<meta itemprop="dateModified" content="2020-05-16T17:54:00&#43;08:00" />
+<meta itemprop="wordCount" content="2008">
+<meta itemprop="keywords" content="高中数学,排列组合," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="隔板法题型整理"/>
+<meta name="twitter:description" content="介绍隔板法及其变式"/>
+
+    <!--[if lte IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+      <![endif]-->
+
+    <!--[if lt IE 9]>
+        <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+      <![endif]-->
+  </head>
+
+  
+  
+
+  <body class="main-center theme-black" itemscope itemtype="http://schema.org/WebPage"><header class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="slimContent">
+      <div class="navbar-header">
+        <div class="profile-block text-center">
+          <a id="avatar" href="" target="_blank">
+            <img class="img-circle img-rotate" src="../../../avatar.png" width="200" height="200">
+          </a>
+          <h2 id="name" class="hidden-xs hidden-sm">1024th</h2>
+          <h3 id="title" class="hidden-xs hidden-sm hidden-md"></h3>
+          <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i>China</small>
+        </div><div class="search" id="search-form-wrap">
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="搜索" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i
+                        class="icon icon-search"></i></button>
+            </span>
+        </div>
+        <div class="ins-search">
+            <div class="ins-search-mask"></div>
+            <div class="ins-search-container">
+                <div class="ins-input-wrapper">
+                    <input type="text" class="ins-search-input" placeholder="想要查找什么..."
+                        x-webkit-speech />
+                    <button type="button" class="close ins-close ins-selectable" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="ins-section-wrapper">
+                    <div class="ins-section-container"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+        <ul class="nav navbar-nav main-nav">
+            <li class="menu-item menu-item-home">
+                <a href="../../../">
+                    <i class="icon icon-home-fill"></i>
+                  <span class="menu-title">主页</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-archives">
+                <a href="../../../posts/">
+                    <i class="icon icon-archives-fill"></i>
+                  <span class="menu-title">归档</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-categories">
+                <a href="../../../categories/">
+                    <i class="icon icon-folder"></i>
+                  <span class="menu-title">分类</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-tags">
+                <a href="../../../tags/">
+                    <i class="icon icon-tags"></i>
+                  <span class="menu-title">标签</span>
+                </a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title"> 标签</h3>
+    <div id="tag-cloud-list" class="widget-body">
+            
+            
+            <a href="../../../tags/css/" class="tag-list-link" rel="1">css<span
+               class="tag-list-count">1</span></a>
+            
+            
+            <a href="../../../tags/html/" class="tag-list-link" rel="1">html<span
+               class="tag-list-count">1</span></a>
+            
+            
+            <a href="../../../tags/hugo/" class="tag-list-link" rel="1">hugo<span
+               class="tag-list-count">1</span></a>
+            
+            
+            <a href="../../../tags/markdown/" class="tag-list-link" rel="1">markdown<span
+               class="tag-list-count">1</span></a>
+            
+            
+            <a href="../../../tags/mathjax/" class="tag-list-link" rel="1">mathjax<span
+               class="tag-list-count">1</span></a>
+            
+            
+            <a href="../../../tags/themes/" class="tag-list-link" rel="1">themes<span
+               class="tag-list-count">1</span></a>
+            
+            
+            <a href="../../../tags/%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/" class="tag-list-link" rel="1">微分方程<span
+               class="tag-list-count">1</span></a>
+            
+            
+            <a href="../../../tags/%E6%8E%92%E5%88%97%E7%BB%84%E5%90%88/" class="tag-list-link" rel="2">排列组合<span
+               class="tag-list-count">2</span></a>
+            
+            
+            <a href="../../../tags/%E6%96%B9%E5%B7%AE/" class="tag-list-link" rel="2">方差<span
+               class="tag-list-count">2</span></a>
+            
+            
+            <a href="../../../tags/%E6%9C%9F%E6%9C%9B/" class="tag-list-link" rel="1">期望<span
+               class="tag-list-count">1</span></a>
+            
+            
+            <a href="../../../tags/%E6%9E%81%E5%9D%90%E6%A0%87/" class="tag-list-link" rel="1">极坐标<span
+               class="tag-list-count">1</span></a>
+            
+            
+            <a href="../../../tags/%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95/" class="tag-list-link" rel="2">解析几何<span
+               class="tag-list-count">2</span></a>
+            
+            
+            <a href="../../../tags/%E9%AB%98%E4%B8%AD%E6%95%B0%E5%AD%A6/" class="tag-list-link" rel="6">高中数学<span
+               class="tag-list-count">6</span></a>
+            
+            
+            <a href="../../../tags/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86/" class="tag-list-link" rel="1">高中物理<span
+               class="tag-list-count">1</span></a>
+            
+    </div>
+<script>
+document.onreadystatechange = () => {
+  if (document.readyState === 'complete') {
+    tagCloud('#tag-cloud-list a',  8 ,  20 );
+  }
+};
+
+function tagCloud(where, min, max) {
+  let iMax = 0;
+  let iMin = 0;
+  $(where).each(function() {
+    let weight = Number($(this).attr("rel"));
+    if(iMax < weight) iMax = weight;
+    if(iMin > weight || iMin == 0) iMin = weight;
+  });
+  let step = (max - min)/(iMax - iMin);
+  $(where).each(function() {
+    let weight = $(this).attr("rel") - iMin;
+    $(this).css({"font-size": min + (weight * step) + 'px'});
+  });
+};
+</script>
+</div>
+
+      <div class="widget">
+    <h3 class="widget-title"> 分类</h3>
+    <div class="widget-body">
+        <ul class="category-list">
+            <li class="category-list-item"><a href="../../../categories/syntax/" class="category-list-link">syntax</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="../../../categories/themes/" class="category-list-link">themes</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="../../../categories/%E7%BC%96%E7%A8%8B/" class="category-list-link">编程</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="../../../categories/%E9%AB%98%E4%B8%AD%E6%95%B0%E5%AD%A6/" class="category-list-link">高中数学</a><span class="category-list-count">6</span></li>
+            <li class="category-list-item"><a href="../../../categories/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86/" class="category-list-link">高中物理</a><span class="category-list-count">1</span></li>
+        </ul>
+    </div>
+</div>
+      <div class="widget">
+    <h3 class="widget-title"> 标签</h3>
+    <div class="widget-body">
+        <ul class="tag-list">
+            
+            
+            <li class="tag-list-item"><a href="../../../tags/css/" class="tag-list-link">css</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="../../../tags/html/" class="tag-list-link">html</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="../../../tags/hugo/" class="tag-list-link">hugo</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="../../../tags/markdown/" class="tag-list-link">markdown</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="../../../tags/mathjax/" class="tag-list-link">mathjax</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="../../../tags/themes/" class="tag-list-link">themes</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="../../../tags/%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/" class="tag-list-link">微分方程</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="../../../tags/%E6%8E%92%E5%88%97%E7%BB%84%E5%90%88/" class="tag-list-link">排列组合</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="../../../tags/%E6%96%B9%E5%B7%AE/" class="tag-list-link">方差</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="../../../tags/%E6%9C%9F%E6%9C%9B/" class="tag-list-link">期望</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="../../../tags/%E6%9E%81%E5%9D%90%E6%A0%87/" class="tag-list-link">极坐标</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="../../../tags/%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95/" class="tag-list-link">解析几何</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="../../../tags/%E9%AB%98%E4%B8%AD%E6%95%B0%E5%AD%A6/" class="tag-list-link">高中数学</a><span
+                    class="tag-list-count">6</span></li>
+            
+            
+            <li class="tag-list-item"><a href="../../../tags/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86/" class="tag-list-link">高中物理</a><span
+                    class="tag-list-count">1</span></li>
+            
+        </ul>
+
+    </div>
+</div>
+      
+<div class="widget">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget-body">
+        <ul class="recent-post-list list-unstyled no-thumbnail">
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="../../../2021/04/add-mathjax-support-for-hugo/" class="title">为 Hugo 添加 MathJax 支持（重新编译 Hugo）</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2021-04-01 00:29:23 &#43;0800 CST" itemprop="datePublished">2021-04-01</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="../../../2021/03/%E7%94%B5%E5%AE%B9%E5%99%A8%E5%8A%A8%E6%9D%86%E7%94%B5%E7%A3%81%E6%84%9F%E5%BA%94%E9%97%AE%E9%A2%98/" class="title">电容器动杆电磁感应问题</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2021-03-27 10:45:41 &#43;0000 UTC" itemprop="datePublished">2021-03-27</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="../../../2020/12/conic-section-and-polar-coordinate-system/" class="title">圆锥曲线与极坐标</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-12-21 22:27:00 &#43;0800 CST" itemprop="datePublished">2020-12-21</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="../../../2020/12/%E5%8D%8A%E4%BB%A3%E6%B3%95%E6%B1%82%E5%9C%86%E9%94%A5%E6%9B%B2%E7%BA%BF%E5%88%87%E7%BA%BF%E6%96%B9%E7%A8%8B%E7%9A%84%E5%8E%9F%E7%90%86%E9%9A%90%E5%87%BD%E6%95%B0%E6%B1%82%E5%AF%BC/" class="title">“半代法”求圆锥曲线切线方程的原理（隐函数求导）</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-12-05 00:41:00 &#43;0800 CST" itemprop="datePublished">2020-12-05</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="../../../2020/05/%E9%9A%94%E6%9D%BF%E6%B3%95%E9%A2%98%E5%9E%8B%E6%95%B4%E7%90%86/" class="title">隔板法题型整理</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-05-15 21:47:00 &#43;0800 CST" itemprop="datePublished">2020-05-15</time>
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+  </div>
+</aside>
+
+    
+    
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <h4 class="toc-title">文章目录</h4>
+    <nav id="toc" class="js-toc toc">
+
+    </nav>
+  </div>
+</aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="../../../2020/05/%E9%9A%94%E6%9D%BF%E6%B3%95%E9%A2%98%E5%9E%8B%E6%95%B4%E7%90%86/"
+    >隔板法题型整理</a
+  >
+</h1>
+
+      <div class="article-meta">
+        
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="../../../2020/05/%E9%9A%94%E6%9D%BF%E6%B3%95%E9%A2%98%E5%9E%8B%E6%95%B4%E7%90%86/" class="article-date">
+  <time datetime="2020-05-15 21:47:00 &#43;0800 CST" itemprop="datePublished">2020-05-15</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="../../../categories/%E9%AB%98%E4%B8%AD%E6%95%B0%E5%AD%A6/"> 高中数学 </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="../../../tags/%E9%AB%98%E4%B8%AD%E6%95%B0%E5%AD%A6/"> 高中数学 </a>
+    <a class="article-tag-link" href="../../../tags/%E6%8E%92%E5%88%97%E7%BB%84%E5%90%88/"> 排列组合 </a>
+  </span>
+
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 2008字</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 5分 </span>
+      </div>
+    </div>
+    <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
+      <blockquote>
+<p>参考博文：<a href="https://www.cnblogs.com/lfri/p/10439510.html">「隔板法」详解</a></p>
+</blockquote>
+<h2 id="理解隔板法">理解隔板法</h2>
+<p><strong>隔板法</strong>就是在 <span class="math inline">\(n\)</span> 个元素间的 <span class="math inline">\(n-1\)</span> 个空插入 <span class="math inline">\(k-1\)</span> 个板子，把 <span class="math inline">\(n\)</span> 个元素分成 <span class="math inline">\(k\)</span> 组的方法。方案数为 <span class="math inline">\(\mathrm{C}_{n-1}^{k-1}\)</span>。</p>
+<p>应用隔板法必须满足的 3 个条件：</p>
+<ol>
+<li><span class="math inline">\(n\)</span> 个元素是相同的</li>
+<li><span class="math inline">\(k\)</span> 个组是互异的</li>
+<li>每组至少分得一个元素</li>
+</ol>
+<p>例如，把 10 个相同的球放入 3 个不同的箱子，每个箱子至少一个，有 <span class="math inline">\(\mathrm{C}_9^2\)</span> 种情况。</p>
+<h2 id="隔板法应用">隔板法应用</h2>
+<h3 id="普通隔板法">普通隔板法</h3>
+<p><strong>例 1</strong>. 求方程 <span class="math inline">\(x+y+z=10\)</span> 的正整数解的个数。</p>
+<p><strong>分析</strong>：将 <span class="math inline">\(10\)</span> 个求排成一排，球与球之间形成 <span class="math inline">\(9\)</span> 个空隙，将两个隔板插入这些空隙中（每空至多插一块隔板），规定由隔板分成的左、中、右三部分的球数分别为 <span class="math inline">\(x\)</span>、<span class="math inline">\(y\)</span>、<span class="math inline">\(z\)</span> 的值，则<strong>隔板法与解的个数之间建立了一一对应关系</strong>，故解的个数为 <span class="math inline">\(\mathrm{C}_{n-1}^{ m-1} = \mathrm{C}_9^2 = 36\)</span>。</p>
+<h3 id="增减元素隔板法">增减元素隔板法</h3>
+<p><strong>例 2</strong>. 求方程 <span class="math inline">\(x+y+z=10\)</span> 的非负整数解的个数。</p>
+<p><strong>分析</strong>：注意到 <span class="math inline">\(x\)</span>、<span class="math inline">\(y\)</span>、<span class="math inline">\(z\)</span> 可以为零，故例 1 解法中的限定「每空至多插一块隔板」就不成立了，怎么办呢？只要预先给 <span class="math inline">\(x\)</span>、<span class="math inline">\(y\)</span>、<span class="math inline">\(z\)</span> 各添加一个球，这样原问题就转化为求 <span class="math inline">\((x+1)+(y+1)+(z+1)=13\)</span> 的解的个数了，则问题就等价于把 <span class="math inline">\(13\)</span> 个相同小球放入 <span class="math inline">\(3\)</span> 个不同箱子，每个箱子至少一个，方案数为 <span class="math inline">\(\mathrm{C}_{n+m-1}^{m-1}=\mathrm{C}_{12}^2=66\)</span>。</p>
+<p><strong>例 3</strong>. 把 <span class="math inline">\(10\)</span> 个相同的小球放到 <span class="math inline">\(3\)</span> 个不同的箱子，第一个箱子至少 <span class="math inline">\(1\)</span> 个，第二个箱子至少 <span class="math inline">\(3\)</span> 个，第 <span class="math inline">\(3\)</span> 个箱子可以为空，有几种情况？</p>
+<p>我们可以在第二个箱子先放入 <span class="math inline">\(10\)</span> 个小球中的 <span class="math inline">\(2\)</span> 个，小球剩 <span class="math inline">\(8\)</span> 个放 <span class="math inline">\(3\)</span> 个箱子，然后在第三个箱子放入 <span class="math inline">\(8\)</span> 个小球之外的 <span class="math inline">\(1\)</span> 个小球（即补充了一个球），则问题转化为把 <span class="math inline">\(9\)</span> 个相同小球放 <span class="math inline">\(3\)</span> 不同箱子，每箱至少 <span class="math inline">\(1\)</span> 个，几种方法？<span class="math inline">\(\mathrm{C}_8^2=28\)</span>。</p>
+<p>也可转化为例 2 的形式，即求方程 <span class="math inline">\(x+y+z=10\ (x\ge 1,y\ge 3,z\ge 0)\)</span> 的整数解的个数。构造新变量 <span class="math inline">\(a=y-2, b=z+1\)</span>，现在 <span class="math inline">\(x,a,b\)</span> 都 <span class="math inline">\(\ge 1\)</span> 了，因此可以运用隔板法。原方程化为 <span class="math inline">\(x+a+b=10-2+1=9\)</span>，隔板法求得方案数 <span class="math inline">\(\mathrm{C}_{9-1}^{2-1}=\mathrm{C}_8^2=28\)</span>。</p>
+<p><strong>例 4</strong>. 将 20 个相同的小球放入编号分别为 1，2，3，4 的四个盒子中，要求每个盒子中的球数不少于它的编号数，求放法总数。</p>
+<p><strong>分析</strong>：先在编号 <span class="math inline">\(1,2,3,4\)</span> 的四个盒子内分别放 <span class="math inline">\(0,1,2,3\)</span> 个球，剩下 <span class="math inline">\(14\)</span> 个球，再把剩下的球分成 <span class="math inline">\(4\)</span> 组，每组至少 <span class="math inline">\(1\)</span> 个，由例 <span class="math inline">\(1\)</span> 知方法有 <span class="math inline">\(\mathrm{C}_{13}^3=286\)</span>（种）。</p>
+<h3 id="添板插板法添加盒子法">添板插板法（添加盒子法）</h3>
+<p><strong>例 5</strong>. 有一类自然数，从左往右的第三个数字开始，每个数字都恰好是它左边两个数字之和，直至不能再写为止，如 1459，58，21369 等。这类数共有几个？</p>
+<p><strong>分析</strong>：因为前 2 位唯一确定了整个序列，只要求出前两位的所有情况即可，设前两位为 <span class="math inline">\(a\)</span> 和 <span class="math inline">\(b\)</span></p>
+<p>显然 <span class="math inline">\(a + b \le 9\)</span>，且 <span class="math inline">\(a\)</span> 不为 <span class="math inline">\(0\)</span>，但 <span class="math inline">\(b\)</span> 可以为 0（例如 202246）。这里恼人的地方在于这个不等号，<span class="math inline">\(a+b\)</span> 的总数是不确定的。怎么办？</p>
+<p>这里可以构造第三个盒子 <span class="math inline">\(c\)</span> 来放剩下的球，即 <span class="math inline">\(a+b+c=9\ (a\ge1,b\ge0,c\ge0)\)</span>。老套路，转化为 <span class="math inline">\(a+(b+1)+(c+1)=11\)</span>，使得<span class="math inline">\(\begin{cases} a\ge1 \\ (b+1)\ge1 \\ (c+1)\ge1 \end{cases}\)</span></p>
+<p>题目等价于，11 个球放入 3 个不同的箱子，每个箱子至少放一个，<span class="math inline">\(\mathrm{C}_{10}^2\)</span>。</p>
+<h3 id="选板法">选板法</h3>
+<p><strong>例 6</strong>. 有 10 粒糖，如果每天至少吃一粒（多不限），吃完为止，求有多少种不同吃法？</p>
+<p><strong>分析</strong>：o_o_o_o_o_o_o_o_o_o（o 代表 10 个糖，_ 代表 9 个空）</p>
+<p>所以 10 块糖，9 个空，插入 9 块隔板，每个板都可以选择放或不放，相邻两板间的糖一天吃掉，这样共有 <span class="math inline">\(2^9=512\)</span> 啦。</p>
+<h3 id="分类插板法">分类插板法</h3>
+<p><strong>例 7</strong>. 小梅有 15 块糖，如果每天至少吃 3 块，吃完为止，那么共有多少种不同的吃法？</p>
+<p><strong>分析</strong>：</p>
+<p>此问题不能用插板法的原因在于没有规定一定要吃几天，因此我们需要对吃的天数进行分类讨论。显然最多吃 5 天，最少吃 1 天。</p>
+<ol>
+<li>吃 1 天或是 5 天，各一种吃法,一共 <span class="math inline">\(2\)</span> 种情况</li>
+<li>吃 2 天，每天预先吃 2 块，即问 11 块糖，每天至少吃 1 块，吃 2 天，几种情况？ <span class="math inline">\(\mathrm{C}_{10}^1=10\)</span></li>
+<li>吃 3 天，每天预先吃 2 块，即问 9 块糖，每天至少 1 块，吃 3 天？<span class="math inline">\(\mathrm{C}_8^2=28\)</span></li>
+<li>吃 4 天，每天预先吃 2 块，即问 7 块糖，每天至少 1 块，吃 4 天？<span class="math inline">\(\mathrm{C}_6^3=20\)</span></li>
+</ol>
+<p>所以一共是 <span class="math inline">\(2+10+28+20=60\)</span> 种。</p>
+<h3 id="supsup逐步插板法"><!-- raw HTML omitted -->*<!-- raw HTML omitted -->逐步插板法</h3>
+<p>实际上是<strong>逐步插空法</strong>，属于插空而不是插板法。</p>
+<p><strong>例 8</strong>. 在一张节目单中原有 6 个节目，若保持这些节目相对次序不变，再添加 3 个节目，共有几种情况？</p>
+<p><strong>分析</strong>：可以用一个节目去插 7 个空位，再用第二个节目去插 8 个空位，用最后个节目去插 9 个空位，所以一共是 <span class="math inline">\(\mathrm{C}_7^1 \mathrm{C}_8^1 \mathrm{C}_9^1=504\)</span> 种。</p>
+<h2 id="综合例题">综合例题</h2>
+<p>有 <span class="math inline">\(n\)</span> 个不同的盒子，在每个盒子中放一些球（可以不放），使得总球数不大于 <span class="math inline">\(m\)</span>，求方案数。</p>
+<p><strong>分析</strong>：总球数 <span class="math inline">\(\le m\)</span>，所以我们可以增加一个盒子放 <span class="math inline">\(m\)</span> 个球中没被选中的球。所以题目等价于 <span class="math inline">\(m\)</span> 个球放入 <span class="math inline">\(n+1\)</span> 个盒子中，盒子有里球数可以为 <span class="math inline">\(0\)</span>，添元素插板法，每一个盒子都增加一个球，即 <span class="math inline">\(m+n+1\)</span> 个球放入 <span class="math inline">\(n+1\)</span> 个盒子，<span class="math inline">\(\mathrm{C}_{m+n}^n\)</span> 为答案。</p>
+
+    </div>
+    <div class="article-footer">
+<blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    <li class="post-copyright-author">
+      <strong>本文作者: </strong>
+        1024th
+    </li>
+    
+    <li class="post-copyright-license">
+      <strong>版权许可: </strong>
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="external">署名-非商业性使用-相同方式共享 4.0 国际</a>
+    </li>
+  </ul>
+</blockquote>
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="../../../avatar.png" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="" target="_blank"><span class="text-dark">1024th</span><small class="ml-1x"></small></a></h3>
+        <div>作者</div>
+      </div>
+    </figure>
+  </div>
+</div>
+
+    </div>
+  </article>
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <ul class="pager pull-left">
+            <li class="prev">
+                <a href="../../../2020/04/proof-of-the-variance-of-binomial-distribution/" title="二项分布方差的详细证明"><i
+                        class="icon icon-angle-left"
+                        aria-hidden="true"></i><span>&nbsp;&nbsp;下一篇</span></a>
+            </li>
+            <li class="next">
+                <a href="../../../2020/12/%E5%8D%8A%E4%BB%A3%E6%B3%95%E6%B1%82%E5%9C%86%E9%94%A5%E6%9B%B2%E7%BA%BF%E5%88%87%E7%BA%BF%E6%96%B9%E7%A8%8B%E7%9A%84%E5%8E%9F%E7%90%86%E9%9A%90%E5%87%BD%E6%95%B0%E6%B1%82%E5%AF%BC/"
+                    title="“半代法”求圆锥曲线切线方程的原理（隐函数求导）"><span>上一篇&nbsp;&nbsp;</span><i
+                        class="icon icon-angle-right" aria-hidden="true"></i></a>
+            </li>
+            
+            <li class="toggle-toc">
+                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false"
+                    title="文章目录" role="button">
+                    <span>[&nbsp;</span><span>文章目录</span>
+                    <i class="text-collapsed icon icon-anchor"></i>
+                    <i class="text-in icon icon-close"></i>
+                    <span>]</span>
+                </a>
+            </li>
+        </ul>
+        <div class="bar-right">
+            <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter"
+                data-mobile-sites="weibo,qq,qzone"></div>
+        </div>
+    </div>
+</nav>
+
+
+</main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+<ul class="social-links">
+    <li><a href="../../../https:/github.com/1024th" target="_blank" title="github" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-github"></i></a></li>
+</ul>
+  <div class="copyright">
+    &copy;2020  -
+    2021
+    <div class="publishby">
+        Theme by <a href="https://github.com/xiaoheiAh" target="_blank"> xiaoheiAh </a>base on<a href="https://github.com/xiaoheiAh/hugo-theme-pure" target="_blank"> pure</a>.
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+            showMathMenu: false, //disables context menu
+            tex2jax: {
+            inlineMath: [ ['$','$'], ['\\(','\\)'] ]
+            },
+            "HTML-CSS": { linebreaks: { automatic: true } },
+            SVG: { linebreaks: { automatic: true } }
+    });
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script>
+    window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/highlight.min.js"></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/python.min.js" defer></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/javascript.min.js" defer></script><script>
+    hljs.configure({
+        tabReplace: '    ', 
+        classPrefix: ''     
+        
+    })
+    hljs.initHighlightingOnLoad();
+</script>
+<script src="../../../js/application.min.a94ab19cb63a95c8d7fbd7b85cab3ddeea8c369bdf75b9cab6708787ead123af.js"></script>
+<script src="../../../js/plugin.min.19c5bcb2fb0789ab4f2b7834e5ceb5e92635645605bab902c1024b25f1502364.js"></script>
+
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: '文章',
+                PAGES: '页面',
+                CATEGORIES: '分类',
+                TAGS: '标签',
+                UNTITLED: '(未命名)',
+            },
+            ROOT_URL: '',
+            CONTENT_URL: '\/searchindex.json ',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script type="text/javascript" src="../../../js/insight.min.4a2d52de4bfff73e0c688404fe3d17c9a3ae12d9888e1e1ac9c690e4890de2ded50fe55f2b819c2ba55435a76f396f3ea6805765f0b0af5635cdf74ea459eab0.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+<script>
+    tocbot.init({
+        
+        tocSelector: '.js-toc',
+        
+        contentSelector: '.js-toc-content',
+        
+        headingSelector: 'h1, h2, h3',
+        
+        hasInnerContainers: true,
+    });
+</script>
+
+
+  </body>
+</html>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>极坐标 on 1024th&#39;s Blog</title>
+    <link>/tags/%E6%9E%81%E5%9D%90%E6%A0%87/</link>
+    <description>Recent content in 极坐标 on 1024th&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>署名-非商业性使用-相同方式共享 4.0 国际</copyright>
+    <lastBuildDate>Mon, 21 Dec 2020 22:27:00 +0800</lastBuildDate>
+    
+        <atom:link href="/tags/%E6%9E%81%E5%9D%90%E6%A0%87/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>为 Hugo 添加 MathJax 支持（重新编译 Hugo）</title>
+      <link>/2021/04/add-mathjax-support-for-hugo/</link>
+      <pubDate>Thu, 01 Apr 2021 00:29:23 +0800</pubDate>
+      
+      <guid>/2021/04/add-mathjax-support-for-hugo/</guid>
+      <description>参考：https://www.cnblogs.com/jiahu-Blog/p/14350046.html 源码编译 Hugo （添加 MathJax 支持） Hugo 默认使用</description>
+    </item>
+    
+    <item>
+      <title>电容器动杆电磁感应问题</title>
+      <link>/2021/03/%E7%94%B5%E5%AE%B9%E5%99%A8%E5%8A%A8%E6%9D%86%E7%94%B5%E7%A3%81%E6%84%9F%E5%BA%94%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Sat, 27 Mar 2021 10:45:41 +0000</pubDate>
+      
+      <guid>/2021/03/%E7%94%B5%E5%AE%B9%E5%99%A8%E5%8A%A8%E6%9D%86%E7%94%B5%E7%A3%81%E6%84%9F%E5%BA%94%E9%97%AE%E9%A2%98/</guid>
+      <description>电容器电流分析 一般高中物理很少涉及分析电容器的充电电流或放电电流。 我们知道，电容器的电容值 \(C\)，电荷量 \(q\) 和电容器两端的电压 \(u\) 满足 \(q</description>
+    </item>
+    
+    <item>
+      <title>圆锥曲线与极坐标</title>
+      <link>/2020/12/conic-section-and-polar-coordinate-system/</link>
+      <pubDate>Mon, 21 Dec 2020 22:27:00 +0800</pubDate>
+      
+      <guid>/2020/12/conic-section-and-polar-coordinate-system/</guid>
+      <description>参考 https://zhuanlan.zhihu.com/p/33808071 极坐标 在平面内取一个定点 \(O\)，叫极点，引一条射线 \(Ox\)，叫做极轴，再选定一个长度单位和角度的正方向（通常取逆时针方向）。对</description>
+    </item>
+    
+    <item>
+      <title>“半代法”求圆锥曲线切线方程的原理（隐函数求导）</title>
+      <link>/2020/12/%E5%8D%8A%E4%BB%A3%E6%B3%95%E6%B1%82%E5%9C%86%E9%94%A5%E6%9B%B2%E7%BA%BF%E5%88%87%E7%BA%BF%E6%96%B9%E7%A8%8B%E7%9A%84%E5%8E%9F%E7%90%86%E9%9A%90%E5%87%BD%E6%95%B0%E6%B1%82%E5%AF%BC/</link>
+      <pubDate>Sat, 05 Dec 2020 00:41:00 +0800</pubDate>
+      
+      <guid>/2020/12/%E5%8D%8A%E4%BB%A3%E6%B3%95%E6%B1%82%E5%9C%86%E9%94%A5%E6%9B%B2%E7%BA%BF%E5%88%87%E7%BA%BF%E6%96%B9%E7%A8%8B%E7%9A%84%E5%8E%9F%E7%90%86%E9%9A%90%E5%87%BD%E6%95%B0%E6%B1%82%E5%AF%BC/</guid>
+      <description>“隐函数求导法”求圆雉曲线的切线方程 参考《妙用“隐函数的导数法”求圆锥曲线的切线方程》 以下推导默认切线斜率存在。切线斜率不存在时，换成对 \(y\) 求</description>
+    </item>
+    
+    <item>
+      <title>隔板法题型整理</title>
+      <link>/2020/05/%E9%9A%94%E6%9D%BF%E6%B3%95%E9%A2%98%E5%9E%8B%E6%95%B4%E7%90%86/</link>
+      <pubDate>Fri, 15 May 2020 21:47:00 +0800</pubDate>
+      
+      <guid>/2020/05/%E9%9A%94%E6%9D%BF%E6%B3%95%E9%A2%98%E5%9E%8B%E6%95%B4%E7%90%86/</guid>
+      <description>参考博文：「隔板法」详解 理解隔板法 隔板法就是在 \(n\) 个元素间的 \(n-1\) 个空插入 \(k-1\) 个板子，把 \(n\) 个元素分成 \(k\) 组的方法。方案数为 \(\mathrm{C}_{</description>
+    </item>
+    
+    <item>
+      <title>二项分布方差的详细证明</title>
+      <link>/2020/04/proof-of-the-variance-of-binomial-distribution/</link>
+      <pubDate>Thu, 16 Apr 2020 11:08:00 +0800</pubDate>
+      
+      <guid>/2020/04/proof-of-the-variance-of-binomial-distribution/</guid>
+      <description>前置技能 从组合数公式可以直接推出： \(k\mathrm{C}_n^k = n\mathrm{C}_{n-1}^{k-1}\) 同样地，你可以得到 \((k-1)\mathrm{C}_{n-1}^{k-1} = (n-1)\mathrm{C}_{n-2}^{k-2}\) （禁止套娃） 你还要熟悉二项式定理： \[(p+q)^n = \sum_{k=0}^n \mathrm{C}_n^k p^k q^{n-k} \] 你还要知道二项分布的概率和期</description>
+    </item>
+    
+    <item>
+      <title>离散型随机变量期望、方差的一些公式与证明</title>
+      <link>/2020/04/%E7%A6%BB%E6%95%A3%E5%9E%8B%E9%9A%8F%E6%9C%BA%E5%8F%98%E9%87%8F%E6%9C%9F%E6%9C%9B%E6%96%B9%E5%B7%AE%E7%9A%84%E4%B8%80%E4%BA%9B%E5%85%AC%E5%BC%8F%E4%B8%8E%E8%AF%81%E6%98%8E/</link>
+      <pubDate>Tue, 14 Apr 2020 20:25:00 +0800</pubDate>
+      
+      <guid>/2020/04/%E7%A6%BB%E6%95%A3%E5%9E%8B%E9%9A%8F%E6%9C%BA%E5%8F%98%E9%87%8F%E6%9C%9F%E6%9C%9B%E6%96%B9%E5%B7%AE%E7%9A%84%E4%B8%80%E4%BA%9B%E5%85%AC%E5%BC%8F%E4%B8%8E%E8%AF%81%E6%98%8E/</guid>
+      <description>声明 本文基于人教版高中数学选修 2-3，本中随机变量均为离散型随机变量。 本文中 \(\displaystyle\sum_x\) 为 \(\displaystyle\sum_{x \in Range(X)}\)（\(Range(X)\) 表示随机</description>
+    </item>
+    
+    <item>
+      <title>排列组合的一些公式及推导</title>
+      <link>/2019/03/%E6%8E%92%E5%88%97%E7%BB%84%E5%90%88%E7%9A%84%E4%B8%80%E4%BA%9B%E5%85%AC%E5%BC%8F%E5%8F%8A%E6%8E%A8%E5%AF%BC/</link>
+      <pubDate>Fri, 29 Mar 2019 19:47:00 +0800</pubDate>
+      
+      <guid>/2019/03/%E6%8E%92%E5%88%97%E7%BB%84%E5%90%88%E7%9A%84%E4%B8%80%E4%BA%9B%E5%85%AC%E5%BC%8F%E5%8F%8A%E6%8E%A8%E5%AF%BC/</guid>
+      <description>绪论：加法原理、乘法原理 分类计数原理：做一件事，有 \(n\) 类办法，在第 \(1\) 类办法中有 \(m_1\) 种不同的方法，在第 \(2\) 类办法中有 \(m_2\) 种不同的方法，…，在第 \(n\) 类办法</description>
+    </item>
+    
+    <item>
+      <title>Markdown Syntax Guide</title>
+      <link>/2019/03/testmarkdown-syntax/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/03/testmarkdown-syntax/</guid>
+      <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
