@@ -157,7 +157,7 @@ $$
 
 这个神奇的图形和组合数、二项式定理密切相关。（图片来自百度百科）
 
-![](images\1605264746559.png)
+![](杨辉三角.jpg)
 
 杨辉三角可以帮助你更好地理解和记忆组合数的性质：
 
@@ -173,11 +173,11 @@ $$
 二项式系数
 
 二项式系数可排列成帕斯卡三角形。
-在数学上，二项式系数是二项式定理中各项的系数。一般而言，二项式系数由两个非负整数 $n$ 和 $k$ 为参数决定，写作，定义为的多项式展开式中，项的系数，因此一定是非负整数。如果将二项式系数写成一行，再依照顺序由上往下排列，则构成帕斯卡三角形。 $\tbinom nk {\displaystyle (1+x)^{n}}x^{k}{\displaystyle {\binom {n}{0}},{\binom {n}{1}},\dots ,{\binom {n}{n}}}{\displaystyle n=0,1,2,\dots }$
+在数学上，二项式系数是二项式定理中各项的系数。一般而言，二项式系数由两个非负整数 $n$ 和 $k$ 为参数决定，写作 $\tbinom nk$，定义为 ${\displaystyle (1+x)^{n}}$ 的多项式展开式中，$x^{k}$ 项的系数，因此一定是非负整数。如果将二项式系数 ${\displaystyle {\binom {n}{0}},{\binom {n}{1}},\dots ,{\binom {n}{n}}}$ 写成一行，再依照 ${\displaystyle n=0,1,2,\dots}$ 顺序由上往下排列，则构成帕斯卡三角形。
 
 二项式系数常见于各数学领域中，尤其是组合数学。事实上，可以被理解为从 $n$ 个相异元素中取出 $k$ 个元素的方法数，所以大多读作「$n$ 取 $k$」。二项式系数的定义可以推广至 $n$ 是复数的情况，而且仍然被称为二项式系数。
 
-二项式系数亦有不同的符号表达方式，包括：$C(n,k)$、$_n\mathrm{C}_k$、$^n\mathrm{C}_k$、[注 3]，其中的 $C$ 代表组合（combinations）或选择（choices）。很多计算机使用含有 $C$ 的变种记号，使得算式只占一行的空间，相同理由也发生在置换数，例如写作 $P( n , k )$。 ${\displaystyle \mathrm{C}_{n}^{k}}{\displaystyle \mathrm{C}_{k}^{n}}{\displaystyle P_{k}^{n}}$
+二项式系数亦有不同的符号表达方式，包括：$C(n,k)$、$_n\mathrm{C}_k$、$^n\mathrm{C}_k$、${\displaystyle \mathrm{C}_{n}^{k}}$、${\displaystyle \mathrm{C}_{k}^{n}}$[注 3]，其中的 $C$ 代表组合（combinations）或选择（choices）。很多计算机使用含有 $C$ 的变种记号，使得算式只占一行的空间，相同理由也发生在置换数，例如写作 $P( n , k )$。 ${\displaystyle \mathrm{C}_{n}^{k}}{\displaystyle \mathrm{C}_{k}^{n}}{\displaystyle P_{k}^{n}}$
 
 定义及概念
 对于非负整数 $n$ 和 $k$，二项式系数定义为的多项式展开式中，项的系数，即 $\tbinom nk{\displaystyle (1+x)^{n}}x^{k}$
@@ -264,6 +264,7 @@ $$
 $$
  F_{n-1}+F_n=\sum_{i=0}^{\infty} \binom {n-1-i}{i}+\sum_{i=0}^{\infty} \binom {n-i }{i}=1+\sum_{i=1}^{\infty} \binom {n-i}{i-1}+\sum_{i=1}^{\infty} \binom {n-i}{i} =1+\sum_{i=1}^{\infty} \binom {n+1-i}{i}=\sum_{i=0}^{\infty} \binom {n+1-i}{ i}=F_{n+1}
 $$
+
 主条目：朱世杰恒等式
 
 $$
@@ -271,24 +272,38 @@ $$
 $$
 
 $$
-\binom {m}{a+1} + \binom ma + \binom {m+1}a ... + \binom na = \binom {n+1}{a+1} $$
+\binom {m}{a+1} + \binom ma + \binom {m+1}a ... + \binom na = \binom {n+1}{a+1}
+$$
+
 二阶求和公式
+
 $$
 {\displaystyle \sum _{r=0}^{n}{\binom {n}{r}}^{2}={\binom {2n}{n}}}
 $$
+
+$$
 \sum_{i=0}^n \binom {r_1+n-1-i}{r_1-1} \binom {r_2+i-1}{r_2-1}=\binom {r_1+r_2+n-1 }{r_1+r_2-1}
+$$
+
 $$
 (1-x)^{-r_1} (1-x)^{-r_2}=(1-x)^{-r_1-r_2}
 $$
+
+$$
 (1-x)^{-r_1} (1-x)^{-r_2}=(\sum_{n=0}^{\infty} \binom {r_1+n-1}{r_1-1} x^ n)(\sum_{n=0}^{\infty} \binom {r_2+n-1}{r_2-1} x^n)=\sum_{n=0}^{\infty} (\sum_{ i=0}^n \binom {r_1+n-1-i}{r_1-1} \binom {r_2+i-1}{r_2-1}) x^n 
+$$
+
 $$
 (1-x)^{-r_1-r_2}=\sum_{n=0}^{\infty} \binom {r_1+r_2+n-1}{r_1+r_2-1} x^n
 $$
 主条目：范德蒙恒等式
+
 $$
 \sum_{i=0}^k \binom ni \binom m{k-i}=\binom {n+m}k
 $$
+
 三阶求和公式
+
 主条目：李善兰恒等式
 $$
 {\binom {n+k}k}^2=\sum_{j=0}^k {\binom kj}^2 \binom {n+2k-j}{2k}
