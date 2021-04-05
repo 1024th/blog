@@ -177,7 +177,7 @@ $$
 
 二项式系数常见于各数学领域中，尤其是组合数学。事实上，可以被理解为从 $n$ 个相异元素中取出 $k$ 个元素的方法数，所以大多读作「$n$ 取 $k$」。二项式系数的定义可以推广至 $n$ 是复数的情况，而且仍然被称为二项式系数。
 
-二项式系数亦有不同的符号表达方式，包括：$C(n,k)$、$_n\mathrm{C}_k$、$^n\mathrm{C}_k$、${\displaystyle \mathrm{C}_{n}^{k}}$、${\displaystyle \mathrm{C}_{k}^{n}}$[注 3]，其中的 $C$ 代表组合（combinations）或选择（choices）。很多计算机使用含有 $C$ 的变种记号，使得算式只占一行的空间，相同理由也发生在置换数，例如写作 $P( n , k )$。 ${\displaystyle \mathrm{C}_{n}^{k}}{\displaystyle \mathrm{C}_{k}^{n}}{\displaystyle P_{k}^{n}}$
+二项式系数亦有不同的符号表达方式，包括：$C(n,k)$、$_n\mathrm{C}_k$、$^n\mathrm{C}_k$、${\displaystyle \mathrm{C}_{n}^{k}}$、${\displaystyle \mathrm{C}_{k}^{n}}$[注 3]，其中的 $C$ 代表组合（combinations）或选择（choices）。很多计算机使用含有 $C$ 的变种记号，使得算式只占一行的空间，相同理由也发生在置换数${\displaystyle P_{k}^{n}}$，例如写作 $P( n , k )$。 
 
 定义及概念
 对于非负整数 $n$ 和 $k$，二项式系数定义为的多项式展开式中，项的系数，即 $\tbinom nk{\displaystyle (1+x)^{n}}x^{k}$
