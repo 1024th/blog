@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>视频处理工具推荐</title>
+      <link>/2021/04/%E8%A7%86%E9%A2%91%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7%E6%8E%A8%E8%8D%90/</link>
+      <pubDate>Fri, 09 Apr 2021 15:07:11 +0000</pubDate>
+      
+      <guid>/2021/04/%E8%A7%86%E9%A2%91%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7%E6%8E%A8%E8%8D%90/</guid>
+      <description>注：Github release 国内下载速度感人（甚至根本下载不了），可能需要使用某技术手段访问。 视频下载工具 首选浏览器插件 Video DownloadHelper 这个插件对 m3u8 的下载有限制，</description>
+    </item>
+    
+    <item>
       <title>为 Hugo 添加 MathJax 支持（重新编译 Hugo）</title>
       <link>/2021/04/add-mathjax-support-for-hugo/</link>
       <pubDate>Thu, 01 Apr 2021 00:29:23 +0800</pubDate>

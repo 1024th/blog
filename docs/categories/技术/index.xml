@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>1024th&#39;s Blog</title>
-    <link>/</link>
-    <description>Recent content on 1024th&#39;s Blog</description>
+    <title>技术 on 1024th&#39;s Blog</title>
+    <link>/categories/%E6%8A%80%E6%9C%AF/</link>
+    <description>Recent content in 技术 on 1024th&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>署名-非商业性使用-相同方式共享 4.0 国际</copyright>
     <lastBuildDate>Fri, 09 Apr 2021 15:07:11 +0000</lastBuildDate>
     
-        <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/categories/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
