@@ -2,7 +2,7 @@
 <html lang="zh">
   <head>
     <title>
-        圆锥曲线与极坐标 - 1024th&#39;s Blog
+        高中数学柯西不等式的应用 - 1024th&#39;s Blog
       </title>
         <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -20,29 +20,29 @@
     <meta http-equiv="window-target" content="_top" />
     
     
-    <meta name="description" content="介绍极坐标，推导圆锥曲线的极坐标方程，推导一些二级结论" />
+    <meta name="description" content="四个模型：平方与一次转换、一次与分式转换、平方和为定值、和为定值" />
     <meta name="generator" content="Hugo 0.83.0-DEV with theme pure" />
-    <title>圆锥曲线与极坐标 - 1024th&#39;s Blog</title>
+    <title>高中数学柯西不等式的应用 - 1024th&#39;s Blog</title>
     
     
     <link rel="stylesheet" href="../../../css/style.min.579a0aeb71900d4350c364faf5923cc3de3cb27a26d52154f0b890ef5780009e.css">
     
     <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
-    <meta property="og:title" content="圆锥曲线与极坐标" />
-<meta property="og:description" content="介绍极坐标，推导圆锥曲线的极坐标方程，推导一些二级结论" />
+    <meta property="og:title" content="高中数学柯西不等式的应用" />
+<meta property="og:description" content="四个模型：平方与一次转换、一次与分式转换、平方和为定值、和为定值" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/2020/12/conic-section-and-polar-coordinate-system/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2020-12-21T22:27:00&#43;08:00" />
-<meta property="article:modified_time" content="2020-12-21T22:27:00&#43;08:00" />
+<meta property="og:url" content="/2021/04/cauchy-inequality/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-04-15T16:34:15&#43;00:00" />
+<meta property="article:modified_time" content="2021-04-15T16:34:15&#43;00:00" />
 
-<meta itemprop="name" content="圆锥曲线与极坐标">
-<meta itemprop="description" content="介绍极坐标，推导圆锥曲线的极坐标方程，推导一些二级结论"><meta itemprop="datePublished" content="2020-12-21T22:27:00&#43;08:00" />
-<meta itemprop="dateModified" content="2020-12-21T22:27:00&#43;08:00" />
-<meta itemprop="wordCount" content="2646">
-<meta itemprop="keywords" content="高中数学,解析几何,极坐标," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="圆锥曲线与极坐标"/>
-<meta name="twitter:description" content="介绍极坐标，推导圆锥曲线的极坐标方程，推导一些二级结论"/>
+<meta itemprop="name" content="高中数学柯西不等式的应用">
+<meta itemprop="description" content="四个模型：平方与一次转换、一次与分式转换、平方和为定值、和为定值"><meta itemprop="datePublished" content="2021-04-15T16:34:15&#43;00:00" />
+<meta itemprop="dateModified" content="2021-04-15T16:34:15&#43;00:00" />
+<meta itemprop="wordCount" content="1379">
+<meta itemprop="keywords" content="高中数学," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="高中数学柯西不等式的应用"/>
+<meta name="twitter:description" content="四个模型：平方与一次转换、一次与分式转换、平方和为定值、和为定值"/>
 
     <!--[if lte IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -383,8 +383,8 @@ function tagCloud(where, min, max) {
       <h1 itemprop="name">
   <a
     class="article-title"
-    href="../../../2020/12/conic-section-and-polar-coordinate-system/"
-    >圆锥曲线与极坐标</a
+    href="../../../2021/04/cauchy-inequality/"
+    >高中数学柯西不等式的应用</a
   >
 </h1>
 
@@ -392,8 +392,8 @@ function tagCloud(where, min, max) {
         
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="../../../2020/12/conic-section-and-polar-coordinate-system/" class="article-date">
-  <time datetime="2020-12-21 22:27:00 &#43;0800 CST" itemprop="datePublished">2020-12-21</time>
+<a href="../../../2021/04/cauchy-inequality/" class="article-date">
+  <time datetime="2021-04-15 16:34:15.809 &#43;0000 UTC" itemprop="datePublished">2021-04-15</time>
 </a>
 </span>
 <span class="article-category">
@@ -403,122 +403,88 @@ function tagCloud(where, min, max) {
   <span class="article-tag">
     <i class="icon icon-tags"></i>&nbsp;
     <a class="article-tag-link" href="../../../tags/%E9%AB%98%E4%B8%AD%E6%95%B0%E5%AD%A6/"> 高中数学 </a>
-    <a class="article-tag-link" href="../../../tags/%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95/"> 解析几何 </a>
-    <a class="article-tag-link" href="../../../tags/%E6%9E%81%E5%9D%90%E6%A0%87/"> 极坐标 </a>
   </span>
 
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 2646字</span>
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 6分 </span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 1379字</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 3分 </span>
       </div>
     </div>
     <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
-      <blockquote>
-<p>参考 <a href="https://zhuanlan.zhihu.com/p/33808071">https://zhuanlan.zhihu.com/p/33808071</a></p>
-</blockquote>
-<h2 id="极坐标">极坐标</h2>
+      <h2 id="柯西不等式">柯西不等式</h2>
 <blockquote>
-<p>在平面内取一个定点 <span class="math inline">\(O\)</span>，叫极点，引一条射线 <span class="math inline">\(Ox\)</span>，叫做极轴，再选定一个长度单位和角度的正方向（通常取逆时针方向）。对于平面内任何一点 <span class="math inline">\(M\)</span>，用 <span class="math inline">\(\rho\)</span> 表示线段 <span class="math inline">\(OM\)</span> 的长度（有时也用 <span class="math inline">\(r\)</span> 表示），<span class="math inline">\(\theta\)</span> 表示从 <span class="math inline">\(Ox\)</span> 到 <span class="math inline">\(OM\)</span> 的角度，<span class="math inline">\(\rho\)</span> 叫做点 <span class="math inline">\(M\)</span> 的极径，<span class="math inline">\(\theta\)</span> 叫做点 <span class="math inline">\(M\)</span> 的极角，有序数对 <span class="math inline">\((\rho,\theta)\)</span> 就叫点 <span class="math inline">\(M\)</span> 的极坐标，这样建立的坐标系叫做极坐标系。</p>
+<p><strong>柯西不等式</strong>是由大数学家奥古斯丁·路易·柯西（Augustin Louis Cauchy）在研究数学分析中的“流数”问题时得到的。但从历史的角度讲，该不等式应称作 Cauchy-Buniakowsky-Schwarz 不等式（柯西-布尼亚科夫斯基-施瓦茨不等式），因为后两位数学家彼此独立地把该不等式在积分学中推而广之，才将这一不等式应用到近乎完善的地步。</p>
 </blockquote>
-<p>极坐标系用长度和角度取代了二维的坐标，相对于一般的直角坐标为下面的优点：</p>
-<ul>
-<li>便于处理角度的关系</li>
-<li>便于表示和计算长度</li>
-</ul>
-<p><img src="polar-coordinate-system.svg" alt=""></p>
-<p>设 <span class="math inline">\(M\)</span> 为平面上的一点，它的直角坐标为 <span class="math inline">\((x,y)\)</span>，极坐标为 <span class="math inline">\((\rho,\theta)\)</span>，易得<strong>互化公式</strong>：</p>
-<p><span class="math display">\[\left\{
-\begin{aligned}
-x &amp;= \rho \cos \theta \\
-y &amp;= \rho \sin \theta
-\end{aligned}
-\right.
-\quad\text{or}
-\left\{
-\begin{aligned}
-\rho^2 &amp;= x^2+y^2 \\
-\tan \theta &amp;= \tfrac{y}{x} \ (x\neq 0)
-\end{aligned}
-\right.
+<h3 id="二维形式">二维形式</h3>
+<p><span class="math display">\[\left(a^2+b^2\right)\left(c^2+d^2\right) \geq(a c+b d)^2
 \]</span></p>
-<h2 id="圆锥曲线的极坐标方程">圆锥曲线的极坐标方程</h2>
-<p>（1）以焦点为极点</p>
-<p><img src="conic.svg" alt=""></p>
-<p>记 <span class="math inline">\(|PF|=\rho\)</span>，<span class="math inline">\(P\)</span> 到准线 <span class="math inline">\(l\)</span> 的距离为 <span class="math inline">\(d\)</span>，焦点到准线的距离为 <span class="math inline">\(p\)</span>，由圆锥曲线的统一定义知 <span class="math inline">\(\frac{\rho}{d}=e\)</span>，由图形可得 <span class="math inline">\(d=p+\rho \cos\theta\)</span>，代入得 <span class="math inline">\(\frac{\rho}{p+\rho \cos\theta}=e\)</span>，整理后得到<strong>圆锥曲线的统一极坐标方程</strong>：</p>
-<p><span class="math display">\[\rho=\frac{ep}{1-e\cos\theta}
-\]</span></p>
-<p>当 <span class="math inline">\(e=0\)</span> 时，轨迹为圆；<span class="math inline">\(0&lt;e&lt;1\)</span> 时，轨迹为椭圆；<span class="math inline">\(e=1\)</span> 时，轨迹为抛物线；<span class="math inline">\(e&gt;1\)</span> 时，轨迹为双曲线。</p>
-<p>（2）以坐标原点为极点</p>
-<p>在这里只考虑椭圆与双曲线的情况，抛物线也可类比：</p>
-<p>椭圆或双曲线的标准方程（焦点在 <span class="math inline">\(x\)</span> 轴上）为： <span class="math inline">\(\frac{x^2}{a^2}\pm\frac{y^2}{b^2}=1\)</span></p>
-<p>代入 <span class="math inline">\(x=\rho \cos\theta\)</span>，<span class="math inline">\(y=\rho \sin\theta\)</span> 得：</p>
-<p><span class="math inline">\(\frac{\rho^2 \cos^2\theta}{a^2}\pm\frac{\rho ^2\sin^2\theta}{b^2}=1\)</span>，提取 <span class="math inline">\(\rho^2\)</span> 得：</p>
-<p><span class="math inline">\(\displaystyle\frac{1}{\rho ^2}=\frac{\cos^2\theta}{a^2}\pm\frac{\sin^2\theta}{b^2}\)</span>，<strong>此方程表示椭圆或双曲线的轨迹。</strong></p>
-<p>取加号时，轨迹为椭圆；取减号时，轨迹为双曲线。</p>
-<h2 id="一些结论">一些结论</h2>
-<p><img src="conclusion.svg" alt=""></p>
-<p>如图，<span class="math inline">\(F\)</span> 为<strong>圆锥曲线</strong> <span class="math inline">\(E\)</span> 的焦点，过 <span class="math inline">\(F\)</span> 的直线交 <span class="math inline">\(E\)</span> 与 <span class="math inline">\(A,B\)</span> 两点，设直线 <span class="math inline">\(AB\)</span> 的倾斜角为 <span class="math inline">\(\alpha\)</span>，则</p>
+<p>等号成立当且仅当 <span class="math inline">\(a d=b c\)</span> （即 <span class="math inline">\(\frac{a}{c}=\frac{b}{d}\)</span> 或 <span class="math inline">\(c=d=0\)</span>）时。</p>
+<h4 id="证明">证明</h4>
+<h5 id="向量法">向量法</h5>
+<p>设 <span class="math inline">\(\vec{m}=(a,b), \vec{n}=(c,d)\)</span>，两向量夹角为 <span class="math inline">\(\theta\)</span>。</p>
+<p>则 <span class="math inline">\(|\vec{m}||\vec{n}|\cos \theta = \vec{m}\cdot\vec{n}\)</span></p>
+<p>所以 <span class="math inline">\(|\vec{m}|^2|\vec{n}|^2\cos^2 \theta = (\vec{m}\cdot\vec{n})^2\)</span></p>
+<p>又因为 <span class="math inline">\(0 \le \cos^2\theta \le 1\)</span></p>
+<p>所以 <span class="math inline">\(|\vec{m}|^2|\vec{n}|^2 \ge (\vec{m}\cdot\vec{n})^2\)</span></p>
+<p>即 <span class="math inline">\(\left(a^2+b^2\right)\left(c^2+d^2\right) \geq(a c+b d)^2\)</span></p>
+<h5 id="构造法">构造法</h5>
 <p><span class="math display">\[\begin{aligned}
-&amp;|AF|=\frac{ep}{1-e\cos \alpha} ,\ |BF|=\frac{ep}{1+e\cos \alpha} \\
-&amp;|AB|=\tfrac{ep}{1-e\cos \alpha}+\tfrac{ep}{1+e\cos \alpha}=\frac{2ep}{1-e^2\cos^2 \alpha}
+&amp;\left(a^2+b^2\right)\left(c^2+d^2\right) \\
+= &amp; a^2c^2 + b^2d^2 + a^2d^2+b^2c^2 \\
+= &amp; (ac+bd)^2+(ad-bc)^2 \\
+\geq &amp; (a c+b d)^2 \quad (a, b, c, d \in \mathbb{R})
 \end{aligned}
 \]</span></p>
-<p>（看成以 <span class="math inline">\(F\)</span> 为极点的极坐标系，由圆锥曲线方程 <span class="math inline">\(\rho=\frac{ep}{1-e\cos\theta}\)</span>，令 <span class="math inline">\(\theta=\alpha\)</span> 可得 <span class="math inline">\(A\)</span> 点的 <span class="math inline">\(\rho\)</span>，即 <span class="math inline">\(|AF|\)</span>；同理，令 <span class="math inline">\(\theta=\alpha+\pi\)</span> 得到 <span class="math inline">\(B\)</span> 的，再用诱导公式 <span class="math inline">\(\cos(\theta+\pi)=-\cos \theta\)</span>）</p>
-<p>当椭圆与双曲线以标准方程表示时，焦准距 <span class="math inline">\(p=\frac{b^2}{c}\)</span>，离心率 <span class="math inline">\(e=\frac{c}{a}\)</span>，那么</p>
-<p><span class="math display">\[\begin{aligned}
-&amp;|AF|=\frac{b^2}{a-c\cos \alpha} ,\ |BF|=\frac{b^2}{a+c\cos \alpha} \\
-&amp;|AB|=\frac{2ab^2}{a^2-c^2\cos^2\alpha}
-\end{aligned}
+<p>等号当且仅当 <span class="math inline">\(ad-bc=0\)</span> 即 <span class="math inline">\(ad=bc\)</span>。</p>
+<h3 id="一般形式">一般形式</h3>
+<p><span class="math display">\[\left(\sum_{i=1}^{n} a_{i}{ }^2\right) \left(\sum_{i=1}^{n} b_{i}{ }^2\right) \geq\left(\sum_{i=1}^{n} a_{i} b_{i}\right)^2
 \]</span></p>
-<p>若 <span class="math inline">\(\frac{|AF|}{|BF|}=\lambda\)</span>，则 <span class="math inline">\(\frac{1+e\cos \alpha}{1-e\cos \alpha}=\lambda\)</span>，解出</p>
-<p><span class="math display">\[e\cos \alpha = \frac{\lambda-1}{\lambda+1}
-\]</span></p>
-<p>已知 <span class="math inline">\(e,\lambda\)</span> 时，可用上式求倾斜角。</p>
-<p>特殊地，当该曲线为抛物线时，<span class="math inline">\(e=1\)</span>，有</p>
-<p><span class="math display">\[\begin{aligned}
-&amp; |AF|=\frac{p}{1-\cos \alpha} \\
-&amp; |BF|=\frac{p}{1+\cos \alpha} \\
-&amp; |AB|=\frac{2p}{\sin^2 \alpha}
-\end{aligned}
-\]</span></p>
+<p>等号成立当且仅当 <span class="math inline">\(\frac{a_1}{b_1}=\frac{a_2}{b_2}=\cdots=\frac{a_{n}}{b_{n}}\)</span> 或 <span class="math inline">\(a_{i}, b_{i}\)</span>（<span class="math inline">\(i=1,2,3, \cdots, n\)</span>）中有至少一方全为零。</p>
+<h4 id="证明-1">证明</h4>
+<p>不等式可以表示成</p>
+<p><span class="math inline">\((x_1^2+x_2^2+\cdots +x_{n}^2)(y_1^2+y_2^2+\cdots +y_{n}^2)\geq (x_1y_1+x_2y_2+\cdots +x_{n}y_{n})^2\)</span></p>
+<p>当 <span class="math inline">\(x_i\)</span>（<span class="math inline">\(i=1,2,3, \cdots, n\)</span>）或 <span class="math inline">\(y_i\)</span>（<span class="math inline">\(i=1,2,3, \cdots, n\)</span>）全部为零时，上式显然取到等号。下面考虑 <span class="math inline">\(x_i, y_i\)</span>（<span class="math inline">\(i=1,2,3, \cdots, n\)</span>）均不为零的情况。</p>
+<p>考虑一个关于 <span class="math inline">\(t\)</span> 的一个一元二次方程 <span class="math inline">\((x_1t+y_1)^2+\cdots +(x_{n}t+y_{n})^2=0\)</span></p>
+<p>很明显的，此方程无实数解或有重根，故其判别式 <span class="math inline">\(\Delta \leq 0\)</span></p>
+<p>注意到 <span class="math inline">\((x_1 t + y_1)^2 + \cdots + (x_n t + y_n)^2 \geq 0\)</span></p>
+<p>所以 <span class="math inline">\((x_1^2 +x_2^2 + \cdots + x_n^2) t^2 + 2 (x_1 y_1 + x_2 y_2 + \cdots + x_n y_n) t + (y_1^2 +y_2^2 + \cdots + y_n^2) \geq 0\)</span></p>
+<p>则 <span class="math inline">\(\Delta = 4 (x_1 y_1 + x_2 y_2 + \cdots + x_n y_n)^2 - 4 (x_1^2 +x_2^2 + \cdots + x_n^2) (y_1^2 +y_2^2 + \cdots + y_n^2) \leq 0\)</span></p>
+<p>即 <span class="math inline">\((x_1^2 +x_2^2 + \cdots + x_n^2)(y_1^2 +y_2^2 + \cdots + y_n^2) \ge (x_1 y_1 + x_2 y_2 + \cdots + x_n y_n)^2\)</span></p>
+<p>而等号成立于判别式 <span class="math inline">\(\Delta=0\)</span> 时</p>
+<p>也就是此时方程有重根，故 <span class="math inline">\(\frac {x_1}{y_1} = \frac {x_2}{y_2} = \cdots = \frac {x_n}{y_n}\)</span></p>
 <h2 id="应用">应用</h2>
-<p>（1）以焦点为极点</p>
-<p><strong>例 1</strong> （2017 年全国Ⅰ卷）10．已知 <span class="math inline">\(F\)</span> 为抛物线 <span class="math inline">\(C:y^2=4x\)</span> 的焦点，过作两条互相垂直的直线 <span class="math inline">\(l_1\)</span>，<span class="math inline">\(l_2\)</span>，直线 <span class="math inline">\(l_1\)</span> 与 <span class="math inline">\(C\)</span> 交于 <span class="math inline">\(A\)</span>、<span class="math inline">\(B\)</span> 两点，直线 <span class="math inline">\(l_2\)</span> 与 <span class="math inline">\(C\)</span> 交于 <span class="math inline">\(D\)</span>、<span class="math inline">\(E\)</span> 两点，则 <span class="math inline">\(|AB|+|DE|\)</span> 的最小值为（　　）
+<h3 id="平方与一次转换">平方与一次转换</h3>
+<p><strong>例</strong> 已知正数 <span class="math inline">\(a,b\)</span> 满足 <span class="math inline">\(a+2b=3\)</span>，求 <span class="math inline">\(4a^2+5b^2\)</span> 的最小值。</p>
+<p><strong>解</strong> 运用柯西不等式 <span class="math inline">\(\left[\left(2a\right)^2+\left(\sqrt5 b\right)^2\right]\left[\left(\frac{1}{2}\right)^2+\left(\frac{2}{\sqrt{5}}\right)^2\right] \ge \left(a+2b\right)^2\)</span></p>
+<p>即 <span class="math inline">\((4a^2+5b^2)(\frac{1}{4}+\frac{4}{5})\ge 3^2=9\)</span></p>
+<p>所以 <span class="math inline">\(4a^2+5b^2\ge \frac{60}{7}\)</span>，最小值为 <span class="math inline">\(\frac{60}{7}\)</span></p>
+<p><strong>例</strong> 已知正数 <span class="math inline">\(a,b\)</span> 满足 <span class="math inline">\(a^2+2b^2=4\)</span>，求 <span class="math inline">\(a+3b\)</span> 的最大值。</p>
+<p><strong>解</strong> 运用柯西不等式 <span class="math inline">\(\left[a^2+\left(\sqrt2 b\right)^2\right]\left[1^2+\left(\frac{3}{\sqrt{2}}\right)^2\right] \ge \left(a+3b\right)^2\)</span></p>
+<p>即 <span class="math inline">\(4\times(1+\frac{9}{2})\ge (a+3b)^2\)</span></p>
+<p>所以 <span class="math inline">\(a+3b \le \sqrt{22}\)</span>，最大值为 <span class="math inline">\(\sqrt{22}\)</span></p>
+<h3 id="一次与分式转换">一次与分式转换</h3>
+<p><strong>例</strong> 已知正数 <span class="math inline">\(a,b\)</span> 满足 <span class="math inline">\(a+2b=3\)</span>，求 <span class="math inline">\(\frac{4}{a}+\frac{5}{b}\)</span> 的最小值。</p>
+<p><strong>解</strong> 运用柯西不等式 <span class="math inline">\(\left[\left(\sqrt{a}\right)^2+\left(\sqrt{2b}\right)^2\right]\left[\left(\frac{2}{\sqrt{a}}\right)^2+\left(\frac{\sqrt{5}}{\sqrt{b}}\right)^2\right] \ge \left(2+\sqrt{10}\right)^2\)</span></p>
+<p>即 <span class="math inline">\(3\left(\frac{4}{a}+\frac{5}{b}\right)\ge 14+4\sqrt{10}\)</span></p>
+<p>所以 <span class="math inline">\(\frac{4}{a}+\frac{5}{b} \ge \frac{14+4\sqrt{10}}{3}\)</span>，最小值为 <span class="math inline">\(\frac{14+4\sqrt{10}}{3}\)</span></p>
+<p><strong>例</strong> 已知正数 <span class="math inline">\(a,b\)</span> 满足 <span class="math inline">\(\frac{1}{a}+\frac{2}{b}=3\)</span>，求 <span class="math inline">\(3a+b\)</span> 的最小值。</p>
+<p><strong>解</strong> 运用柯西不等式 <span class="math inline">\(\left[\left(\sqrt{3a}\right)^2+\left(\sqrt{b}\right)^2\right]\left[\left(\frac{1}{\sqrt{a}}\right)^2+\left(\frac{\sqrt{2}}{\sqrt{b}}\right)^2\right] \ge \left(\sqrt{3}+\sqrt{2}\right)^2\)</span></p>
+<p>即 <span class="math inline">\(\left(3a+b\right)\times 3 \ge 5+2\sqrt{6}\)</span></p>
+<p>所以 <span class="math inline">\(3a+b \ge \frac{5+2\sqrt{6}}{3}\)</span>，最小值为 <span class="math inline">\(\frac{5+2\sqrt{6}}{3}\)</span></p>
+<h3 id="平方和为定值">平方和为定值</h3>
+<p><strong>例</strong> （2017 年全国Ⅰ卷）10．已知 <span class="math inline">\(F\)</span> 为抛物线 <span class="math inline">\(C:y^2=4x\)</span> 的焦点，过作两条互相垂直的直线 <span class="math inline">\(l_1\)</span>，<span class="math inline">\(l_2\)</span>，直线 <span class="math inline">\(l_1\)</span> 与 <span class="math inline">\(C\)</span> 交于 <span class="math inline">\(A\)</span>、<span class="math inline">\(B\)</span> 两点，直线 <span class="math inline">\(l_2\)</span> 与 <span class="math inline">\(C\)</span> 交于 <span class="math inline">\(D\)</span>、<span class="math inline">\(E\)</span> 两点，则 <span class="math inline">\(|AB|+|DE|\)</span> 的最小值为（　　）
 A.16　　B.14　　C. 12　　D.10</p>
 <p><strong>解</strong> <span class="math inline">\(p=2\)</span>，设直线 <span class="math inline">\(AB\)</span> 的倾斜角为 <span class="math inline">\(\alpha\)</span>，则直线 <span class="math inline">\(DE\)</span> 的倾斜角为 <span class="math inline">\(\alpha+\frac{\pi}{2}\)</span></p>
 <p>使用结论：<span class="math inline">\(|AB|=\frac{2p}{\sin^2\alpha}=\frac{4}{\sin^2\alpha}\)</span>，同理 <span class="math inline">\(|DE|=\frac{4}{\sin^2(\alpha+\frac{\pi}{2})}=\frac{4}{\cos^2\alpha}\)</span></p>
+<blockquote>
+<p>结论推导见 <a href="../../../2020/12/conic-section-and-polar-coordinate-system/" title="圆锥曲线与极坐标">圆锥曲线与极坐标</a></p>
+</blockquote>
 <p>所以 <span class="math inline">\(|AB|+|DE|=\frac{4}{\sin^2\alpha}+\frac{4}{\cos^2\alpha}=\left(\frac{4}{\sin^2\alpha}+\frac{4}{\cos^2\alpha}\right)\times 1=\left(\frac{4}{\sin^2\alpha}+\frac{4}{\cos^2\alpha}\right)\left(\sin^2\alpha+\cos^2\alpha\right)\geq(\frac{2}{\sin \alpha}\sin \alpha +\frac{2}{\cos\alpha}\cos \alpha)^2=(2+2)^2=16\)</span> （柯西不等式）</p>
-<p><strong>例 2</strong> （模型来自于同济大学自招题）已知椭圆 <span class="math inline">\(C:\frac{x^2}{4}+\frac{y^2}{3}=1\)</span>，过左焦点作两条相互垂直的直线，交椭圆于 <span class="math inline">\(M,N,P,Q\)</span> 四点，求四边形 <span class="math inline">\(MNPQ\)</span> 的面积的取值范围。</p>
-<p><img src="T2.png" alt=""></p>
-<p><strong>解</strong> 依题意 <span class="math inline">\(e=\frac{1}{2}\)</span>，<span class="math inline">\(p=3\)</span>，设直线 <span class="math inline">\(PQ\)</span> 的倾斜角为 <span class="math inline">\(\alpha\)</span>，则直线 <span class="math inline">\(MN\)</span> 的倾斜角为 <span class="math inline">\(\alpha+\frac{\pi}{2}\)</span></p>
-<p><span class="math inline">\(|PQ|=\frac{2ep}{1-e^2\cos^2\alpha}=\frac{12}{4-\cos^2\alpha}=\frac{12}{\sin^2\alpha+3}\)</span></p>
-<p>用 <span class="math inline">\(\alpha+\frac{\pi}{2}\)</span> 代替 <span class="math inline">\(\alpha\)</span> 得：<span class="math inline">\(|MN|=\frac{12}{\cos^2\alpha+3}\)</span></p>
-<p>所以 <span class="math inline">\(S=\frac{1}{2}|PQ||MN|=\frac{72}{(4-\cos^2\alpha)(\cos^2\alpha+3)}\)</span></p>
-<p>此处换元后易求得范围。</p>
-<p><strong>例 3</strong> 已知梯形 <span class="math inline">\(ABCD\)</span> 满足 <span class="math inline">\(AB/\!/CD\)</span>，<span class="math inline">\(\angle BAD =45^\circ\)</span>，以 <span class="math inline">\(AD\)</span> 为焦点的双曲线 <span class="math inline">\(\Gamma\)</span> 经过 <span class="math inline">\(B,C\)</span> 两点，若 <span class="math inline">\(CD=7AB\)</span>，则 <span class="math inline">\(\Gamma\)</span> 的离心率为
-A.<span class="math inline">\(\frac{3\sqrt{2}}{4}\)</span>　　B.<span class="math inline">\(\sqrt{2}\)</span>　　C.<span class="math inline">\(\frac{3\sqrt{2}}{2}\)</span>　　D.<span class="math inline">\(2\sqrt{2}\)</span></p>
-<p><img src="T3.svg" alt=""></p>
-<p><strong>解</strong> 延长 <span class="math inline">\(CD\)</span> 交 <span class="math inline">\(\Gamma\)</span> 于点 <span class="math inline">\(E\)</span>，由对称性知 <span class="math inline">\(DE=AB\)</span>，因此 <span class="math inline">\(\frac{CD}{DE}=\frac{CD}{AB}=7\)</span> 即 <span class="math inline">\(\lambda=7\)</span></p>
-<p>运用结论 <span class="math inline">\(e\cos 45^\circ = \frac{\lambda-1}{\lambda+1}\)</span>，得 <span class="math inline">\(\frac{e}{\sqrt{2}}=\frac{6}{8}=\frac{3}{4}\)</span>，<span class="math inline">\(e=\frac{3\sqrt{2}}{4}\)</span></p>
-<p>（2）以坐标原点为极点</p>
-<p><strong>例 4</strong> 已知椭圆 <span class="math inline">\(C:\frac{x^2}{a^2}+\frac{y^2}{b^2}=1\)</span>，过原点作两条射线 <span class="math inline">\(OA\)</span>，<span class="math inline">\(OB\)</span>，交椭圆于 <span class="math inline">\(A,B\)</span>，且满足：<span class="math inline">\(OA\bot OB\)</span>，求证： <span class="math inline">\(\frac{1}{|OA|^2}+\frac{1}{|OB|^2}\)</span> 为定值。</p>
-<p><img src="T4.png" alt=""></p>
-<p><strong>解 1</strong> 以坐标原点为极点，<span class="math inline">\(x\)</span> 轴为极轴，建立极坐标系，则：</p>
-<p><span class="math inline">\(x=\rho \cos\theta\)</span>，<span class="math inline">\(y=\rho \sin\theta\)</span>，代入椭圆方程得：</p>
-<p><span class="math inline">\(\frac{1}{\rho ^2}=\frac{\cos^2\theta}{a^2}+\frac{\sin^2\theta}{b^2}\)</span></p>
-<p>设直线 <span class="math inline">\(OA\)</span> 的倾斜角为 <span class="math inline">\(\theta\)</span>，则直线 <span class="math inline">\(OB\)</span> 的倾斜角为 <span class="math inline">\(\theta+\frac{\pi}{2}\)</span></p>
-<p><span class="math inline">\(\frac{1}{|OA| ^2}=\frac{1}{\rho_1 ^2}=\frac{\cos^2\theta}{a^2}+\frac{\sin^2\theta}{b^2}\)</span></p>
-<p>用 <span class="math inline">\(\theta+\frac{\pi}{2}\)</span> 代替 <span class="math inline">\(\theta\)</span> 得：</p>
-<p><span class="math inline">\(\frac{1}{|OB| ^2}=\frac{1}{\rho_2 ^2}=\frac{\sin^2\theta}{a^2}+\frac{\cos^2\theta}{b^2}\)</span></p>
-<p>两式相加得： <span class="math inline">\(\frac{1}{|OA|^2}+\frac{1}{|OB|^2}=\frac{\cos^2\theta+\sin^2\theta}{a^2}+\frac{\sin^2\theta+\cos^2\theta}{b^2}=\frac{1}{a^2}+\frac{1}{b^2}\)</span>，为定值</p>
-<p>用此方法的证明极度简洁，但担心会被扣分，因此给出如下“角参”的做法：</p>
-<p><strong>解 2</strong> 记 <span class="math inline">\(|OA|=m\)</span>，<span class="math inline">\(|OB|=n\)</span>，<span class="math inline">\(\angle AOx=\theta\)</span>，<span class="math inline">\(\angle BOx=\theta+\frac{\pi}{2}\)</span></p>
-<p>则 <span class="math inline">\(A(m\cos\theta,m\sin\theta)\)</span>，<span class="math inline">\(B(n\cos(\theta+\frac{\pi}{2}),n\sin(\theta+\frac{\pi}{2}))\)</span>，即 <span class="math inline">\(B(-n\sin\theta,n\cos\theta)\)</span>，代入椭圆方程得：</p>
-<p><span class="math inline">\(\frac{1}{m^2}=\frac{\cos^2\theta}{a^2}+\frac{\sin^2\theta}{b^2}\)</span></p>
-<p><span class="math inline">\(\frac{1}{n^2}=\frac{\sin^2\theta}{a^2}+\frac{\cos^2\theta}{b^2}\)</span></p>
-<p>两式相加得： <span class="math inline">\(\frac{1}{m^2}+\frac{1}{n^2}=\frac{\cos^2\theta+\sin^2\theta}{a^2}+\frac{\sin^2\theta+\cos^2\theta}{b^2}=\frac{1}{a^2}+\frac{1}{b^2}\)</span>，为定值。</p>
-<p>其实本质上还是极坐标的思想，不过这样写就不会被当作超纲了。</p>
-<p>在这里有人可能会想到椭圆的参数方程： <span class="math inline">\((a\cos\theta,b\sin\theta)\)</span><br>
-但是由于参数方程里面的 <span class="math inline">\(\theta\)</span> 并没有明确的几何意义，垂直难以表示，因此在这里不能使用！</p>
+<h3 id="和为定值">和为定值</h3>
+<p><strong>例</strong> 函数 <span class="math inline">\(y=\frac{1}{\cos x}+\frac{9}{2-\cos x}\ (0&lt;x&lt;\frac{\pi}{2})\)</span> 在何处取得最小值？最小值是？</p>
+<p><strong>解</strong> 令 <span class="math inline">\(t=\cos x\ (0&lt;t&lt;1)\)</span>，则 <span class="math inline">\(y=\frac{1}{t}+\frac{9}{2-t}\)</span></p>
+<p>运用柯西不等式 <span class="math inline">\(\left(\frac{1}{t}+\frac{9}{2-t}\right)(t+2-t)\ge (1+3)^2\)</span></p>
+<p>即 <span class="math inline">\(y\times 2\ge 16\)</span>，<span class="math inline">\(y\ge 8\)</span>，当且仅当 <span class="math inline">\(\frac{2-t}{t}=\frac{9t}{2-t}\)</span>，即 <span class="math inline">\(t=\frac{1}{2}\)</span>，<span class="math inline">\(x=\frac{\pi}{3}\)</span> 时取等号。</p>
+<p>所以函数在 <span class="math inline">\(x=\frac{\pi}{3}\)</span> 处取得最小值 <span class="math inline">\(8\)</span></p>
 
     </div>
     <div class="article-footer">
@@ -558,14 +524,9 @@ A.<span class="math inline">\(\frac{3\sqrt{2}}{4}\)</span>　　B.<span class="m
     <div class="bar-inner">
         <ul class="pager pull-left">
             <li class="prev">
-                <a href="../../../2020/12/%E5%8D%8A%E4%BB%A3%E6%B3%95%E6%B1%82%E5%9C%86%E9%94%A5%E6%9B%B2%E7%BA%BF%E5%88%87%E7%BA%BF%E6%96%B9%E7%A8%8B%E7%9A%84%E5%8E%9F%E7%90%86%E9%9A%90%E5%87%BD%E6%95%B0%E6%B1%82%E5%AF%BC/" title="“半代法”求圆锥曲线切线方程的原理（隐函数求导）"><i
+                <a href="../../../2021/04/%E8%A7%86%E9%A2%91%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7%E6%8E%A8%E8%8D%90/" title="视频处理工具推荐"><i
                         class="icon icon-angle-left"
                         aria-hidden="true"></i><span>&nbsp;&nbsp;下一篇</span></a>
-            </li>
-            <li class="next">
-                <a href="../../../2021/03/%E7%94%B5%E5%AE%B9%E5%99%A8%E5%8A%A8%E6%9D%86%E7%94%B5%E7%A3%81%E6%84%9F%E5%BA%94%E9%97%AE%E9%A2%98/"
-                    title="电容器动杆电磁感应问题"><span>上一篇&nbsp;&nbsp;</span><i
-                        class="icon icon-angle-right" aria-hidden="true"></i></a>
             </li>
             
             <li class="toggle-toc">
