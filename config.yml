@@ -60,11 +60,11 @@ menu:
       url: /tags/
       weight: 4
 
-    # - identifier: about
-    #   name: About
-    #   title: 关于
-    #   url: /about/
-    #   weight: 5
+    - identifier: about
+      name: About
+      title: 关于
+      url: /about/
+      weight: 5
 
 
 params:
@@ -158,15 +158,15 @@ params:
 
   # Donate
   donate:
-    enable: false
+    enable: true
     # 微信打赏
     wechatpay:
-      qrcode: donate/wechatpayimg.png
+      qrcode: donate/wechat.jpg
       title: 微信支付
     # 支付宝打赏
-    alipay:
-      qrcode: donate/alipayimg.png
-      title: 支付宝
+    # alipay:
+    #   qrcode: donate/alipayimg.png
+    #   title: 支付宝
 
   # PV
   pv:

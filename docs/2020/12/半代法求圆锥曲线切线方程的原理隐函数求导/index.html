@@ -25,7 +25,7 @@
     <title>“半代法”求圆锥曲线切线方程的原理（隐函数求导） - 1024th&#39;s Blog</title>
     
     
-    <link rel="stylesheet" href="../../../css/style.min.579a0aeb71900d4350c364faf5923cc3de3cb27a26d52154f0b890ef5780009e.css">
+    <link rel="stylesheet" href="../../../css/style.min.55370f72e5fab0c2b11e58e6ab513563cf36dcfa939b4e7d6eb91291352afea0.css">
     
     <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
@@ -123,6 +123,12 @@
                 <a href="../../../tags/">
                     <i class="icon icon-tags"></i>
                   <span class="menu-title">标签</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-about">
+                <a href="../../../about/">
+                    <i class="icon icon-cup-fill"></i>
+                  <span class="menu-title">关于</span>
                 </a>
             </li>
         </ul>
@@ -552,6 +558,10 @@ function tagCloud(where, min, max) {
                 </a>
             </li>
         </ul>
+        
+        <button type="button" class="btn btn-fancy btn-donate pop-onhover bg-gradient-warning" data-toggle="modal"
+            data-target="#donateModal"><span>赏</span></button>
+        
         <div class="bar-right">
             <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter"
                 data-mobile-sites="weibo,qq,qzone"></div>
@@ -560,9 +570,56 @@ function tagCloud(where, min, max) {
 </nav>
 
 
+<div class="modal modal-center modal-small modal-xs-full fade" id="donateModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content donate">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                    aria-hidden="true">&times;</span></button>
+            <div class="modal-body">
+                <div class="donate-box">
+                    <div class="donate-head">
+                        <p>感谢您的支持,我会继续努力的!</p>
+                    </div>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane fade active in" id="alipay">
+                            <div class="donate-payimg">
+                                <img src="../../../"
+                                    alt="扫码支持" title="扫一扫" />
+                            </div>
+                            <p class="text-muted mv">扫码打赏, 多少你说了算~</p>
+                            <p class="text-grey">打开支付宝扫一扫，即可进行扫码打赏哦~</p>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="wechatpay">
+                            <div class="donate-payimg">
+                                <img src="../../../donate/wechat.jpg"
+                                    alt="扫码支持" title="扫一扫" />
+                            </div>
+                            <p class="text-muted mv">扫码打赏, 多少你说了算~</p>
+                            <p class="text-grey">打开微信扫一扫，即可进行扫码打赏哦</p>
+                        </div>
+                    </div>
+                    <div class="donate-footer">
+                        <ul class="nav nav-tabs nav-justified" role="tablist">
+                            <li role="presentation" class="active">
+                                <a href="#alipay" id="alipay-tab" role="tab" data-toggle="tab" aria-controls="alipay"
+                                    aria-expanded="true"><i class="icon icon-alipay"></i> 支付宝</a>
+                            </li>
+                            <li role="presentation" class="">
+                                <a href="#wechatpay" role="tab" id="wechatpay-tab" data-toggle="tab"
+                                    aria-controls="wechatpay" aria-expanded="false"><i class="icon icon-wepay"></i>
+                                    微信支付</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 </main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
 <ul class="social-links">
-    <li><a href="../../../https:/github.com/1024th" target="_blank" title="github" data-toggle=tooltip data-placement=top >
+    <li><a href="https://github.com/1024th" target="_blank" title="github" data-toggle=tooltip data-placement=top >
             <i class="icon icon-github"></i></a></li>
 </ul>
   <div class="copyright">
