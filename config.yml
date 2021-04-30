@@ -30,7 +30,7 @@ outputs:
     home: ["HTML","RSS","SearchIndex"]  # recommend not to modify
 # sitemap
 sitemap:
-  changefreq: hourly
+  changefreq: daily
   filename: sitemap.xml
   priority: 0.5
 
