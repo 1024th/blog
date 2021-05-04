@@ -6,10 +6,19 @@
     <description>Recent content in Posts on 1024th&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>署名-非商业性使用-相同方式共享 4.0 国际</copyright>
-    <lastBuildDate>Thu, 15 Apr 2021 16:34:15 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 04 May 2021 04:29:53 +0000</lastBuildDate>
     
         <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>电磁感应中电容器和动杆的等效转化</title>
+      <link>/2021/05/%E7%94%B5%E7%A3%81%E6%84%9F%E5%BA%94%E4%B8%AD%E7%94%B5%E5%AE%B9%E5%99%A8%E5%92%8C%E5%8A%A8%E6%9D%86%E7%9A%84%E7%AD%89%E6%95%88%E8%BD%AC%E5%8C%96/</link>
+      <pubDate>Tue, 04 May 2021 04:29:53 +0000</pubDate>
+      
+      <guid>/2021/05/%E7%94%B5%E7%A3%81%E6%84%9F%E5%BA%94%E4%B8%AD%E7%94%B5%E5%AE%B9%E5%99%A8%E5%92%8C%E5%8A%A8%E6%9D%86%E7%9A%84%E7%AD%89%E6%95%88%E8%BD%AC%E5%8C%96/</guid>
+      <description>参考 https://zhuanlan.zhihu.com/p/108494777 电磁感应问题中含电容器模型可能在理解上存在较大的难度。本文介绍一种将电容器与动杆等效转化的方法。 问题背景 水平面上固定有两根足够长的光滑</description>
+    </item>
     
     <item>
       <title>关于我</title>
