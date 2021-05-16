@@ -205,3 +205,7 @@ params:
     - tag
     - recent_posts
 
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
