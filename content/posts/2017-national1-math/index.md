@@ -71,7 +71,7 @@ A．15　　B．20　　C．30　　D．35
 
 A．10　　B．12　　C．14　　D．16
 
-**8．** 右面程序框图是为了求出满足 3*^n^*−2*^n^*>1000 的最小偶数 $n$，那么在 <?xml version="1.0" encoding="UTF-8"?><svg width="18.12mm" height="5.382mm" version="1.1" viewBox="0 0 18.12 5.382" xmlns="http://www.w3.org/2000/svg"><g transform="translate(-96.77 -145.5)"><g transform="matrix(.3528 0 0 -.3528 105.8 118.2)"><path d="m24.8-85.04-24.8 7.369-24.8-7.369 24.8-7.369z" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width=".4981"/></g></g></svg> 和 <?xml version="1.0" encoding="UTF-8"?><svg width="10.68mm" height="3.479mm" version="1.1" viewBox="0 0 10.68 3.479" xmlns="http://www.w3.org/2000/svg"><g transform="translate(-108.2 -159.7)"><g transform="matrix(.3528 0 0 -.3528 131.5 140.4)"><path d="m-65.97-64.26h29.89v9.465h-29.89z" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width=".3985"/><g transform="scale(-1)"><g transform="rotate(180 -2.916 32.77)"></g></g></g></g></svg> 两个空白框中，可以分别填入【D】
+**8．** 右面程序框图是为了求出满足 $3^n−2^n>1000$ 的最小偶数 $n$，那么在 <?xml version="1.0" encoding="UTF-8"?><svg width="18.12mm" height="5.382mm" version="1.1" viewBox="0 0 18.12 5.382" xmlns="http://www.w3.org/2000/svg"><g transform="translate(-96.77 -145.5)"><g transform="matrix(.3528 0 0 -.3528 105.8 118.2)"><path d="m24.8-85.04-24.8 7.369-24.8-7.369 24.8-7.369z" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width=".4981"/></g></g></svg> 和 <?xml version="1.0" encoding="UTF-8"?><svg width="10.68mm" height="3.479mm" version="1.1" viewBox="0 0 10.68 3.479" xmlns="http://www.w3.org/2000/svg"><g transform="translate(-108.2 -159.7)"><g transform="matrix(.3528 0 0 -.3528 131.5 140.4)"><path d="m-65.97-64.26h29.89v9.465h-29.89z" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width=".3985"/><g transform="scale(-1)"><g transform="rotate(180 -2.916 32.77)"></g></g></g></g></svg> 两个空白框中，可以分别填入【D】
 
 ![](2017t8.svg)
 
@@ -229,9 +229,9 @@ $$
 
 $X$ 的数学期望为 $EX=16 \times 0.0026=0.0416$．
 
-（2）（i）如果生产状态正常，一个零件尺寸在 $(\mu-3\sigma,\mu+3\sigma)$ 之外的概率只有 $0.0026$，一天内抽取的 $16$ 个零件中，出现尺寸在 $(\mu-3\sigma,\mu+3\sigma)$ 之外的零件的概率只有 $0.0408$，发生的概率很小．因此一旦发生这种情况，就有理由认为这条生产线在这一天的生产过程可能出现了异常情况，需对当天的生产过程进行检查，可见上述监控生产过程的方法是合理的．
+（2）（ⅰ）如果生产状态正常，一个零件尺寸在 $(\mu-3\sigma,\mu+3\sigma)$ 之外的概率只有 $0.0026$，一天内抽取的 $16$ 个零件中，出现尺寸在 $(\mu-3\sigma,\mu+3\sigma)$ 之外的零件的概率只有 $0.0408$，发生的概率很小．因此一旦发生这种情况，就有理由认为这条生产线在这一天的生产过程可能出现了异常情况，需对当天的生产过程进行检查，可见上述监控生产过程的方法是合理的．
 
-（ii）由 $\bar{x}=9.97,s \approx 0.212$，得 $\mu$ 的估计值为 $\hat{\mu}=9.97$，$\sigma$ 的估计值为 $\hat{\sigma}=0.212$，由样本数据可以看出有一个零件的尺寸在 $(\hat{\mu}-3\hat{\sigma},\hat{\mu}+3\hat{\sigma})$ 之外，因此需对当天的生产过程进行检查．
+（ⅱ）由 $\bar{x}=9.97,s \approx 0.212$，得 $\mu$ 的估计值为 $\hat{\mu}=9.97$，$\sigma$ 的估计值为 $\hat{\sigma}=0.212$，由样本数据可以看出有一个零件的尺寸在 $(\hat{\mu}-3\hat{\sigma},\hat{\mu}+3\hat{\sigma})$ 之外，因此需对当天的生产过程进行检查．
 
 剔除 $(\hat{\mu}-3\hat{\sigma},\hat{\mu}+3\hat{\sigma})$ 之外的数据 $9.22$，剩下数据的平均数为
 
