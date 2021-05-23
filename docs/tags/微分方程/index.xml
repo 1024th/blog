@@ -12,9 +12,18 @@
     
     
     <item>
+      <title>2020 全国Ⅰ卷理科数学试题及答案</title>
+      <link>/2021/05/2020-national1-math/</link>
+      <pubDate>Sun, 23 May 2021 10:34:30 +0000</pubDate>
+      
+      <guid>/2021/05/2020-national1-math/</guid>
+      <description>2020 年普通高等学校招生全国统一考试 理科数学（全国Ⅰ卷） 本试卷 5 页，23 小题（含选考题）。全卷满分 150 分。考试用时 120 分钟。 ★祝考试顺利★ 一、选择题</description>
+    </item>
+    
+    <item>
       <title>简单线性回归的相关公式与推导</title>
       <link>/2021/05/simple-linear-regression/</link>
-      <pubDate>Sun, 23 May 2021 03:48:50 +0000</pubDate>
+      <pubDate>Sun, 23 May 2021 07:17:39 +0000</pubDate>
       
       <guid>/2021/05/simple-linear-regression/</guid>
       <description>参考 https://zhuanlan.zhihu.com/p/66261557 本文内容包括： 简单线性回归中拟合直线的两个参数 \(\hat{\beta_0},\hat{\beta_1}\) 的推导（最小二乘法） 简单线性回归中对 \(R^2\) 意义的一点个人理解 推导 \(R^2=r^2\) 简单线性回归中拟合直线的</description>
