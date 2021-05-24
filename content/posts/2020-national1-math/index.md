@@ -106,7 +106,7 @@ A.$a>2b$ B.$a<2b$ C.$a>b^2$ D.$a<b^2$
 
 **16.** 如图，在三棱锥 $P-ABC$ 的平面展开图中，$AC=1$，$AB=AD=\sqrt{3}$，$AB\perp AC$，$AB\perp AD$，$\angle CAE=30^{\circ}$，则 $\cos\angle FCD=\underline{\qquad}$.
 
-![](2020t16.png)
+![](2020t16.svg)
 
 **三、解答题：共 70 分。解答应写出文字说明、证明过程或演算步骤。第 17~21 题为必考题，每个试题考生都**
 
