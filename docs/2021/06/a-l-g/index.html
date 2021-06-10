@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <title>
+        关于对数平均不等式 - 1024th&#39;s Blog
+      </title>
+        <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    
+    <meta name="theme-color" content="#000000" />
+    
+    <meta http-equiv="window-target" content="_top" />
+    
+    
+    <meta name="description" content="对数平均不等式的证明以及应用" />
+    <meta name="generator" content="Hugo 0.83.0-DEV with theme pure" />
+    <title>关于对数平均不等式 - 1024th&#39;s Blog</title>
+    
+    
+    <link rel="stylesheet" href="../../../css/style.min.d8a3e28bd34e35f5972ea34034675480b33bc9f5a486b93930afae28a6aea527.css">
+    
+    <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/tocbot/4.12.2/tocbot.min.css" async>
+    <meta property="og:title" content="关于对数平均不等式" />
+<meta property="og:description" content="对数平均不等式的证明以及应用" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/2021/06/a-l-g/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-06-04T13:23:42&#43;00:00" />
+<meta property="article:modified_time" content="2021-06-04T13:23:42&#43;00:00" />
+
+<meta itemprop="name" content="关于对数平均不等式">
+<meta itemprop="description" content="对数平均不等式的证明以及应用"><meta itemprop="datePublished" content="2021-06-04T13:23:42&#43;00:00" />
+<meta itemprop="dateModified" content="2021-06-04T13:23:42&#43;00:00" />
+<meta itemprop="wordCount" content="1008">
+<meta itemprop="keywords" content="高中数学,回归分析," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="关于对数平均不等式"/>
+<meta name="twitter:description" content="对数平均不等式的证明以及应用"/>
+
+    <!--[if lte IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+      <![endif]-->
+
+    <!--[if lt IE 9]>
+        <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+      <![endif]-->
+  </head>
+
+  
+  
+
+  <body class="main-center theme-black" itemscope itemtype="http://schema.org/WebPage"><header class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="slimContent">
+      <div class="navbar-header">
+        <div class="profile-block text-center">
+          <a id="avatar" href="" target="_blank">
+            <img class="img-circle img-rotate" src="../../../avatar.png" width="200" height="200">
+          </a>
+          <h2 id="name" class="hidden-xs hidden-sm">1024th</h2>
+          <h3 id="title" class="hidden-xs hidden-sm hidden-md"></h3>
+          <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i>China</small>
+        </div><div class="search" id="search-form-wrap">
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="搜索" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i
+                        class="icon icon-search"></i></button>
+            </span>
+        </div>
+        <div class="ins-search">
+            <div class="ins-search-mask"></div>
+            <div class="ins-search-container">
+                <div class="ins-input-wrapper">
+                    <input type="text" class="ins-search-input" placeholder="想要查找什么..."
+                        x-webkit-speech />
+                    <button type="button" class="close ins-close ins-selectable" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="ins-section-wrapper">
+                    <div class="ins-section-container"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+        <ul class="nav navbar-nav main-nav">
+            <li class="menu-item menu-item-home">
+                <a href="../../../">
+                    <i class="icon icon-home-fill"></i>
+                  <span class="menu-title">主页</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-archives">
+                <a href="../../../posts/">
+                    <i class="icon icon-archives-fill"></i>
+                  <span class="menu-title">归档</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-categories">
+                <a href="../../../categories/">
+                    <i class="icon icon-folder"></i>
+                  <span class="menu-title">分类</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-tags">
+                <a href="../../../tags/">
+                    <i class="icon icon-tags"></i>
+                  <span class="menu-title">标签</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-about">
+                <a href="../../../about/">
+                    <i class="icon icon-cup-fill"></i>
+                  <span class="menu-title">关于</span>
+                </a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title"> 标签</h3>
+    <div id="tag-cloud-list" class="widget-body">
+            
+            
+            <a href="../../../tags/css/" class="tag-list-link" rel="1">css<span
+               class="tag-list-count">1</span></a>
+            
+            
+            <a href="../../../tags/html/" class="tag-list-link" rel="1">html<span
+               class="tag-list-count">1</span></a>
+            
+            
+            <a href="../../../tags/hugo/" class="tag-list-link" rel="1">hugo<span
+               class="tag-list-count">1</span></a>
+            
+            
+            <a href="../../../tags/markdown/" class="tag-list-link" rel="1">markdown<span
+               class="tag-list-count">1</span></a>
+            
+            
+            <a href="../../../tags/mathjax/" class="tag-list-link" rel="1">mathjax<span
+               class="tag-list-count">1</span></a>
+            
+            
+            <a href="../../../tags/themes/" class="tag-list-link" rel="1">themes<span
+               class="tag-list-count">1</span></a>
+            
+            
+            <a href="../../../tags/%E5%9B%9E%E5%BD%92%E5%88%86%E6%9E%90/" class="tag-list-link" rel="2">回归分析<span
+               class="tag-list-count">2</span></a>
+            
+            
+            <a href="../../../tags/%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/" class="tag-list-link" rel="2">微分方程<span
+               class="tag-list-count">2</span></a>
+            
+            
+            <a href="../../../tags/%E6%8E%92%E5%88%97%E7%BB%84%E5%90%88/" class="tag-list-link" rel="2">排列组合<span
+               class="tag-list-count">2</span></a>
+            
+            
+            <a href="../../../tags/%E6%96%B9%E5%B7%AE/" class="tag-list-link" rel="2">方差<span
+               class="tag-list-count">2</span></a>
+            
+            
+            <a href="../../../tags/%E6%9C%9F%E6%9C%9B/" class="tag-list-link" rel="1">期望<span
+               class="tag-list-count">1</span></a>
+            
+            
+            <a href="../../../tags/%E6%9E%81%E5%9D%90%E6%A0%87/" class="tag-list-link" rel="1">极坐标<span
+               class="tag-list-count">1</span></a>
+            
+            
+            <a href="../../../tags/%E8%A7%86%E9%A2%91%E5%A4%84%E7%90%86/" class="tag-list-link" rel="1">视频处理<span
+               class="tag-list-count">1</span></a>
+            
+            
+            <a href="../../../tags/%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95/" class="tag-list-link" rel="2">解析几何<span
+               class="tag-list-count">2</span></a>
+            
+            
+            <a href="../../../tags/%E9%AB%98%E4%B8%AD%E6%95%B0%E5%AD%A6/" class="tag-list-link" rel="14">高中数学<span
+               class="tag-list-count">14</span></a>
+            
+            
+            <a href="../../../tags/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86/" class="tag-list-link" rel="2">高中物理<span
+               class="tag-list-count">2</span></a>
+            
+            
+            <a href="../../../tags/%E9%AB%98%E8%80%83%E7%AD%94%E6%A1%88/" class="tag-list-link" rel="5">高考答案<span
+               class="tag-list-count">5</span></a>
+            
+    </div>
+<script>
+document.onreadystatechange = () => {
+  if (document.readyState === 'complete') {
+    tagCloud('#tag-cloud-list a',  12 ,  20 );
+  }
+};
+
+function tagCloud(where, min, max) {
+  let iMax = 0;
+  let iMin = 0;
+  $(where).each(function() {
+    let weight = Number($(this).attr("rel"));
+    if(iMax < weight) iMax = weight;
+    if(iMin > weight || iMin == 0) iMin = weight;
+  });
+  let step = (max - min)/(iMax - iMin);
+  $(where).each(function() {
+    let weight = $(this).attr("rel") - iMin;
+    $(this).css({"font-size": min + (weight * step) + 'px'});
+  });
+};
+</script>
+</div>
+
+      <div class="widget">
+    <h3 class="widget-title"> 分类</h3>
+    <div class="widget-body">
+        <ul class="category-list">
+            <li class="category-list-item"><a href="../../../categories/syntax/" class="category-list-link">syntax</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="../../../categories/themes/" class="category-list-link">themes</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="../../../categories/%E6%8A%80%E6%9C%AF/" class="category-list-link">技术</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="../../../categories/%E7%BC%96%E7%A8%8B/" class="category-list-link">编程</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="../../../categories/%E9%AB%98%E4%B8%AD%E6%95%B0%E5%AD%A6/" class="category-list-link">高中数学</a><span class="category-list-count">14</span></li>
+            <li class="category-list-item"><a href="../../../categories/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86/" class="category-list-link">高中物理</a><span class="category-list-count">2</span></li>
+        </ul>
+    </div>
+</div>
+      <div class="widget">
+    <h3 class="widget-title"> 标签</h3>
+    <div class="widget-body">
+        <ul class="tag-list">
+            
+            
+            <li class="tag-list-item"><a href="../../../tags/css/" class="tag-list-link">css</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="../../../tags/html/" class="tag-list-link">html</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="../../../tags/hugo/" class="tag-list-link">hugo</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="../../../tags/markdown/" class="tag-list-link">markdown</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="../../../tags/mathjax/" class="tag-list-link">mathjax</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="../../../tags/themes/" class="tag-list-link">themes</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="../../../tags/%E5%9B%9E%E5%BD%92%E5%88%86%E6%9E%90/" class="tag-list-link">回归分析</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="../../../tags/%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/" class="tag-list-link">微分方程</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="../../../tags/%E6%8E%92%E5%88%97%E7%BB%84%E5%90%88/" class="tag-list-link">排列组合</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="../../../tags/%E6%96%B9%E5%B7%AE/" class="tag-list-link">方差</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="../../../tags/%E6%9C%9F%E6%9C%9B/" class="tag-list-link">期望</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="../../../tags/%E6%9E%81%E5%9D%90%E6%A0%87/" class="tag-list-link">极坐标</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="../../../tags/%E8%A7%86%E9%A2%91%E5%A4%84%E7%90%86/" class="tag-list-link">视频处理</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="../../../tags/%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95/" class="tag-list-link">解析几何</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="../../../tags/%E9%AB%98%E4%B8%AD%E6%95%B0%E5%AD%A6/" class="tag-list-link">高中数学</a><span
+                    class="tag-list-count">14</span></li>
+            
+            
+            <li class="tag-list-item"><a href="../../../tags/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86/" class="tag-list-link">高中物理</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="../../../tags/%E9%AB%98%E8%80%83%E7%AD%94%E6%A1%88/" class="tag-list-link">高考答案</a><span
+                    class="tag-list-count">5</span></li>
+            
+        </ul>
+
+    </div>
+</div>
+      
+<div class="widget">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget-body">
+        <ul class="recent-post-list list-unstyled no-thumbnail">
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="../../../2021/06/2021-xgk1-math/" class="title">2021 新高考Ⅰ卷数学试题及答案</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2021-06-09 11:16:04.773 &#43;0000 UTC" itemprop="datePublished">2021-06-09</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="../../../2021/06/a-l-g/" class="title">关于对数平均不等式</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2021-06-04 13:23:42.026 &#43;0000 UTC" itemprop="datePublished">2021-06-04</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="../../../2021/05/2020-national1-math/" class="title">2020 全国Ⅰ卷理科数学试题及答案</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2021-05-23 10:34:30.795 &#43;0000 UTC" itemprop="datePublished">2021-05-23</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="../../../2021/05/simple-linear-regression/" class="title">简单线性回归的相关公式与推导</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2021-05-23 07:17:39.423 &#43;0000 UTC" itemprop="datePublished">2021-05-23</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="../../../2021/05/2017-national1-math/" class="title">2017 全国Ⅰ卷理科数学试题及答案</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2021-05-16 16:08:19.199 &#43;0000 UTC" itemprop="datePublished">2021-05-16</time>
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+  </div>
+</aside>
+
+    
+    
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <h4 class="toc-title">文章目录</h4>
+    <nav id="toc" class="js-toc toc">
+
+    </nav>
+  </div>
+</aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="../../../2021/06/a-l-g/"
+    >关于对数平均不等式</a
+  >
+</h1>
+
+      <div class="article-meta">
+        
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="../../../2021/06/a-l-g/" class="article-date">
+  <time datetime="2021-06-04 13:23:42.026 &#43;0000 UTC" itemprop="datePublished">2021-06-04</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="../../../categories/%E9%AB%98%E4%B8%AD%E6%95%B0%E5%AD%A6/"> 高中数学 </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="../../../tags/%E9%AB%98%E4%B8%AD%E6%95%B0%E5%AD%A6/"> 高中数学 </a>
+    <a class="article-tag-link" href="../../../tags/%E5%9B%9E%E5%BD%92%E5%88%86%E6%9E%90/"> 回归分析 </a>
+  </span>
+
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 1008字</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 3分 </span>
+      </div>
+    </div>
+    <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
+      <p><strong>对数平均不等式</strong>，也称算数-对数-几何平均值不等式、A-L-G 不等式（<strong>A</strong>rithmetic mean-<strong>L</strong>ogarithmic mean-<strong>G</strong>eometric mean inequality），是指对任意不相等的正实数 <span class="math inline">\(a,b\)</span>，它们满足</p>
+<p><span class="math display">\[\frac{a+b}{2} &gt; \frac{b-a}{\ln b-\ln a} &gt; \sqrt{ab}
+\]</span></p>
+<p>其中 <span class="math inline">\(\dfrac{b-a}{\ln b-\ln a}\)</span> 被称为<strong>对数平均值</strong>。</p>
+<h2 id="证明">证明</h2>
+<h3 id="用柯西积分不等式证明">用柯西积分不等式证明</h3>
+<blockquote>
+<p>参考：<a href="https://www.zhihu.com/question/339199415/answer/1192504001">怎么理解对数均值不等式？ - Warlock的回答 - 知乎</a></p>
+</blockquote>
+<p>根据柯西积分不等式（<a href="#柯西积分不等式的证明">证明</a>）</p>
+<p><span class="math display">\[\left[\int_a^b f(x)g(x)\ \mathrm{d}x\right]^2\le \int_a^b f^2(x)\ \mathrm{d}x\int_a^b g^2(x)\ \mathrm{d}x
+\]</span></p>
+<p>令 <span class="math inline">\(f^2(x)= x\)</span>，<span class="math inline">\(g^2(x)= \frac{1}{x}\)</span>，则有 <span class="math inline">\(\left| f(x)g(x) \right| = 1\)</span></p>
+<p>代入柯西积分不等式得（<span class="math inline">\(f(x)\)</span> 与 <span class="math inline">\(g(x)\)</span> 线性无关，故等号不可取）</p>
+<p><span class="math display">\[\left( b-a \right)^2 &lt; \frac{1}{2}\left( b^2-a^2 \right)\left( \ln b-\ln a \right)
+\]</span></p>
+<p><span class="math inline">\(b-a\)</span> 与 <span class="math inline">\(\ln b-\ln a\)</span> 同正负，故 <span class="math inline">\((b-a)(\ln b -\ln a)&gt;0\)</span>，不等式两边同时除以 <span class="math inline">\((b-a)(\ln b -\ln a)\)</span> 得</p>
+<p><span class="math display">\[\frac{b-a}{\ln b-\ln a} &lt; \frac{a+b}{2}
+\]</span></p>
+<p>令 <span class="math inline">\(f(x) = \frac{1}{x}\)</span>，<span class="math inline">\(g(x)=1\)</span>，则有 <span class="math inline">\(\left| f(x)g(x) \right| = \frac{1}{x}\)</span></p>
+<p>代入柯西积分不等式得（<span class="math inline">\(f(x)\)</span> 与 <span class="math inline">\(g(x)\)</span> 线性无关，故等号不可取）</p>
+<p><span class="math display">\[\left( \ln b-\ln a \right)^2 &lt; \left( \frac{1}{a} - \frac{1}{b}\right)\left( b-a \right)
+\]</span></p>
+<p>其中</p>
+<p><span class="math display">\[\left( \frac{1}{a} - \frac{1}{b}\right)\left( b-a \right) = \frac{(b-a)^2}{ab}
+\]</span></p>
+<p>所以</p>
+<p><span class="math display">\[ab &lt; \frac{(b-a)^2}{(\ln b-\ln a)^2}
+\]</span></p>
+<p>即</p>
+<p><span class="math display">\[\sqrt{ab} &lt; \frac{b-a}{\ln b-\ln a}
+\]</span></p>
+<h3 id="高中知识证明">高中知识证明</h3>
+<p>思路：由于 <span class="math inline">\(a,b\)</span> 是两个独立的变量，如果能够构造两个变量的比值（或差值）实现变量归一，那么就能利用导数证明此不等式。</p>
+<p>不妨设 <span class="math inline">\(b&gt;a\)</span>，则</p>
+<p><span class="math display">\[\frac{a+b}{2} &gt; \frac{b-a}{\ln b-\ln a} \\[8pt]
+\Leftrightarrow (a+b)(\ln b-\ln a)&gt;2(b-a) \\[8pt]
+\Leftrightarrow \left(\frac{b}{a}+1\right) \ln \frac{b}{a}&gt;2\left(\frac{b}{a}-1\right)
+\]</span></p>
+<p>设函数 <span class="math inline">\(f(x)=(1+x) \ln x-2(x-1)\ (x&gt;1)\)</span>，则</p>
+<p><span class="math display">\[f'(x)=\ln x+\frac{x+1}{x}-2=\frac{x \ln x-x+1}{x}
+\]</span></p>
+<p>令 <span class="math inline">\(g(x)=x \ln x-x+1(x&gt;1)\)</span>, 则 <span class="math inline">\(g'(x)=\ln x&gt;0\)</span>，所以 <span class="math inline">\(g(x)\)</span> 在 <span class="math inline">\((1,+\infty)\)</span> 单调递增，<span class="math inline">\(g(x)&gt;g(1)=0\)</span></p>
+<p>所以 <span class="math inline">\(f'(x)&gt;0\)</span>，<span class="math inline">\(f(x)\)</span> 在 <span class="math inline">\((1,+\infty)\)</span> 单调递增，<span class="math inline">\(f(x)&gt;f(1)=0\)</span>，故原不等式成立。</p>
+<p><span class="math display">\[\frac{b-a}{\ln b-\ln a} &gt; \sqrt{ab} \\[8pt]
+\Leftrightarrow \sqrt{\frac{b}{a}} - \sqrt{\frac{a}{b}} &gt; \ln \frac{b}{a}
+\]</span></p>
+<p>设 <span class="math inline">\(f(x)=x-\frac{1}{x}-\ln x^2 = x-\frac{1}{x}-2\ln x\ (x&gt;1)\)</span>，则</p>
+<p><span class="math display">\[f'\left(x\right)= 1+\frac{1}{x^2}+\frac{2}{x}=\frac{(x+1)^2}{x} &gt; 0
+\]</span></p>
+<p>所以 <span class="math inline">\(f(x)\)</span> 在 <span class="math inline">\((1,+\infty)\)</span> 单调递增，<span class="math inline">\(f(x)&gt;f(1)=0\)</span>，故原不等式得证。</p>
+<h3 id="几何意义">几何意义</h3>
+<p><img src="A-L-G_1.svg" alt=""></p>
+<p>图中曲线为 <span class="math inline">\(y=\frac{1}{x}\)</span>，因为曲边梯形面积 <span class="math inline">\(&gt;\)</span> 梯形面积 <span class="math inline">\(=\)</span> 矩形面积，所以</p>
+<p><span class="math display">\[\int_a^b \frac{1}{x}\ \mathrm{d}x &gt; \frac{2}{a+b}(b-a)
+\]</span></p>
+<p><span class="math display">\[\ln b-\ln a &gt; \frac{2}{a+b}(b-a)
+\]</span></p>
+<p><span class="math display">\[\frac{a+b}{2} &gt; \frac{b-a}{\ln b-\ln a}
+\]</span></p>
+<p><img src="A-L-G_2.svg" alt=""></p>
+<p>图中曲线为 <span class="math inline">\(y=\frac{1}{x}\)</span>，因为曲边梯形面积 <span class="math inline">\(&lt;\)</span> 两个梯形面积之和，所以</p>
+<p><span class="math display">\[\ln b-\ln a &lt; \frac{1}{2}\left(\frac{1}{a}+\frac{1}{\sqrt{ab}}\right)\left(\sqrt{ab}-a\right) + \frac{1}{2}\left(\frac{1}{\sqrt{ab}}+\frac{1}{b}\right)(b-\sqrt{ab}) \\[8pt]
+=\frac{(\sqrt{ab}+a)(\sqrt{ab}-a)}{2 a\sqrt{ab}}+\frac{(b+\sqrt{ab})(b-\sqrt{ab})}{2 b \sqrt{a b}} \\[8pt]
+=\frac{ab-a^2}{2 a\sqrt{ab}}+\frac{b^2-ab}{2 b \sqrt{a b}}=\frac{b-a}{2\sqrt{ab}}+\frac{b-a}{2\sqrt{a b}} =\frac{b-a}{\sqrt{a b}}
+\]</span></p>
+<p>所以</p>
+<p><span class="math display">\[\sqrt{a b}&lt;\frac{b-a}{\ln b-\ln a}
+\]</span></p>
+<h2 id="应用">应用</h2>
+<p>To be continued&hellip;</p>
+<h2 id="柯西积分不等式的证明">柯西积分不等式的证明</h2>
+<p>由 <span class="math inline">\(\left[f(x)+tg(x)\right]^2\ge 0\)</span> 得</p>
+<p><span class="math display">\[\int_a^b \left[f(x)+tg(x)\right]^2 \mathrm{d}x \ge 0
+\]</span></p>
+<p><span class="math display">\[\int_a^b f^2(x)\ \mathrm{d}x + 2t\int_a^b f(x)g(x)\ \mathrm{d}x + t^2\int_a^b g^2(x)\ \mathrm{d}x \ge 0
+\]</span></p>
+<p>将上式视为关于 <span class="math inline">\(t\)</span> 的不等式，则</p>
+<p><span class="math display">\[\Delta = 4\left[\int_a^b f(x)g(x)\ \mathrm{d}x\right]^2 - 4\int_a^b f^2(x)\ \mathrm{d}x\int_a^b g^2(x)\ \mathrm{d}x\le 0
+\]</span></p>
+<p>所以</p>
+<p><span class="math display">\[\left[\int_a^b f(x)g(x)\ \mathrm{d}x\right]^2\le \int_a^b f^2(x)\ \mathrm{d}x\int_a^b g^2(x)\ \mathrm{d}x
+\]</span></p>
+<p>上式称为<strong>柯西积分不等式</strong>。等号成立的充分必要条件是 <span class="math inline">\(f(x)\)</span> 和 <span class="math inline">\(g(x)\)</span> 线性相关，即 <span class="math inline">\(f(x)\)</span> 和 <span class="math inline">\(g(x)\)</span> 中有一个恒为零或存在常数 <span class="math inline">\(t\)</span> 使得 <span class="math inline">\(f(x)=tg(x)\)</span> 恒成立。（证明见<a href="https://www.zhihu.com/question/431329683/answer/1587501678">柯西施瓦兹不等式的积分形式等号成立的条件是什么呢？如何证明呢？ - 刘醉白的回答 - 知乎</a>）</p>
+
+    </div>
+    <div class="article-footer">
+<blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    <li class="post-copyright-author">
+      <strong>本文作者: </strong>
+        1024th
+    </li>
+    
+    <li class="post-copyright-license">
+      <strong>版权许可: </strong>
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="external">署名-非商业性使用-相同方式共享 4.0 国际</a>
+    </li>
+  </ul>
+</blockquote>
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="../../../avatar.png" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="" target="_blank"><span class="text-dark">1024th</span><small class="ml-1x"></small></a></h3>
+        <div>作者</div>
+      </div>
+    </figure>
+  </div>
+</div>
+
+    </div>
+  </article>
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <ul class="pager pull-left">
+            <li class="prev">
+                <a href="../../../2021/05/2020-national1-math/" title="2020 全国Ⅰ卷理科数学试题及答案"><i
+                        class="icon icon-angle-left"
+                        aria-hidden="true"></i><span>&nbsp;&nbsp;下一篇</span></a>
+            </li>
+            <li class="next">
+                <a href="../../../2021/06/2021-xgk1-math/"
+                    title="2021 新高考Ⅰ卷数学试题及答案"><span>上一篇&nbsp;&nbsp;</span><i
+                        class="icon icon-angle-right" aria-hidden="true"></i></a>
+            </li>
+            
+            <li class="toggle-toc">
+                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false"
+                    title="文章目录" role="button">
+                    <span>[&nbsp;</span><span>文章目录</span>
+                    <i class="text-collapsed icon icon-anchor"></i>
+                    <i class="text-in icon icon-close"></i>
+                    <span>]</span>
+                </a>
+            </li>
+        </ul>
+        
+        <button type="button" class="btn btn-fancy btn-donate pop-onhover bg-gradient-warning" data-toggle="modal"
+            data-target="#donateModal"><span>赏</span></button>
+        
+        <div class="bar-right">
+            <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter"
+                data-mobile-sites="weibo,qq,qzone"></div>
+        </div>
+    </div>
+</nav>
+
+
+<div class="modal modal-center modal-small modal-xs-full fade" id="donateModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content donate">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                    aria-hidden="true">&times;</span></button>
+            <div class="modal-body">
+                <div class="donate-box">
+                    <div class="donate-head">
+                        <p>感谢您的支持,我会继续努力的!</p>
+                    </div>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane fade active in" id="alipay">
+                            <div class="donate-payimg">
+                                <img src="../../../"
+                                    alt="扫码支持" title="扫一扫" />
+                            </div>
+                            <p class="text-muted mv">扫码打赏, 多少你说了算~</p>
+                            <p class="text-grey">打开支付宝扫一扫，即可进行扫码打赏哦~</p>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="wechatpay">
+                            <div class="donate-payimg">
+                                <img src="../../../donate/wechat.jpg"
+                                    alt="扫码支持" title="扫一扫" />
+                            </div>
+                            <p class="text-muted mv">扫码打赏, 多少你说了算~</p>
+                            <p class="text-grey">打开微信扫一扫，即可进行扫码打赏哦</p>
+                        </div>
+                    </div>
+                    <div class="donate-footer">
+                        <ul class="nav nav-tabs nav-justified" role="tablist">
+                            <li role="presentation" class="active">
+                                <a href="#alipay" id="alipay-tab" role="tab" data-toggle="tab" aria-controls="alipay"
+                                    aria-expanded="true"><i class="icon icon-alipay"></i> 支付宝</a>
+                            </li>
+                            <li role="presentation" class="">
+                                <a href="#wechatpay" role="tab" id="wechatpay-tab" data-toggle="tab"
+                                    aria-controls="wechatpay" aria-expanded="false"><i class="icon icon-wepay"></i>
+                                    微信支付</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+<ul class="social-links">
+    <li><a href="https://github.com/1024th" target="_blank" title="github" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-github"></i></a></li>
+</ul>
+  <div class="copyright">
+    &copy;2020  -
+    2021
+    <div class="publishby">
+        Theme by <a href="https://github.com/xiaoheiAh" target="_blank"> xiaoheiAh </a>base on<a href="https://github.com/xiaoheiAh/hugo-theme-pure" target="_blank"> pure</a>.
+    </div>
+  </div>
+</footer>
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.0/dist/katex.min.css" integrity="sha384-t5CR+zwDAROtph0PXGte6ia8heboACF9R5l/DiY+WZ3P2lxNgvJkQk5n7GPvLMYw" crossorigin="anonymous">
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.0/dist/katex.min.js" integrity="sha384-FaFLTlohFghEIZkw6VGwmf9ISTubWAVYW8tG8+w2LAIftJEULZABrF9PPFv+tVkH" crossorigin="anonymous"></script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.0/dist/contrib/auto-render.min.js" integrity="sha384-bHBqxz8fokvgoJ/sc17HODNxa42TlaEhB+w8ZJXTc2nZf1VgEaFZeZvT4Mznfz0v" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script>
+    window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/highlight.min.js"></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/python.min.js" defer></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/javascript.min.js" defer></script><script>
+    hljs.configure({
+        tabReplace: '    ', 
+        classPrefix: ''     
+        
+    })
+    hljs.initHighlightingOnLoad();
+</script>
+<script src="../../../js/application.min.a94ab19cb63a95c8d7fbd7b85cab3ddeea8c369bdf75b9cab6708787ead123af.js"></script>
+<script src="../../../js/plugin.min.19c5bcb2fb0789ab4f2b7834e5ceb5e92635645605bab902c1024b25f1502364.js"></script>
+
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: '文章',
+                PAGES: '页面',
+                CATEGORIES: '分类',
+                TAGS: '标签',
+                UNTITLED: '(未命名)',
+            },
+            ROOT_URL: '',
+            CONTENT_URL: '\/searchindex.json ',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script type="text/javascript" src="../../../js/insight.min.4a2d52de4bfff73e0c688404fe3d17c9a3ae12d9888e1e1ac9c690e4890de2ded50fe55f2b819c2ba55435a76f396f3ea6805765f0b0af5635cdf74ea459eab0.js" defer></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/tocbot/4.12.2/tocbot.min.js"></script>
+<script>
+    tocbot.init({
+        
+        tocSelector: '.js-toc',
+        
+        contentSelector: '.js-toc-content',
+        
+        headingSelector: 'h1, h2, h3',
+        
+        hasInnerContainers: true,
+    });
+</script>
+
+
+  </body>
+</html>

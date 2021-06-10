@@ -155,7 +155,7 @@ $\{a_{n}\}$ 是公比不为 $1$ 的等比数列，$a_1$ 为 $a_2,a_3$ 的等差�
 
 **21.** （12 分）
 
-已知函数 $f(x)=e^{x}+ax^2-x$.
+已知函数 $f(x)=\mathrm{e}^{x}+ax^2-x$.
 
 （1）当 $a=1$ 时，讨论 $f(x)$ 的单调性；
 
@@ -342,35 +342,35 @@ $$
 
 **21.** 解：
 
-（1）当 $a=1$ 时，$f(x)=e^{x}+x^2-x$，$f'(x)=e^{x}+2x-1$.
+（1）当 $a=1$ 时，$f(x)=\mathrm{e}^{x}+x^2-x$，$f'(x)=\mathrm{e}^{x}+2x-1$.
 
 故当 $x\in(-\infty,0)$ 时，$f'(x)<0$；当 $x\in(0,+\infty)$ 时，$f'(x)>0$. 所以 $f(x)$ 在 $(-\infty,0)$ 单调递减，在 $(0,+\infty)$ 单调递增.
 
-（2）$f(x)\geq\frac{1}{2}x^3+1$ 等价于 $(\frac{1}{2}x^3-ax^2+x+1)e^{-x}\leq1$.
+（2）$f(x)\geq\frac{1}{2}x^3+1$ 等价于 $(\frac{1}{2}x^3-ax^2+x+1)\mathrm{e}^{-x}\leq1$.
 
-设函数 $g(x)=(\frac{1}{2}x^3-ax^2+x+1)e^{-x}\ (x\geq0)$，则
+设函数 $g(x)=(\frac{1}{2}x^3-ax^2+x+1)\mathrm{e}^{-x}\ (x\geq0)$，则
 
 $$
 \begin{aligned}
-g'(x) &= -\left(\frac{1}{2}x^3-ax^2+x+1-\frac{3}{2}x^2+2ax-1\right)e^{-x} \\
-&= -\frac{1}{2}x\left[x^2-(2a+3)x+4a+2\right] e^{-x} \\
-&= -\frac{1}{2}x(x-2a-1)(x-2)e^{-x} \\
+g'(x) &= -\left(\frac{1}{2}x^3-ax^2+x+1-\frac{3}{2}x^2+2ax-1\right)\mathrm{e}^{-x} \\
+&= -\frac{1}{2}x\left[x^2-(2a+3)x+4a+2\right] \mathrm{e}^{-x} \\
+&= -\frac{1}{2}x(x-2a-1)(x-2)\mathrm{e}^{-x} \\
 \end{aligned}
 $$
 
 （i）若 $2a+1\leq0$，即 $a\leq-\frac{1}{2}$，则当 $x\in(0,2)$ 时，$g'(x)>0$. 所以 $g(x)$ 在 $(0,2)$ 单调递增，而 $g(0)=1$，故当 $x\in(0,2)$ 时，$g(x)>1$，不合题意.
 
-（ii）若 $0<2a+1<2$，即 $-\frac{1}{2}<a<\frac{1}{2}$，则当 $x\in(0,2a+1)\cup(2,+\infty)$ 时，$g'(x)<0$；当 $x\in(2a+1,2)$ 时，$g'(x)>0$. 所以 $g(x)$ 在 $(0,2a+1)$，$(2,+\infty)$ 单调递减，在 $(2a+1,2)$ 单调递增. 由于 $g(0)=1$，所以 $g(x)\leq1$ 当且仅当 $g(2)=(7-4a)e^{-2}\leq1$，即 $a\geq\frac{7-e^2}{4}$.
+（ii）若 $0<2a+1<2$，即 $-\frac{1}{2}<a<\frac{1}{2}$，则当 $x\in(0,2a+1)\cup(2,+\infty)$ 时，$g'(x)<0$；当 $x\in(2a+1,2)$ 时，$g'(x)>0$. 所以 $g(x)$ 在 $(0,2a+1)$，$(2,+\infty)$ 单调递减，在 $(2a+1,2)$ 单调递增. 由于 $g(0)=1$，所以 $g(x)\leq1$ 当且仅当 $g(2)=(7-4a)\mathrm{e}^{-2}\leq1$，即 $a\geq\frac{7-\mathrm{e}^2}{4}$.
 
-所以 $\frac{7-e^2}{4}\leq a<\frac{1}{2}$ 时，$g(x)\leq1$.
+所以 $\frac{7-\mathrm{e}^2}{4}\leq a<\frac{1}{2}$ 时，$g(x)\leq1$.
 
-（iii）若 $2a+1\geq2$，即 $a\geq\frac{1}{2}$，$g(x)\leq(\frac{1}{2}x^3+x+1)e^{-x}$.
+（iii）若 $2a+1\geq2$，即 $a\geq\frac{1}{2}$，$g(x)\leq(\frac{1}{2}x^3+x+1)\mathrm{e}^{-x}$.
 
-由于 $0\in\lbrack\frac{7-e^2}{4},\frac{1}{2})$，故由（ii）可得 $(\frac{1}{2}x^3+x+1)e^{-x}\leq1$.
+由于 $0\in\lbrack\frac{7-\mathrm{e}^2}{4},\frac{1}{2})$，故由（ii）可得 $(\frac{1}{2}x^3+x+1)\mathrm{e}^{-x}\leq1$.
 
 故当 $a\geq\frac{1}{2}$时，$g(x)\leq1$.
 
-综上，$a$ 的取值范围是 $\lbrack\frac{7-e^2}{4},+\infty)$.
+综上，$a$ 的取值范围是 $\lbrack\frac{7-\mathrm{e}^2}{4},+\infty)$.
 
 **22.** 解：
 
