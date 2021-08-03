@@ -9,7 +9,7 @@ draft = false
     * {
         margin: 0;
         padding: 0;
-        color: #333333;
+
     }
 
     h1 {
