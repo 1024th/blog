@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>启明13班去向图</title>
+      <link>/2021/08/cft/</link>
+      <pubDate>Tue, 03 Aug 2021 12:50:17 +0000</pubDate>
+      
+      <guid>/2021/08/cft/</guid>
+      <description>* { margin: 0; padding: 0; color: #333333; } h1 { text-align: center; } h3, h4, h5, h6 { font-weight: normal; } .clear { clear: both; } body { font-family: &#34;微软雅黑&#34;; } a { text-decoration: none; color: #333; } #charts { width: 800px; height: 600px; margin: 0 auto; } .market_map_title { font-size: 32px; text-align: left; padding-left: 50px; } 启明13班去</description>
+    </item>
+    
+    <item>
       <title>2021 新高考Ⅰ卷数学试题及答案</title>
       <link>/2021/06/2021-xgk1-math/</link>
       <pubDate>Wed, 09 Jun 2021 11:16:04 +0000</pubDate>
@@ -180,15 +189,6 @@
       
       <guid>/2019/03/%E6%8E%92%E5%88%97%E7%BB%84%E5%90%88%E7%9A%84%E4%B8%80%E4%BA%9B%E5%85%AC%E5%BC%8F%E5%8F%8A%E6%8E%A8%E5%AF%BC/</guid>
       <description>绪论：加法原理、乘法原理 分类计数原理：做一件事，有 \(n\) 类办法，在第 \(1\) 类办法中有 \(m_1\) 种不同的方法，在第 \(2\) 类办法中有 \(m_2\) 种不同的方法，…，在第 \(n\) 类办法</description>
-    </item>
-    
-    <item>
-      <title>Markdown Syntax Guide</title>
-      <link>/2019/03/testmarkdown-syntax/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/2019/03/testmarkdown-syntax/</guid>
-      <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
     </item>
     
   </channel>
